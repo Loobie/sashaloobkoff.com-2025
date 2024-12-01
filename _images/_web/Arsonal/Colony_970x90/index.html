@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <style type="text/css">	
+		html { 
+		  background: url(../../../background.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+		.shadow {
+		  -moz-box-shadow:    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		  box-shadow:         2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+    
+    <!--[if IE]><script type="text/javascript" src="js/classList.js"></script><![endif]-->
+    <script>
+        EBModulesToLoad = ['Video', 'EBCMD'];
+    </script>
+    <script type="text/javascript" src="js/EBLoader.js"></script>
+    <script type="text/javascript" src="js/devicedetector-min.js"></script>
+    <script type='text/javascript' src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/pushdown_banner.js"></script>
+    <script type="text/javascript" src="js/Notifications.js"></script>
+    <script type="text/javascript" src="js/ArsonalSizmekVideo.js"></script>
+    <script type='text/javascript' src="js/main.js"></script>
+
+    <script type="text/javascript">
+        EB.initExpansionParams(0, 0, 970, 418);
+    </script>
+</head>
+<body onload="initEB();">
+<div id="sizmek_sync_block" style="position: relative; margin: 5% auto; width: 970px;">
+
+    <!-- content collapsed -->
+    <div id="content-collapsed" class="shadow">
+
+            <div id="banner">
+                <div class="keyline" style="width: 968px; height: 88px;"></div>
+                <div id="tunein"></div>
+                <button type="button" id="button-clicktag-1" class="clicktag" style="width:970px; height:90px;"></button>
+                <button type="button" id="watch-cta"></button>
+            </div>
+
+    </div>
+
+    <!-- content expand -->
+    <div id="content-expand" class="shadow">
+
+            <div class="keyline" style="width: 968px; height: 416px;"></div>
+            <div id="tunein-expand"></div>
+            <button type="button" id="button-clicktag-2" class="clicktag" style="width:970px; height:418px;"></button>
+            <button type="button" id="button-cta"></button>
+            <div id="video-2-container-holder">
+                <div id="video-2-container"></div>
+                <div id="video-2-loader">
+                    <img src="images/loader.gif" />
+                </div>
+                <button type="button" id="button-clicktag-3" class="clicktag" style="width:531px; height:380px;"></button>
+                <button type="button" id="button-play-video"></button>
+                <button type="button" id="button-pause-video"></button>
+                <button type="button" id="button-unmute-video"></button>
+                <button type="button" id="button-mute-video"></button>
+                <button type="button" id="button-click-to-replay-video">
+                    <div class="video-frame-static"></div>
+                    <div class="icon-click-to-replay-video"></div>
+                </button>
+                <button type="button" id="button-click-to-play-video">
+                    <div class="video-frame-static"></div>
+                    <div class="icon-click-to-play-video"></div>
+                </button>
+            </div>
+            <div class="blk_fill"></div>
+            <button type="button" id="button-video-1"></button>
+            <button type="button" id="button-video-2"></button>
+            <button type="button" id="button-video-3"></button>
+            <div id="panel-closeBtn"></div>
+
+    </div>
+</div>
+    <p style="text-align:center; font-family: Helvetica, Arial, Sans-Serif; color: #222; font-style: italic;">{Click 'WATCH VIDEO' to expand}</p>
+</body>
+</html>

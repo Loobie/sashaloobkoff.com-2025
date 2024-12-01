@@ -1,0 +1,120 @@
+/* container 1  */
+#mcs_container{
+	position: absolute;
+	top: 110px;
+  	left: 179px;
+	width: 459px;
+	height: 318px;
+}
+
+#mcs_container .customScrollBox{
+	position:relative; 
+	height:100%; 
+	overflow:hidden;
+}
+
+#mcs_container .customScrollBox .container{
+	position:relative; 
+	width:100%; 
+	top:0; 
+	float:left;
+}
+
+#mcs_container .customScrollBox .content{
+	clear:both;
+}
+
+
+#mcs_container .dragger_container{
+	position:relative; 
+	width:2px; 
+	height:470px; 
+	float:left; 
+	margin:40px 0 0 10px; 
+	background:#000; 
+	cursor:pointer 
+	-moz-border-radius:2px; 
+	-khtml-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	border-radius:12px; 
+	cursor:s-resize;
+}
+
+#mcs_container .dragger{
+	position:absolute; 
+	width:2px; 
+	height:60px; 
+	background:#999; 
+	text-align:center; 
+	line-height:60px; 
+	color:#666; 
+	overflow:hidden; 
+	cursor:pointer; 
+	-moz-border-radius:2px; 
+	-khtml-border-radius:2px; 
+	-webkit-border-radius:2px; 
+	border-radius:2px;
+	}
+
+#mcs_container .dragger_pressed{
+	position:absolute; 
+	width:4px; 
+	margin-left:-1px; 
+	height:60px; 
+	background:#999; 
+	text-align:center; 
+	line-height:60px; 
+	color:#666; 
+	overflow:hidden; 
+	-moz-border-radius:4px; 
+	-khtml-border-radius:4px; 
+	-webkit-border-radius:4px; 
+	border-radius:4px; 
+	cursor:s-resize;}
+
+#mcs_container .scrollUpBtn,#mcs_container .scrollDownBtn{
+	position:absolute; 
+	display:inline-block; 
+	width:30px; 
+	height:32px;  
+	text-decoration:none; 
+}
+
+#mcs_container .scrollDownBtn{
+	position: relative;
+	top: 8px;
+	bottom: 0px; 
+	right: 7px;
+	float: right;
+	background:url(../_images/scroll.gif) 0 0px no-repeat;
+}
+
+
+#mcs_container .scrollUpBtn{
+	position: relative;
+	top: 8px;
+	bottom: 0px; 
+	right: 7px;
+	float: right;
+	background:url(../_images/scroll.gif) -30px 0 no-repeat;
+}
+
+#mcs_container .scrollDownBtn:hover{
+	background-position: 0 -32px;
+	
+}
+
+#mcs_container .scrollUpBtn:hover{
+	background-position: -30px -32px;
+	
+}
+
+#mcs_container .scrollDownBtn:active{
+	background-position: 0 -64px;
+	
+}
+
+#mcs_container .scrollUpBtn:active{
+	background-position: -30px -64px;
+	
+}

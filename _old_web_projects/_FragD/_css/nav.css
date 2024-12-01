@@ -1,0 +1,191 @@
+#main-nav {
+		position: relative;
+		top: 116px;
+		left: 0px;
+		width: 878px;
+		height: 30px;
+		clear: both;
+	}
+	
+#main-nav ul li a {
+		height: 30px;
+		background: url(../_images/nav_bar.gif) no-repeat 0 0;
+		text-decoration: none;
+		display: block;
+	}
+
+#main-nav ul li {
+	float: left;
+	list-style: none; /* make sure no bullets show up on nav bar */
+	}
+
+#main-nav ul li a.nav_left {
+	width: 83px;
+	background-position: 0px 0px;
+	}
+
+#main-nav ul li a.home {
+	width: 82px;
+	background-position: -83px 0px;
+	}
+
+#main-nav ul li.selected a.home {
+	background-position: -83px -30px;
+	}
+
+#main-nav ul li a.home:hover {
+	background-position: -83px -30px;
+	}
+
+#main-nav ul li a.about {
+	width: 73px;
+	background-position: -165px 0px;
+	}
+
+#main-nav ul li.selected a.about {
+	width: 73px;
+	background-position: -165px -30px;
+	}
+
+#main-nav ul li a.about:hover {
+	background-position: -165px -30px;
+	}
+
+#main-nav ul li a.the_experience {
+	width: 148px;
+	background-position: -238px 0px;
+	}
+
+#main-nav ul li.selected a.the_experience {
+	width: 148px;
+	background-position: -238px -30px;
+	}
+
+#main-nav ul li a.the_experience:hover {
+	background-position: -238px -30px;
+	}
+
+#main-nav ul li a.calendar {
+	width: 99px;
+	background-position: -386px 0px;
+	}
+
+#main-nav ul li.selected a.calendar {
+	width: 99px;
+	background-position: -386px -30px;
+	}
+
+#main-nav ul li a.calendar:hover {
+	background-position: -386px -30px;
+	}
+
+#main-nav ul li a.gallery {
+	width: 84px;
+	background-position: -485px 0px;
+	}
+
+#main-nav ul li.selected a.gallery {
+	width: 84px;
+	background-position: -485px -30px;
+	}
+
+#main-nav ul li a.gallery:hover {
+	background-position: -485px -30px;
+	}
+
+#main-nav ul li a.contact_us {
+	width: 117px;
+	background-position: -569px 0px;
+	}
+
+#main-nav ul li.selected a.contact_us {
+	width: 117px;
+	background-position: -569px -30px;
+	}
+
+#main-nav ul li a.contact_us:hover {
+	background-position: -569px -30px;
+	}
+
+#main-nav ul li a.facebook {
+	width: 51px;
+	background-position: -686px 0px;
+	}
+
+#main-nav ul li a.facebook:hover {
+	background-position: -686px -30px;
+	}
+
+#main-nav ul li a.twitter {
+	width: 53px;
+	background-position: -737px 0px;
+	}
+
+#main-nav ul li a.twitter:hover {
+	background-position: -737px -30px;
+	}
+
+#main-nav ul li a.nav_right {
+	width: 88px;
+	background-position: -790px 0px;
+	}
+	
+/*Sub nav Menu div*/
+#main-nav UL LI UL
+{
+	background: url(../_images/drop_down.jpg) no-repeat 0 0;
+	background-color: #000000;
+	width: 184px;
+	position: absolute;
+	border: none;
+	clear: both;
+	overflow: hidden;
+	margin-left: 2px;
+	display: none;
+	z-index:10;
+	text-shadow: -1px 1px 1px #000000;
+	
+	/* shadow */
+	box-shadow: 3px 3px 4px #222222;
+	-webkit-box-shadow: 3px 3px 4px #222222;
+	-moz-box-shadow: 3px 3px 4px #222222;
+	
+	/* rounded bottom corners */
+	-webkit-border-bottom-right-radius: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-bottomleft: 12px;
+	
+	/* rounded bottom corners */
+	filter: alpha(opacity=70);
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	-moz-opacity: 0.70;
+	opacity:0.7;
+}
+
+#main-nav UL LI UL LI A
+{
+	font: 12px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	width: 184px;
+	background: none;
+	padding: 6px 0px 6px 26px;
+	height: 15px;
+}
+
+#main-nav UL LI UL LI A.odd
+{
+	text-decoration: none;
+	color: #666666;
+	background: url(../_images/drop_down_even.jpg) no-repeat 0 0;
+}
+#main-nav UL LI UL LI A.even
+{
+	//background-color: #222222;
+	width: 184px;
+}
+#main-nav UL LI UL LI A:hover
+{
+	color: #ffffff;
+	//background-color: #c60000;
+	background: url(../_images/drop_down_over.jpg) no-repeat 0 0;
+}

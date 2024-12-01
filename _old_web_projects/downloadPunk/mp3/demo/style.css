@@ -1,0 +1,337 @@
+body, table
+{
+	scrollbar-face-color: #000000; 
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #b5b2b5; 
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-arrow-color:  #FFFFFF; 
+	scrollbar-track-color: #323232;
+	scrollbar-darkshadow-color: #b5b2b5;
+	scrollbar-width:6px;
+	font:8pt geneva, verdana, helvetica, sans-serif;
+	color: #FFFFFF;
+	line-height: 12pt ;
+}
+.mainTable
+{
+	padding:24px 44px;
+	vertical-align:top;
+}
+td.products
+{
+	vertical-align:top;
+	text-align:center;
+	padding:0px 0px 30px 0px;
+}
+p
+{
+	font:8pt geneva, verdana, helvetica, sans-serif;
+	color: #FFFFFF;
+	line-height: 12pt ;
+}
+.mouse
+{
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	color: #FFFFFF;
+	vertical-align:center;
+}
+p.smallSpace
+{
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	margin: 0px 0px 8px 0px;
+}
+p.bigSpace
+{
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	margin: 0px 0px 16px 0px;
+}
+ div.form
+ {
+	background-color:#212121;
+	text-align:left;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	color:#FFFFFF;
+	padding:8px;
+}
+div.formHead
+{
+	background-color:#000000; 
+	font:bold 7pt geneva, verdana, helvetica, sans-serif;
+	color:#FFFFFF;
+	text-align:center;
+	padding:8px;
+}
+
+div.formSubHead
+{
+	border-top:#212121 2px dotted;
+	font:bold 7pt geneva, verdana, helvetica, sans-serif;
+	color:#FFFFFF;
+	text-align:left;
+	padding:6px 0px;
+}
+input
+{
+	background-color: #656565;
+	border: #000000 1px solid;
+	color: #000000;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	padding:0px;
+} 
+input.radio
+{
+	background-color:#212121;
+	border: #212121 0px solid;
+	color: #212121;
+	size:6px;
+	padding:0px;
+} 
+select
+{
+	background-color: #656565;
+	border: #000000 1px solid;
+	color: #000000;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	height: 16pt;
+	padding:2px 4px;
+} 
+textarea 
+{
+	background-color: #656565;
+	border: black 1px solid;
+	color: #000000;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	padding:0px;
+	overflow:auto;
+} 
+input.buttonOut
+{
+	background-color: #000000;
+	border: black .5px solid;
+	color: #FFFFFF;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	text-align:center;
+	padding:2px 4px;
+	width:60px;
+	cursor: hand;
+	! important
+} 
+input.buttonOver
+{
+	background-color: #FFCC00;
+	border: black .5px solid;
+	color: #000000;
+	font:7pt geneva, verdana, helvetica, sans-serif;
+	text-align:center;
+	padding:2px 4px;
+	width:60px;
+	cursor: hand;
+	! important
+} 
+
+a
+{
+		font:bold geneva, verdana, helvetica, sans-serif;
+}
+a:link
+{
+
+	color:#555555;
+	background:transparent;
+	text-decoration:none;
+}
+a:visited 
+{ 
+	color:#555555;
+	background:transparent;
+	text-decoration:none;
+}
+a:active
+{ 
+	color:#555555;
+	background:transparent;
+	text-decoration:none;
+}
+a:hover 
+{
+	color:#FF0000;
+	background:transparent;
+ 	text-decoration:underline;
+} 
+
+
+table.product
+	{
+		background-color: #FFCC00;
+		border:2px solid #FFFFFF;
+	}
+	td.text
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #FFFFFF;
+	}
+	td.mid
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		border-color:#FFFFFF;
+		border-width:2px 2px 0px 2px ;
+		border-style:solid;
+		
+	}
+	span.title 
+	{
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+	}
+	.cartOver 
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		font-weight: normal;
+		background : #FFCC00;
+		cursor: hand;
+		border-top:2px solid #FFFFFF;
+	}
+	.cartOut 
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-align:center;
+		padding:4px 6px;
+		background: #000000;
+		cursor: hand;
+		border-top:2px solid #FFFFFF;
+	}
+	.cartDown
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFCC00;
+		text-align:center;
+		padding:4px 6px;
+		background: #000000;
+		cursor: hand;
+		border-top:2px solid #FFFFFF;
+	}
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////
+	// bullshit to make add cart links work in mozilla
+	.cartDown a:link
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration:none;
+	}
+	.cartDown a:visited
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration:none;
+	}
+	.cartDown a:hover
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-decoration:none;
+	}
+	.cartDown a:active
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFCC00;
+		text-decoration:none;
+	}
+	
+	.cartOver a:link
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-decoration:none;
+	}
+	.cartOver a:visited
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-decoration:none;
+	}
+	.cartOver a:hover
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-decoration:none;
+	}
+	.cartOver a:active
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFCC00;
+		text-decoration:none;
+	}
+	
+	.cartOut a:link
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration:none;
+	}
+	.cartOut a:visited
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration:none;
+	}
+	.cartOut a:hover
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-decoration:none;
+	}
+	.cartOut a:active
+	{
+		font:7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFCC00;
+		text-decoration:none;
+	}
+	
+	.shoppingCartHead
+	{
+		font:Bold 7pt geneva, verdana, helvetica, sans-serif;
+		color:#FFFFFF;
+		padding:2px 8px;
+	}
+	.shoppingCart
+	{
+		padding:2px 8px;
+	}	
+	.shoppingCartRowDark
+	{
+		background-color:#212121; 
+		color:#FFFFFF;
+	}
+	.shoppingCartRowLight
+	{
+		background-color:#343434; 
+		color:#FFFFFF;
+	}
+	.shoppingCartRowOver
+	{
+		background-color: #FFCC00;
+		color:#000000;
+	}
+	
+	.invoice
+	{
+		color:#000000; 
+		font:7pt geneva, verdana, helvetica, sans-serif;
+	}
+	
+	.invoiceHead
+	{
+		color:#000000; 
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+	}

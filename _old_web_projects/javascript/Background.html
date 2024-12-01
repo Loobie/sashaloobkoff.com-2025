@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+	<SCRIPT LANGUAGE="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #2
+		// 02.17.03
+		
+		var displayColor = prompt("What background color do you want?", "tan")
+
+		// The default text color is black
+		var textColor = "black"
+
+		// If the user chooses a black background, change the text to white
+		// so it is visible
+
+		if (displayColor == "black" || displayColor == "#000000" || displayColor == null) {
+    		textColor = "white"
+		}
+		
+		// #######################################################
+		// Sasha's Modification
+		// Place a document.writeln statement that writes the 
+		// title bar. ("window" is optional)
+		window.document.writeln("<title>New color is " + displayColor + "</TITLE>");
+
+		// Display page content
+		document.writeln("<BODY BGCOLOR=" + displayColor + " TEXT=" + textColor + " onBlur = window.close() link='#202020' vlink='#202020' alink='#ff6600'><font face='verdana, tahoma, geneva' size='-2' color='000000'>You chose " + displayColor + ".<br><br><< <a href = '#' onClick='window.close()'>Close Window</a> >></font></BODY>")
+
+		//  End -->
+	</SCRIPT>
+</HEAD>
+</HTML>

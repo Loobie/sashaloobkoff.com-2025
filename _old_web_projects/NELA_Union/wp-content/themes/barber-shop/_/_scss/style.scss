@@ -1,0 +1,410 @@
+/*!
+Theme Name: The Barber Shop
+Theme URI: http://tinktank.in/barber-shop/
+Description: A Responsive WordPress Theme by Tink Tank.
+Author: Tink Tank
+Author URI: http://tinktank.in
+Version: 1
+*/
+
+$offWhite:         #F6F6F6;
+$text:             #646464;
+$accent:           #CA5250;
+
+$margin-bottom:    8rem;
+
+@import 'bp';
+@import 'reset';
+@import 'toolbox';
+@import 'typography';
+
+
+//----------------------------------- STRUCTURE
+body {
+    background: $offWhite;
+}
+.wrapper {
+    max-width: 96rem;
+    margin: $margin-bottom auto 2rem;
+    @include bp (M) {
+        margin: 8% auto 1rem;
+        width: 85%;
+    }
+    @include bp (S) {
+        width: 90%;
+    }
+}
+.sidepadding {
+    padding: 0 12%;
+    @include bp(M) {
+        padding: 0 5%;
+    }
+    @include bp(S) {
+        padding:0;
+    }
+}
+//----------------------------------- HEADER + NAV
+.logo {
+    display: inline-block;
+    margin-bottom: 3rem;
+    max-width: 35%;
+    @include bp(M) {
+        margin-bottom: 5%;
+    }
+}
+.header {
+    margin-bottom: $margin-bottom;
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-size: 1.8rem;
+    text-align: center;
+
+    @include bp(M) {
+        margin-bottom: 8%;
+    }
+}
+.nav {
+    ul {
+        padding: 0;
+        margin: 0;
+        @include bp(S) {
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: all 0.8s ease;
+            -moz-transition:    all 0.8s ease;
+            -o-transition:      all 0.8s ease;
+            transition:         all 0.8s ease;
+        }
+    }
+    li {
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        margin: 0 1.7rem;
+        @include bp(S) {
+            display: block;
+        }
+
+        &:hover ul {
+            left:0;
+        }
+    }
+    a {
+        position: relative;
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        @include bp(S) {
+            padding: 0.5rem;
+        }
+        @include bp(minS) {
+            &:before {
+                content:'';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -1rem;
+                width: 2rem;
+                height: 1px;
+                background: transparent;
+                @include transition;
+            }
+        }
+        &:hover, &:focus {
+            color: $accent;
+            &:before {
+                top: 130%;
+                background: $accent;
+            }
+        }
+    }
+
+    @include bp(minS) { // SUBNAV
+    ul ul { 
+            position: absolute;
+            left: -9999px;
+            z-index: 1;
+            border: 1px solid $text;
+            background: $offWhite;
+            text-align: left;
+            line-height: 2rem;
+
+            li {
+                display: block;
+                margin: 0;
+                border-bottom: 1px solid $text;
+                &:last-of-type {
+                    border: none;
+                }
+                a { 
+                    display: block;
+                    padding: 0.5rem;
+                    &:before {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-toggle {
+    display: block;
+    padding: 1rem 0;
+    border-top: 4px double #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    color: inherit;
+    &:hover, &:focus {
+        color: $accent;
+        text-decoration: none;
+    }
+    @include bp(minS) {
+        display: none;
+    }
+}
+.js .open ul {
+    max-height: 60em;
+    overflow: visible;
+}
+
+//----------------------------------- IMGAGE GRID
+.image-grid {
+    position: relative;
+    a {
+        float: left;
+        display: block;
+        position: relative;
+
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border: 4px solid $offWhite;
+            pointer-events: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing:    border-box;
+            box-sizing:         border-box;
+            @include bp (M) {
+                border: 2px solid $offWhite;
+            }
+            @include bp (S) {
+                border: 1px solid $offWhite;
+            }
+        }
+
+        &:nth-child(6n+1), &:nth-child(6n+2), &:nth-child(6n+6) {
+            width: 50%;
+        }
+        &:nth-child(6n+3), &:nth-child(6n+4), &:nth-child(6n+5) {
+            width: 25%;
+        }
+        &:nth-child(6n+5), &:nth-child(6n+6) {
+            margin-top: -25%;
+        }
+        &:nth-child(6n+6) {
+            margin-left: 25%;
+        }
+    }
+}
+//----------------------------------- BLOGROLL
+.blogroll {
+    float: left;
+    width: 60%;
+    @include bp(S) {
+        float: none;
+        width: 100%;
+    }
+}
+.blog-entry {
+    padding: 2.8rem 0;
+    border-top: 1px solid #EAEAEA;
+    &:nth-child(1) {
+        border-top: 4px double #EAEAEA;
+    }
+    &:last-of-type {
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .date {
+        font-family: 'Alegreya SC', Georgia, serif;
+        color: #BFBFBF;
+    }
+    h2 {
+        margin: 0;
+        line-height: 2.4rem;
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.2rem;
+            color: inherit;
+            &:hover, &:focus {
+                color: $accent;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 2.8rem 0;
+    border-top: 4px double #EAEAEA;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    @include bp(M) {
+        width: 35%;
+    }
+    @include bp(S) {
+        float: none;
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+//----------------------------------- PAGE
+.article {
+    margin-bottom: $margin-bottom;
+
+    >p:first-child:first-letter {
+        float: left;
+        padding: 0.3rem 0.8rem 0 0.3rem;
+        font-size: 8rem; 
+        line-height: 6.5rem; 
+        color: $accent; 
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Lola', Georgia, serif;
+        font-style: italic;
+    }
+}
+.pagination {
+    padding-top: 1rem;
+}
+
+//----------------------------------- INPUTS
+input, textarea {
+    max-width: 100%;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+    font-family: inherit;
+    font-size: inherit;
+}
+.btn, .wpcf7-submit, #submit, #searchsubmit {
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-size: 1.6rem;
+    background: $accent;
+    color: white;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        opacity: 0.8;
+    }
+}
+.screen-reader-text {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+#s {
+    width: 60%;
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    @include bp(M) {
+        width: 50%;
+    }
+}
+//----------------------------------- COMMENTS
+#respond {
+  padding-top: 1.6rem;
+}
+.commentlist {
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 4rem 0;
+    list-style: none;
+  }
+  .avatar {
+    float: left;
+    width: 15%;
+    margin-right: 1.6rem;
+  }
+  .comment-meta {
+    font-size: 80%;
+  }
+}
+@include bp (S) {
+  .commentform {
+    label {
+      font-size: 1.6rem;
+    }
+    input {
+      width: 50%;
+    }
+  }
+}
+//----------------------------------- CONTACT FORM 7
+.wpcf7-form {
+    textarea {
+        width:100%;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+//----------------------------------- FOOTER
+.home, .category, .archive {
+    .footer {
+        padding: 0;
+    }
+}
+.footer {
+    font-size: 1.2rem;
+
+    .tinktank {
+        font-family: 'menlo';
+        font-size: 150%;
+    }
+}
+
+//--------------------------- SOCIAL ICONS
+.social-icons {
+    float: right;
+
+    @include bp(M) {
+        float: none;
+        width: 100%;
+    }
+
+  a {
+    font-size: 2.2rem;
+    padding:1px;
+    text-decoration: none;
+    margin-left: 0.1rem;
+    color: rgba(0,0,0,0.2);
+    &:hover, &:focus {
+        color: $accent;
+    }
+  }
+  span {
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+  }
+}

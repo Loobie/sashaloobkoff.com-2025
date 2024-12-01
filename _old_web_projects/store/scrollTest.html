@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Scrolling Status Bar</title>
+</head>
+<body bgcolor="#004A4A" link="#ffffff" vlink="#808080" alink="#ff6600" onLoad="var ctrlWin = window.open('control.html','CtrlPage','width=800,height=300,top=365,left=10')">
+
+	<script language="JavaScript">
+		<!-- Begin
+			
+			// initialize variables
+			// text related variables
+			var letter = 0;
+			var startStr = " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: 09.30.04 tolea's European Vacation.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: 09.16.04 Last Days of April in Stock.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:: 09.14.04 Introducing The Fakers.";
+			var str = startStr;
+
+			// control related variables
+			var count = 0;		
+			var rate = 6;
+			var prevRate = 6;  // default
+			var timerId = -1;
+			
+
+			// scrolling function
+			// works by cutting characters from middle string of spaces
+			function scroller() 
+			{
+
+				// set status bar
+				window.document.write(str);
+				window.document.write("<br>eat shit");
+
+				// if more characters left to scroll, continue removing middle spaces
+				if (str!="") 
+				{
+					length = str.length - 1;
+					str = str.substr(rate,length);
+							
+				// re-start scrolling annimation
+				} else 
+				{
+					letter = 0;
+					str = startString;
+					count++;		
+				}
+
+				// re-call function after timeout
+				// as long we have not run 5 times
+				if (count < 5) {
+				
+					timerId = window.setTimeout("scroller()", 200);
+				}
+			}
+			// call scroller -- will run automatically
+			scroller();
+			
+		// End -->
+	</script>
+	
+</body>
+</HTML>

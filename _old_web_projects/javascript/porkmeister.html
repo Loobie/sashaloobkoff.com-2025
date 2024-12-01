@@ -1,0 +1,665 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<title>
+			Sasha's Voter Interest Page
+		</title>
+		<link rel=stylesheet type="text/css" href="http://cs115.cs.sbcc.net/~n2loobko/styles.css">
+<script language=javascript>
+	<!-- Begin
+	// #######################################################
+	// Sasha Loobkoff
+	// cs115 JavaScript
+	// Assignment #6 Porkmeister for President
+	// 03.22.03
+	
+	//-->
+</script>
+<script language=javascript type="text/javascript">
+	<!-- Begin	
+	
+		// global variables
+		var affil;
+		var candid;	
+
+		// ################################################################
+		// check text field
+		function checkvalue(field)
+			{
+			if (field.value == "")
+				{
+				alert("Field " + field.name + " is not complete");
+				return false;
+				}
+
+			}
+
+		// ################################################################
+		// check radio buttons
+		function checkRadio(radioGroup)
+			{
+			var radiochecked = false;
+
+			for (x=0;x<radioGroup.length;x++)
+				{
+				if (radioGroup[x].checked == true)
+					{
+					radiochecked = true;
+					}
+				}
+			if (radiochecked == false)
+				{
+				alert("Field " + radioGroup[0].name + " is not selected");
+				return false;
+				}
+			}
+
+			// #######################################################################
+		    // checks for form elements left blank  
+			function checkForm(myForm)
+				{
+				
+				// first check text boxes
+				for (j=0;j<(myForm.length - 1);j++)
+					{
+					if (myForm.elements[j].type == "text")
+						{
+						if (checkvalue(myForm.elements[j]) == false)
+							{
+							return false;	
+							}
+						} else
+						{
+						// if any thing else, do nothing
+						if ((myForm.elements[j].type == "submit") || (myForm.elements[j].type == "reset") || (myForm.elements[j].type == "radio"))
+							{
+							}
+						}
+					}
+				
+				// then radio buttons		
+				if (checkRadio(myForm.affiliation) == false)
+					{
+					return false;
+					}
+				if (checkRadio(myForm.candidate) == false)
+					{
+					return false;
+					}
+				if (checkRadio(myForm.contributionReply) == false)
+					{
+					return false;
+					}
+				if (checkRadio(myForm.recipient) == false)
+					{
+					return false;
+					}
+
+				// check email is correct format
+				if (checkEmail(myForm.emailAddress) == false)
+					{
+					return false;
+					}
+					
+				// make sure affiliation and candidates match
+				if (checkRelationship() == false)
+					{
+					return false;
+					}
+					
+				// return false if no contribution is selected
+				if (noContribution() == true)
+					{
+					return false;
+					}
+				}
+
+			// ################################################################
+			// start of email checking section
+			// first build the array of options			
+			cc = new Array(239)
+		         
+		    cc[0] = "AF"
+		    cc[1] = "AL"
+		    cc[2] = "DZ"
+		    cc[3] = "AS"
+		    cc[4] = "AD"
+		    cc[5] = "AO"
+		    cc[6] = "AI"
+		    cc[7] = "AQ"
+		    cc[8] = "AG"
+		    cc[9] = "AR"
+		    cc[10] = "AM"
+		    cc[11] = "AW"
+		    cc[12] = "AU"
+		    cc[13] = "AT"
+		    cc[14] = "AZ"
+		    cc[15] = "BS"
+		    cc[16] = "BH"
+		    cc[17] = "BD"
+		    cc[18] = "BB"
+		    cc[19] = "BY"
+		    cc[20] = "BE"
+		    cc[21] = "BZ"
+		    cc[22] = "BJ"
+		    cc[23] = "BM"
+		    cc[24] = "BT"
+		    cc[25] = "BO"
+		    cc[26] = "BA"
+		    cc[27] = "BW"
+		    cc[28] = "BV"
+		    cc[29] = "BR"
+		    cc[30] = "IO"
+		    cc[31] = "BN"
+		    cc[32] = "BG"
+		    cc[33] = "BF"
+		    cc[34] = "BI"
+		    cc[35] = "KH"
+		    cc[36] = "CM"
+		    cc[37] = "CA"
+		    cc[38] = "CV"
+		    cc[39] = "KY"
+		    cc[40] = "CF"
+		    cc[41] = "TD"
+		    cc[42] = "CL"
+		    cc[43] = "CN"
+		    cc[44] = "CX"
+		    cc[45] = "CC"
+		    cc[46] = "CO"
+		    cc[47] = "KM"
+		    cc[48] = "CG"
+		    cc[49] = "CD"
+		    cc[50] = "CK"
+		    cc[51] = "CR"
+		    cc[52] = "CI"
+		    cc[53] = "HR"
+		    cc[54] = "CU"
+		    cc[55] = "CY"
+		    cc[56] = "CZ"
+		    cc[57] = "DK"
+		    cc[58] = "DJ"
+		    cc[59] = "DM"
+		    cc[60] = "DO"
+		    cc[61] = "TP"
+		    cc[62] = "EC"
+		    cc[63] = "EG"
+		    cc[64] = "SV"
+		    cc[65] = "GQ"
+		    cc[66] = "ER"
+		    cc[67] = "EE"
+		    cc[68] = "ET"
+		    cc[69] = "FK"
+		    cc[70] = "FO"
+		    cc[71] = "FJ"
+		    cc[72] = "FI"
+		    cc[73] = "FR"
+		    cc[74] = "GF"
+		    cc[75] = "PF"
+		    cc[76] = "TF"
+		    cc[77] = "GA"
+		    cc[78] = "GM"
+		    cc[79] = "GE"
+		    cc[80] = "DE"
+		    cc[81] = "GH"
+		    cc[82] = "GI"
+		    cc[83] = "GR"
+		    cc[84] = "GL"
+		    cc[85] = "GD"
+		    cc[86] = "GP"
+		    cc[87] = "GU"
+		    cc[88] = "GT"
+		    cc[89] = "GN"
+		    cc[90] = "GW"
+		    cc[91] = "GY"
+		    cc[92] = "HT"
+		    cc[93] = "HM"
+		    cc[94] = "VA"
+		    cc[95] = "HN"
+		    cc[96] = "HK"
+		    cc[97] = "HU"
+		    cc[98] = "IS"
+		    cc[99] = "IN"
+		    cc[100] = "ID"
+		    cc[101] = "IR"
+		    cc[102] = "IQ"
+		    cc[103] = "IE"
+		    cc[104] = "IL"
+		    cc[105] = "IT"
+		    cc[106] = "JM"
+		    cc[107] = "JP"
+		    cc[108] = "JO"
+		    cc[109] = "KZ"
+		    cc[110] = "KE"
+		    cc[111] = "KI"
+		    cc[112] = "KP"
+		    cc[113] = "KR"
+		    cc[114] = "KW"
+		    cc[115] = "KG"
+		    cc[116] = "LA"
+		    cc[117] = "LV"
+		    cc[118] = "LB"
+		    cc[119] = "LS"
+		    cc[120] = "LR"
+		    cc[121] = "LY"
+		    cc[122] = "LI"
+		    cc[123] = "LT"
+		    cc[124] = "LU"
+		    cc[125] = "MO"
+		    cc[126] = "MK"
+		    cc[127] = "MG"
+		    cc[128] = "MW"
+		    cc[129] = "MY"
+		    cc[130] = "MV"
+		    cc[131] = "ML"
+		    cc[132] = "MT"
+		    cc[133] = "MH"
+		    cc[134] = "MQ"
+		    cc[135] = "MR"
+		    cc[136] = "MU"
+		    cc[137] = "YT"
+		    cc[138] = "MX"
+		    cc[139] = "FM"
+		    cc[140] = "MD"
+		    cc[141] = "MC"
+		    cc[142] = "MN"
+		    cc[143] = "MS"
+		    cc[144] = "MA"
+		    cc[145] = "MZ"
+		    cc[146] = "MM"
+		    cc[147] = "NA"
+		    cc[148] = "NR"
+		    cc[149] = "NP"
+		    cc[150] = "NL"
+		    cc[151] = "AN"
+		    cc[152] = "NC"
+		    cc[153] = "NZ"
+		    cc[154] = "NI"
+		    cc[155] = "NE"
+		    cc[156] = "NG"
+		    cc[157] = "NU"
+		    cc[158] = "NF"
+		    cc[159] = "MP"
+		    cc[160] = "NO"
+		    cc[161] = "OM"
+		    cc[162] = "PK"
+		    cc[163] = "PW"
+		    cc[164] = "PS"
+		    cc[165] = "PA"
+		    cc[166] = "PG"
+		    cc[167] = "PY"
+		    cc[168] = "PE"
+		    cc[169] = "PH"
+		    cc[170] = "PN"
+		    cc[171] = "PL"
+		    cc[172] = "PT"
+		    cc[173] = "PR"
+		    cc[174] = "QA"
+		    cc[175] = "RE"
+		    cc[176] = "RO"
+		    cc[177] = "RU"
+		    cc[178] = "RW"
+		    cc[179] = "SH"
+		    cc[180] = "KN"
+		    cc[181] = "LC"
+		    cc[182] = "PM"
+		    cc[183] = "VC"
+		    cc[184] = "WS"
+		    cc[185] = "SM"
+		    cc[186] = "ST"
+		    cc[187] = "SA"
+		    cc[188] = "SN"
+		    cc[189] = "SC"
+		    cc[190] = "SL"
+		    cc[191] = "SG"
+		    cc[192] = "SK"
+		    cc[193] = "SI"
+		    cc[194] = "SB"
+		    cc[195] = "SO"
+		    cc[196] = "ZA"
+		    cc[197] = "GS"
+		    cc[198] = "ES"
+		    cc[199] = "LK"
+		    cc[200] = "SD"
+		    cc[201] = "SR"
+		    cc[202] = "SJ"
+		    cc[203] = "SZ"
+		    cc[204] = "SE"
+		    cc[205] = "CH"
+		    cc[206] = "SY"
+		    cc[207] = "TW"
+		    cc[208] = "TJ"
+		    cc[209] = "TZ"
+		    cc[210] = "TH"
+		    cc[211] = "TG"
+		    cc[212] = "TK"
+		    cc[213] = "TO"
+		    cc[214] = "TT"
+		    cc[215] = "TN"
+		    cc[216] = "TR"
+		    cc[217] = "TM"
+		    cc[218] = "TC"
+		    cc[219] = "TV"
+		    cc[220] = "UG"
+		    cc[221] = "UA"
+		    cc[222] = "AE"
+		    cc[223] = "GB"
+		    cc[224] = "US"
+		    cc[225] = "UM"
+		    cc[226] = "UY"
+		    cc[227] = "UZ"
+		    cc[228] = "VU"
+		    cc[229] = "VE"
+		    cc[230] = "VN"
+		    cc[231] = "VG"
+		    cc[232] = "VI"
+		    cc[233] = "WF"
+		    cc[234] = "EH"
+		    cc[235] = "YE"
+		    cc[236] = "YU"
+		    cc[237] = "ZM"
+		    cc[238] = "ZW"
+		    
+		    // #######################################################################
+		    //          
+		    function check_cc(email)
+		       {
+		       // Make sure that we have two letters and a dot on the end. This means
+		       // that the third character from the end should be a ".".
+		       if(email.charAt(email.length - 3) != ".")
+		          {
+		          return false
+		          }
+
+		       // The last two letters are the cc
+		       the_cc = email.substring(email.length - 2, email.length).toUpperCase()
+		                
+		       // I now loop over the entire array looking for a matching item. If I find one
+		       // then I'm done and I can return, otherwise I keep going. If I get to the end
+		       // of the loop then I cannot find any match so I return false.
+		       for(i = 0; i < cc.length; i++)
+		          {
+		          if(cc[i] == the_cc)
+		             {
+		             return true
+		             }
+		          }
+		       return false
+		       }
+		    
+		    // Create Top Level Domain array to be used later.
+		    tld = new Array(5)
+		    tld[0] = ".com"
+		    tld[1] = ".org"
+		    tld[2] = ".net"
+		    tld[3] = ".mil"
+		    tld[4] = ".edu"
+		    
+		    // #######################################################################
+		    //          
+		    // Chop off the last four characters and then check to see if it matches
+		    // any on your list of TLDs
+		    function us_centric(email_address)
+		       {
+		       if(email_address.length < 4)
+		          {
+		          return false
+		          }
+
+		       the_tld = email_address.substring(email_address.length - 4, email_address.length)
+		                 
+		       
+		       // We can also loop over the tld array and check our tld against the whole array.
+		       // If we find a match we're done otherwise we'll terminate the loop and return false.
+		       for(i = 0; i < tld.length; i++)
+		          {
+		          if(the_tld == tld[i])
+		             {
+		             return true
+		             }
+		          }
+		       return 
+		       }
+
+			// #######################################################################
+		    //          
+		    // email addresses have the following properties:
+		    //    1. There is only one @ present
+		    //    2. They have at least one character before the @
+		    //    3. There is at least two letters after the @ but before the last .
+		    //    4. They end in [.com|.org|.net|.mil|.edu] or a cc
+		    function checkEmail(email)
+		       {
+		       theEmail = email.value
+		                  
+		       //    1. There is only one @ present
+		       if((firstAt = theEmail.indexOf("@")) != -1)
+		          {
+		          if(theEmail.indexOf("@", firstAt + 1) == -1)
+		             {
+		             //    2. They have at least one character before the @
+		             if(theEmail.indexOf("@") > 0)
+		                {
+		                //    3. There is at least two letters after the @ but before the last .
+		                if(theEmail.lastIndexOf(".") - theEmail.indexOf("@") > 2)
+		                   {
+		                   //    4. They end in [.com|.org|.net|.mil|.edu] or a cc
+		                   if(us_centric(theEmail) || check_cc(theEmail))
+		                      {
+		                      }
+		                   else
+		                      {
+		                      alert("Error -- Bad domain name extension, please input the correct email address")
+		                      }
+		                   }
+		                else
+		                   {
+		                   alert("Error -- Not enough space between the \"@\" and the \".\",\n please input the correct email address")
+		                   }
+		                }
+		             else
+		                {
+		                // Need at lest one "@"s
+		                alert("Error -- You need some text before the \"@\", please input the correct email address")
+		                }
+		             }
+		          else
+		             {
+		             // Too many "@"s
+		             alert("Error -- Too many \"@\"s present, please input the correct email address")
+		             }
+		          }
+		       else
+		          {
+		          // No "@"
+		          alert("Error -- No \"@\" present, please input the correct email address")
+		          }
+		       
+		       // If we don't return a true somewhere we must have a problem.
+		       return false
+		       }
+		    
+		    // #######################################################################
+		    // random number generator
+		    function randomNum(limit)
+		    	{
+		    	return Math.floor(Math.random() * limit);
+		    	}  
+		    
+		    // #######################################################################
+		    // candidate affiliation relationship checker
+		    function checkRelationship()
+		    	{
+		    	if ((affil == 0) && (candid != 2))
+		    		{
+		    		alert("As a Democrat,\nyou must chose Gore.")
+		    		return false;
+		    		}
+		    	if ((affil == 1) && (candid != 1))
+		    		{
+		    		alert("As a Republican,\nyou must chose Bush.")
+		    		return false;
+		    		}
+		    	if ((affil == 2) && ((candid == 1) || (candid == 2)))
+		    		{
+		    		// randomly instruct user to choose either Buchanan or Nader
+		    		if (randomNum(2) == 0)
+		    			{
+		    			alert("As an Independent,\nyou must chose Buchanan.")
+		    			} else
+		    			{
+		    			alert("As an Independent,\nyou must chose Nader.")
+		    			}
+		    		return false;
+		    		}
+		    	}  
+		    
+		    // #######################################################################
+		    // alert if no contibution is selected
+		    function noContribution(radioButton)
+		    	{
+		    	if (radioButton.checked == true)
+		    		{
+		    		alert("This form will not be\nprocessed unless you contribute.");
+		    		// don't allow "no" to stay checked
+		    		radioButton.checked = false;
+		    		return true;
+					} else
+					{
+		    		return false;
+		    		}
+		    	}   
+		    
+		    // #######################################################################
+		    // format contribution value
+		    // note I could have used a variable so as to lighten my typing load
+		    // but hell, I'm a glutton for punishment.
+		    function formatNum(money)
+		    	{
+		    	
+		    	// truncate number at first "."
+		    	if (money.value.indexOf(".") >= 0)
+		    		{
+		    		money.value = money.value.substring(0,money.value.indexOf("."));
+		    		}
+		    	
+		    	// take out all formating
+		    	for (var i=0; i<money.value.length; i++)
+		    		{
+		    		if ((money.value.charAt(i) < "0") || (money.value.charAt(i) > "9"))
+		    			{
+		    			money.value = money.value.substring(0,i) + money.value.substring(i+1,money.value.length);
+		    			i -= 1;
+		    			}
+		    		}  
+		    	
+		    	// add $
+		    	var x = money.value.length;
+		    	while((x / 3) > 1)
+		    		{
+		    	     x -=3;
+		    		money.value = money.value.substring(0,x) + "," + money.value.substring(x,money.value.length);
+		    	     }
+		    	
+		    	// add $
+		    	money.value = "$" + money.value;
+		    	}
+		       
+		// -->
+</script>		
+			
+
+<body bgcolor='#000000' leftmargin=20 marginheight=20 marginheight=20 marginwidth=20>
+
+	<form name="voter" id="voter" method="get" action="http://cs115.cs.sbcc.net/cgi-bin/FormMail.pl" onsubmit="if (checkForm(this) == false) {return false} else {return true}" />
+		<input type="hidden" name="username" value="n2loobko" />
+		<p class=box>
+		<table width=100 border=0>
+			<tr>
+				<td class=right width=15>Name:</td>
+				<td class=left>
+					<input type=text name="name" id="name" />
+				</td>
+
+			</tr>
+		</table>
+		</p>
+		<p class=box>
+		<table width=100 border=0>
+			<tr>
+				<td class=right width=15>eMail:</td>
+				<td class=left>
+					<input type=text name="emailAddress" id="emailAddress" onChange="checkEmail(this)" />
+				</td>
+			</tr>
+		</table>
+		</p>
+		<p class=box>
+			Political Affiliation: 
+			<br />
+			<input type=radio name="affiliation" id="affiliation" value=democrat onClick="affil=0; checkRelationship()" />
+			Democrat 
+			<input type=radio name="affiliation" id="affiliation" value=republican onClick="affil=1; checkRelationship()" />
+			Republican 
+			<input type=radio name="affiliation" id="affiliation" value=independent onClick="affil=2; checkRelationship()" />
+			Independent 
+		</p>		
+		<p class=box>
+
+			Presidential Candidate: 
+			<br />
+			<input type=radio name="candidate" id="candidate" value=buchanan onClick="candid = 0; checkRelationship()" />
+			Buchanan 
+			<input type=radio name="candidate" id="candidate" value=bush onClick="candid = 1; checkRelationship()" />
+			Bush 
+			<input type=radio name="candidate" id="candidate" value=gore onClick="candid = 2; checkRelationship()" />
+			Gore 
+			<input type=radio name="candidate" id="candidate" value=nader onClick="candid = 3; checkRelationship()" />
+			Nader 
+		</p>
+		
+		<script language=javascript>
+			<!-- Begin
+				affil = randomNum(3);
+				candid = randomNum(4);	
+				window.document.voter.affiliation[affil].checked = true;	
+				window.document.voter.candidate[candid].checked = true;
+				// don't like checking here, is inconvenient to user
+				//checkRelationship();
+			// -->
+		</script>
+		
+		<p class=box>
+			Will you contribute to the Porkmeister 
+			<br />
+			for President campaign fund? 
+			<br />
+			<input type=radio name="contributionReply" id="contributionYes" value=yes />
+			Yes 
+			<input type=radio name="contributionReply" id="contributionYes" value=no onClick="noContribution(this)" />
+			No 
+		</p>
+		<p class=box>
+
+			How much would you like to contribute? 
+			<br />
+			(whole dollar amounts only please) 
+			<br />
+			<input type=text name="contributionAmount" onChange="formatNum(this)" />
+		</p>
+		<p class=box>
+			Comments: 
+			<br />
+			<textarea rows=6 cols=35 name="comments" Id="comments" /></textarea>
+
+		</p>
+		<p class=box>
+			Recipients:<br />
+			<input type="radio" name="recipient" id="recipient" value="1" checked=true />1 <input type="radio" name="recipient" id="recipient" value="2" />2<br /><br />
+			<input type="submit" value="submit" />
+			<input type="reset" value="reset" />
+		</p>
+	</form>
+</body>
+</head>
+</html>

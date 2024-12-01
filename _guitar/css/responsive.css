@@ -1,0 +1,119 @@
+/* bootstrap breakpoints */
+@media only screen and (min-width : 980px) and (max-width : 1200px) {
+  .instructions {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 979px) {
+    h1 {
+        font-size:60px;
+    }
+  .instructions {
+    font-size: .9em;
+  }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+  .instructions {
+    font-size: .8em;
+  }
+
+}
+
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+  .instructions {
+    font-size: .7em;
+  }
+
+}
+
+@media only screen and (max-width : 320px) {
+  .instructions {
+    font-size: .7em;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+}
+
+/* my custom media queries */
+@media screen and (max-width: 768px) {
+
+    /* makes buttons act responsively */
+    .btn-responsive {
+      padding: 4px 10px 5px 10px;
+      font-size:86%;
+      line-height: 1.2;
+    }
+
+    /* makes inputs act responsively */
+    .input-responsive {
+      padding:4px 10px !important;
+      font-size: 11px !important;
+      line-height: 1.2px !important;
+      height: 24px !important;
+    }
+
+    .inner {
+    	padding: 0 0 10px 0;
+    }
+
+    .inner-with-button {
+    	padding: 16px 0;
+    }
+
+    .inner-with-inputs {
+    	padding: 16px 0;
+    }
+
+    .inner-with-checkbox {
+      padding: 10px 0;
+    }
+
+    .form-group {
+    	margin-bottom: 0px;
+    }
+
+  }
+
+
+@media screen and (min-width: 591px) and (max-width: 768px) {
+
+    h1 {
+        font-size:50px;
+    }
+
+  .info-icon {
+    font-size: 32%;
+    margin: 10px 0 0 2px;
+  }
+}
+
+
+@media screen and (max-width: 590px) {
+
+  h1 {
+      font-size:34px;
+  }
+
+  .info-icon {
+    font-size: 40%;
+    margin: 4px 0 0 4px;
+  }
+
+  span.mobile-remove {
+    display:none;
+  }
+
+  div.col-xs-7x {
+    width:25%;
+  }
+
+  .box-for-odd {
+    display: block;
+  }
+
+}

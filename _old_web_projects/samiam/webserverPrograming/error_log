@@ -1,0 +1,2 @@
+[10-Oct-2003 23:45:20] PHP Warning:  mysql_connect() [<a href='http://www.php.net/function.mysql-connect'>function.mysql-connect</a>]: Access denied for user: 'n3loobko@localhost' (Using password: YES) in /home/slapped/public_html/sasha/webserverPrograming/guestbook.php on line 32
+[08-Nov-2003 16:18:46] PHP Warning:  mysql_connect() [<a href='http://www.php.net/function.mysql-connect'>function.mysql-connect</a>]: Access denied for user: 'n3loobko@localhost' (Using password: YES) in /home/slapped/public_html/sasha/webserverPrograming/guestbook.php on line 32

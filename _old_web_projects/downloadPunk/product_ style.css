@@ -1,0 +1,50 @@
+table.product
+	{
+		border:2px solid #D0D8DA;
+	}
+	td.black
+	{
+		background-color: #000000;
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #D0D8DA;
+	}
+	td.light
+	{
+		background-color: #9facb1;
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #D0D8DA;
+	}
+	
+	td.red
+	{
+		background-color: red;
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+		color: #FFFFFF;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #D0D8DA;
+	}
+	td.left
+	{
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #D0D8DA;
+		border-right:2px solid #D0D8DA;
+		background-color: #FFCC00;
+	}
+	td.text
+	{
+		font:bold 7pt geneva, verdana, helvetica, sans-serif;
+		color: #000000;
+		text-align:center;
+		padding:4px 6px;
+		border-top:2px solid #D0D8DA;
+	}

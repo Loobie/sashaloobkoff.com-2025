@@ -1,0 +1,172 @@
+div.photo_row {
+	overflow: hidden; 
+	margin-bottom: 8px;
+}
+
+.photo_btn {
+	width: 77px;
+	height: 77px;
+	float: left;
+	margin-right:14px;
+	border: 1px solid #9a988b;
+}
+
+#photo_btn_1 {
+	background: #ffffff url(../_images/thumbnails/01.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_1:hover {
+	background: #ffffff url(../_images/thumbnails/01_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_2 {
+	background: #ffffff url(../_images/thumbnails/02.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_2:hover {
+	background: #ffffff url(../_images/thumbnails/02_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_3 {
+	background: #ffffff url(../_images/thumbnails/03.jpg) no-repeat 2px 2px;	
+}
+
+#photo_btn_3:hover {
+	background: #ffffff url(../_images/thumbnails/03_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_4 {
+	background: #ffffff url(../_images/thumbnails/04.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_4:hover {
+	background: #ffffff url(../_images/thumbnails/04_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_5 {
+	background: #ffffff url(../_images/thumbnails/05.jpg) no-repeat 2px 2px;	
+}
+
+#photo_btn_5:hover {
+	background: #ffffff url(../_images/thumbnails/05_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_6 {
+	background: #ffffff url(../_images/thumbnails/06.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_6:hover {
+	background: #ffffff url(../_images/thumbnails/06_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_7 {
+	background: #ffffff url(../_images/thumbnails/07.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_7:hover {
+	background: #ffffff url(../_images/thumbnails/07_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_8 {
+	background: #ffffff url(../_images/thumbnails/08.jpg) no-repeat 2px 2px;	
+}
+
+#photo_btn_8:hover {
+	background: #ffffff url(../_images/thumbnails/08_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_9 {
+	background: #ffffff url(../_images/thumbnails/09.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_9:hover {
+	background: #ffffff url(../_images/thumbnails/09_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_10 {
+	background: #ffffff url(../_images/thumbnails/10.jpg) no-repeat 2px 2px;	
+}
+
+#photo_btn_10:hover {
+	background: #ffffff url(../_images/thumbnails/10_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_11 {
+	background: #ffffff url(../_images/thumbnails/11.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_11:hover {
+	background: #ffffff url(../_images/thumbnails/11_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_12 {
+	background: #ffffff url(../_images/thumbnails/12.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_12:hover {
+	background: #ffffff url(../_images/thumbnails/12_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_13 {
+	background: #ffffff url(../_images/thumbnails/13.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_13:hover {
+	background: #ffffff url(../_images/thumbnails/13_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_14 {
+	background: #ffffff url(../_images/thumbnails/14.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_14:hover {
+	background: #ffffff url(../_images/thumbnails/14_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_15 {
+	background: #ffffff url(../_images/thumbnails/15.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_15:hover {
+	background: #ffffff url(../_images/thumbnails/15_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_16 {
+	background: #ffffff url(../_images/thumbnails/16.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_16:hover {
+	background: #ffffff url(../_images/thumbnails/16_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_17 {
+	background: #ffffff url(../_images/thumbnails/17.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_17:hover {
+	background: #ffffff url(../_images/thumbnails/17_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_18 {
+	background: #ffffff url(../_images/thumbnails/18.jpg) no-repeat 2px 2px;	
+}
+
+#photo_btn_18:hover {
+	background: #ffffff url(../_images/thumbnails/18_over.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_19 {
+	background: #ffffff url(../_images/thumbnails/generic.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_19:hover {
+	background: #ffffff url(../_images/thumbnails/generic.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_20 {
+	background: #ffffff url(../_images/thumbnails/generic.jpg) no-repeat 2px 2px;
+}
+
+#photo_btn_20:hover {
+	background: #ffffff url(../_images/thumbnails/generic.jpg) no-repeat 2px 2px;
+}

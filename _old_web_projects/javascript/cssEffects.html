@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<title>
+			CSS Effects
+		</title>
+		<style type="text/css">
+		<!--
+			body { 
+				background-position: center; 
+				background-attachment: fixed; 
+				background-repeat: no-repeat; 
+				background-image: url(rollover/art/Cutlass1.jpg); 
+				background-color: #a1a379
+				}
+				
+			P.shadow { 
+				margin-left: 2px; 
+				color: #000000; 
+				font-size: 28pt; 
+				font-weight: bold; 
+				font-family: geneva, verdana, sans-serif 
+				}
+				
+			P.text { 
+				margin-top: -66px; 
+				color: #ff6600; 
+				font-size: 28pt; 
+				font-weight: bold; 
+				font-family:  geneva, verdana, sans-serif 
+				}
+				
+			
+			div { 
+				background-color: #ffffff; 
+				padding: 10px; 
+				border-width: 2px; 
+				border-style: groove; 
+				border-color: gray; 
+				position: absolute; 
+				top: 270px; left: 70px; 
+				width: 400px; 
+				height: 200px; 
+				overflow: auto
+				}
+		-->
+		</style>
+	</head>
+	<body>
+	<p class="shadow">Drop Shadow Madness</p>
+	<p class="text">Drop Shadow Madness</p>
+
+	<div><p style="font-size: 9pt; font-family: geneva, verdana, san-serif">This text is positioned absolutely using stylesheets. The upper-left corner of the invisible box that surrounds this paragraph is positioned exactly 100 pixels from the all edges of the browser window (top, right, left, bottom). Cool. 
+Actually, the CSS rule is applied to a tag, which in turn surrounds the tag in the HTML. This is necessary because IE has problems positioning elements directly. But if you wrap an element in a and then position the, the element will be positioned fine. That's an excellent general rule to follow when positioning anything.</p></div>
+
+
+	</body>
+</html>

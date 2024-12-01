@@ -1,0 +1,20 @@
+p {text-align: left; font: 10pt"verdana","tahoma"; color: white}
+p.box {text-align: left; font: 10pt"verdana","tahoma"; color: white; border-style: ridge; border-width: 3px; border-color: #999999; background-color: #c8c8c8; padding: 6px; width: 350px}
+
+table {border-spacing: 3pt}
+tr.dark {background: #847308; font: 10pt"verdana","tahoma"}
+tr.light {background: #ad9410; font: 10pt"verdana","tahoma"}
+td {text-align: center; font: 10pt"verdana","tahoma"; color: white}
+td.blackLeft {white-space: pre; text-align: left; font: 10pt"verdana","tahoma"; color: black}
+td.left {text-align: left; font: 10pt'verdana','tahoma'; color: white}
+td.right {text-align: right; font: 10pt"verdana","tahoma"; color: white}
+
+a:link {color: #847308; text-decoration: none; font: 10pt"verdana","tahoma"}
+a:visited {color: #847308; text-decoration: none; font: 10pt"verdana","tahoma"}
+a:hover {color: #ad9410; text-decoration: none; font: 10pt"verdana","tahoma"}
+a:active {color: #ad9410; text-decoration: none; font: 10pt"verdana","tahoma"}
+
+a.green:link {color: #FFFFFF; text-decoration: none; font: 10pt"verdana","tahoma"}
+a.green:visited {color: #FFFFFF; text-decoration: none; font: 10pt"verdana","tahoma"}
+a.green:hover {color: #000000; text-decoration: none; font: 10pt"verdana","tahoma"}
+a.green:active {color: #000000; text-decoration: none; font: 10pt"verdana","tahoma"}

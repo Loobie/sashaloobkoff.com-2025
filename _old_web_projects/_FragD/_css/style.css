@@ -1,0 +1,129 @@
+*, HTML, BODY, DIV, DL, DT, DD, UL, OL, LI, H1, H2, H3, H4, H5, H6, PRE, FORM, LABEL, FIELDSET, INPUT, P, BLOCKQUOTE, TH, TD, IMG
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: #000000 url(../_images/background.jpg) no-repeat center top;
+
+	width: 100%;
+	display: table;
+  
+	font: 11px/15px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif; 
+}
+
+img {border: 0px;}
+
+a {outline: 0;}
+
+a:link {color: #888888; text-decoration:none;}
+a:visited {color:#888888; text-decoration:none;}
+a:hover {color:#f60093; text-decoration:underline;}
+a:active {color:#f60093;text-decoration:none;}
+
+
+a.shadowBoxLink:link {color: #cccccc; text-decoration:none;}
+a.shadowBoxLink:visited {color:#cccccc; text-decoration:none;}
+a.shadowBoxLink:hover {color:#f60093; text-decoration:underline;}
+a.shadowBoxLink:active {color:#f60093;text-decoration:none;}
+
+div#preload {
+	display: none;
+}
+
+
+#center_content_main {
+		position: fixed;
+		width: 878px;
+		height: 706px;
+		top: 0px;
+		left: 50%;
+		margin-left: -442px;
+		background: url(../_images/top_banner.jpg) no-repeat 0 0;
+}
+
+
+#content {
+		position: relative;
+		top: 116px;
+		left: 0px;
+		width: 878px;
+		height: 534px;
+		background: url(../_images/content_background.jpg) no-repeat 0px 0px;
+		background-color: #000000;
+		overflow: hidden; /*super important -- retains size of block even when there is a float inside */
+
+}
+
+/*super important -- no overflow on home page... fucks up nivo-slider by sometimes adding scrollbars */
+#content_home {
+		position: relative;
+		top: 116px;
+		left: 0px;
+		width: 878px;
+		height: 534px;
+		background: url(../_images/content_background.jpg) no-repeat 0px 0px;
+		background-color: #000000;
+}
+
+
+.subhead {
+	font: 31px/33px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	margin: 14px 0px 0px 0px;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+.subsubhead {
+	font: 16px/20px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	margin: 6px 0px 10px 0px;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+
+.body {
+	font: 13px/17px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	margin: 14px 0px 0px 0px;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+
+.bodySM {
+	font: 12px/16px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	padding: 0px 20px 0px 0px;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+
+.footnote {
+	font: 9px/13px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	margin: 14px 0px 0px 0px;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+
+#mousetype {
+		position: relative;
+		top: 116px;
+		left: 0px;
+		margin-top: 15px;
+		width: 878px;
+		height: 30px;
+		font-size: 9px;
+		text-align: center;
+		color: #8E8C8C;
+	}
+	
+ul.demos {
+	list-style-position: outside;
+	font: 13px/17px Helvetica,Arial,Verdana,sans-serif;
+	color: #222222;
+	text-shadow: -1px 1px 0px #ffffff;
+}
+
+	
+ul.demos li {
+	margin: 0px 24px 6px 20px;
+}

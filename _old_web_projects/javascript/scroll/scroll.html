@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Scrolling Status Bar</title>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #4 -- Scrolling Status Bar
+		// 03.05.03		
+		
+		//  End -->
+	</script>
+</head>
+<body bgcolor="#004A4A" link="#ffffff" vlink="#808080" alink="#ff6600" onLoad="var ctrlWin = window.open('control.html','CtrlPage','width=800,height=300,top=365,left=10')">
+
+	<script language="JavaScript">
+		<!-- Begin
+			
+			// initialize variables
+			// text related variables
+			var letter = 0;
+			var beginStr = "";
+			var midStr = "                                                                                                      ";
+			var phrase = "COMSC 111 Rocks";	
+			var endStr = phrase.charAt(letter);					
+			var str = beginStr + midStr + endStr;
+			var startMidStr = midStr;			
+			var startString = str;
+
+			// control related variables
+			var count = 0;		
+			var rate = 6;
+			var prevRate = 6;  // default
+			var timerId = -1;
+			
+
+			// scrolling function
+			// works by cutting characters from middle string of spaces
+			function scroller() {
+
+				// set status bar
+				window.status = str;
+
+				// if more characters left to scroll, continue removing middle spaces
+				if (endStr!="") {
+
+					// time to scroll new character
+					if (midStr.length <= rate) {
+						beginStr = beginStr + endStr;
+						midStr = startMidStr;
+						letter++;
+						endStr = phrase.charAt(letter);
+
+						// don't scroll spaces, move to next character
+						if (endStr == " ") {
+							letter++;
+							beginStr = beginStr + " ";
+							endStr =  phrase.charAt(letter);
+						}
+						str = beginStr + midStr + endStr;
+
+					// keep removing spaces from middle
+					} else {
+						midStr = midStr.substr(rate,midStr.length);
+						str = beginStr + midStr + endStr;
+					}
+		
+				// re-start scrolling annimation
+				} else {
+					letter = 0;
+					beginStr = "";
+					midStr = startMidStr;
+					endStr = phrase.charAt(letter);
+					str = startString;
+					count++;		
+				}
+
+				// re-call function after timeout
+				// as long we have not run 5 times
+				if (count < 5) {
+					timerId = window.setTimeout("scroller()", 200);
+				}
+			}
+
+			// change text function -- a new phrase is passed in
+			function changePhrase(text) {
+				letter = 0;
+				count = 0;
+				beginStr = "";
+				midStr = startMidStr;
+				rate = 4;
+				phrase = text;	
+				endStr = phrase.charAt(letter);					
+				str = beginStr + midStr + endStr;
+				startMidStr = midStr;			
+				startString = str;
+
+				// have to clear previous timeout cycle or it will speed up
+				// learned this one the hard way : )
+				if (timerId != -1) {
+					clearTimeout(timerId);
+				}
+
+				// call scroller
+				scroller();
+			}
+
+			// call scroller -- will run automatically
+			scroller(phrase);
+			
+		// End -->
+	</script>
+
+	<form name = "txtFrm">
+		<input type="textfield" name = "strTxt" width=200>
+		<input type="button" value="Change Text" onClick="changePhrase(window.document.txtFrm.strTxt.value)">
+	</form>
+
+	<script language="JavaScript">
+		<!-- Begin
+
+			window.document.write("<a href='javascript:window.close()'><img src='close.gif' border=0></a><font face='verdana, tahoma, geneva' size='-2' color='ffffff'> close</font>");
+			
+		// End -->
+	</script>
+	
+</body>
+</HTML>

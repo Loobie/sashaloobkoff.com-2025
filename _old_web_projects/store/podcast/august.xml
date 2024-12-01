@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rss xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd" version="2.0">
+   <channel>
+      <title>Momibello Recording Company</title>
+      <link>http://www.momibello.com</link>
+      <description>An online record store featuring Solea, Last Days of April, Communique, Cutlass Supreme, The Fakers, Speed not Steel, Theory of Ruin and Samiam.</description>
+      <language>en-us</language> 
+	  <webmaster>momibello@sashaloobkoff.com</webmaster>
+      <itunes:summary>Our favorite bands play some of their best songs.</itunes:summary> 
+      <itunes:image href="http://www.momibello.com/podcast/itunes_image.png" />
+      <item>
+         <title>August 2005 Podcast</title>
+         <link>http://www.momibello.com/podcast/momibello_aug-2005.mp3</link>
+         <description>The August 2005 Edition of the Momibello Podcast. This month features tracks by Spoon, Doves, Swervedriver, My Bloody Valentine, Knapsack, Pedro the Lion, Venus Beads, Pavement, Sparklehorse, Interpol and Last Days of April.</description>
+		 <author>Momibello Recording Company</author>
+		 <category>Momibello Recording Company</category>
+         <pubDate>Sun, 07 Aug 2005 00:00:00 GMT</pubDate>
+         <enclosure url="" length="41767000" type="audio/mpeg" />
+         <guid>http://www.momibello.com/podcast/momibello_aug-2005.mp3</guid>
+      </item>
+   </channel>
+</rss>
+http://www.momibello.com/podcast/momibello_aug-2005.mp3

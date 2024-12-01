@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>DHTML -- Tracking Menu</title>
+	
+	<style type="text/css">
+	<!--
+	body { 	
+		margin: 0;
+		padding: 0;
+		background-color: #000000;
+		color: #e4e4e4;
+		}
+	
+	h1 {
+		font-size: 18pt;
+		font-family: Times, Times New Roman, Serif;
+		}
+		
+	a:link {
+		font-weight: bold;
+		color: #C3A22F;
+		text-decoration: none;
+		}	
+			
+	a:visited {
+		font-weight: bold;
+		color: #c3a22f;
+		text-decoration: none;
+		}	
+			
+	a:hover {
+		text-decoration: underline;
+		}	
+		
+	a:active {
+		text-decoration: underline;
+		}
+	
+	div.fixed {
+		background-color: #ffffff;
+		position: absolute;
+		top: 0px;
+		left: 0px; 
+		border-width: 2px; 
+		border-style: groove; 
+		border-color: gray; 
+		width: 100px; 
+		height: auto; 
+		overflow: hidden;
+		z-index: 1;
+		}
+
+	div {
+	      	}
+
+	table {
+		font-family: geneva, verdana, sans-serif;
+		font-size: 10pt;
+		top: 10px;
+		left: 110px;
+		position: absolute;
+		}
+
+	img.right {
+		float:right;
+		margin:3px
+		}
+
+	img.left {
+		float:left;
+		margin:3px
+		}
+		
+	-->
+	</style>
+	<script language="javascript" type="text/javascript">
+		<!--
+
+		/////////////////////////////////////////////////////////////
+		// pre cache images
+		if (document.images)
+		{
+			// precache all 'off' button images
+			var offImgArray = new Array();
+			offImgArray["google"] = new Image(90,40);
+			offImgArray["MSN"] = new Image(90,40);
+			offImgArray["yahoo"] = new Image(90,40);
+			offImgArray["altavista"] = new Image(90,40);
+			
+			// set path each 'off' button images
+			offImgArray["google"].src = "/~n2loobko/rollover/art/google.jpg";
+			offImgArray["MSN"].src = "/~n2loobko/rollover/art/MSN.jpg";
+			offImgArray["yahoo"].src = "/~n2loobko/rollover/art/yahoo.jpg";
+			offImgArray["altavista"].src = "/~n2loobko/rollover/art/altavista.jpg";
+			
+			// precache all 'over' button images
+			var overImgArray = new Array();
+			overImgArray["google"] = new Image(90,40);
+			overImgArray["MSN"] = new Image(90,40);
+			overImgArray["yahoo"] = new Image(90,40);
+			overImgArray["altavista"] = new Image(90,40);
+			
+			// set path each 'over' button images
+			overImgArray["google"].src = "/~n2loobko/rollover/art/googleOver.jpg";
+			overImgArray["MSN"].src = "/~n2loobko/rollover/art/MSNOver.jpg";
+			overImgArray["yahoo"].src = "/~n2loobko/rollover/art/yahooOver.jpg";
+			overImgArray["altavista"].src = "/~n2loobko/rollover/art/altavistaOver.jpg";
+		} else
+		{
+		alert('Sorry, your browser does not the image object.\nSome JavaScript functionality will not work including rollovers.');
+		}
+
+		/////////////////////////////////////////////////////////////
+		// functions that swap images
+		
+		// off
+		function imageOff(imgName)
+		{
+			if (document.images)
+			{
+				document.images[imgName].src = offImgArray[imgName].src;
+			}
+			// on mouse over and out need a return true!!!!!!
+			return true;
+		}
+		
+		// over
+		function imageOver(imgName)
+		{
+			if (document.images)
+			{
+				document.images[imgName].src = overImgArray[imgName].src;
+			}
+			return true;
+		}
+
+		/////////////////////////////////////////////////////////////
+		// functions gets the style object
+		function getStyleObject(element)
+		{
+			if (document.all)
+			{
+				return (eval("document.all." + element + ".style"));
+			}
+			else
+			{
+				return (document.getElementById(element).style);
+			}
+		}
+
+		/////////////////////////////////////////////////////////////
+		// functions gets the style object
+		function setScrollingStyle()
+		{
+			if (document.all)
+			{
+				// makes menu fixed in ie 5
+				// funky trick
+				document.all.body.style.overflowY="hidden";
+				document.all.divBody.style.height="100%";
+				document.all.divBody.style.overflow="auto";
+				return;
+			}
+			else
+			{
+				// makes menu fixed in WC3 compliant browsers
+				// set menu position to fixed
+				document.getElementById("divFixed").style.position="fixed";
+				// move body of text over to right
+				document.getElementById("divBody").style.position="absolute";
+				document.getElementById("divBody").style.left="112px";
+				return ;
+			}
+		}
+			
+		//-->
+	</script>
+			
+</head>
+<body id="body" marginwidth=0 marginheight=0 topmargin=0 leftmargin=0 onload="setScrollingStyle()">
+
+<!-- Search Engine Menu -->
+<div class="fixed" id="divFixed">
+<center>
+<a href = "http://www.google.com" target = "navWindow" onMouseOver="imageOver('google')" onMouseOut="imageOff('google')"><img src="/~n2loobko/rollover/art/google.jpg" name="google" Id="google" height=40 width=90 border=0></a>
+<br />
+<a href = "http://search.msn.com/" target = "navWindow" onMouseOver="imageOver('MSN')" onMouseOut="imageOff('MSN')"><img src="/~n2loobko/rollover/art/MSN.jpg" name="MSN" height=40 width=90 border=0></a>
+<br />
+<a href = "http://search.yahoo.com/" target = "navWindow" onMouseOver="imageOver('yahoo')" onMouseOut="imageOff('yahoo')"><img src="/~n2loobko/rollover/art/yahoo.jpg" name="yahoo" height=40 width=90 border=0></a>
+<br />
+<a href = "http://www.altavista.com" target = "navWindow" onMouseOver="imageOver('altavista')" onMouseOut="imageOff('altavista')"><img src="/~n2loobko/rollover/art/altavista.jpg" name="altavista" height=40 width=90 border=0></a>
+</center>
+</div>
+
+<!-- 'Body' of Page -->
+<div id="divBody">
+<table width=1200>
+<tr>
+Tuesday, May, 13 2003
+<br><br><br><br>
+<h1><b>Auction</b></h1>
+<br><br>
+<a href="http://cgi6.ebay.com/ws/eBayISAPI.dll?ViewSellersOtherItems&include=0&userid=deadcosmo&sort=3&rows=25&since=-1&rd=1" target="newWindow"><img class="right" src="http://www.gosamgo.com/samSALEbanner.jpg" border=0></a>Sergie is selling all his extra samiam and solea cds, eps, lps and 7&#39;s on <a href="http://cgi6.ebay.com/ws/eBayISAPI.dll?ViewSellersOtherItems&include=0&userid=deadcosmo&sort=3&rows=25&since=-1&rd=1" target="newWindow">ebay.com</a>... with no reserve!!! He wants them to have good homes, so if not many people bid, you can have them for really cheap. If you want he will sign them too. Lots of stuff is first pressing and really rare, have a look.<br /><br />The message board is back up, so start posting.
+<br /><br />
+<hr>
+<br /><br />
+Saturday, April, 19 2003
+<br /><br /><br /><br />
+<h1><b>Summer Tour</b></h1>
+Just when you thought all hope was lost, Samiam have risen from their slumber... this time for a July European tour. More details to follow...
+<br /><br />
+The site on the other hand, is still sleeping. Sorry, but we moved servers and I have been too busy to fix everything that needs to be fixed. That will soon change, I promise. In the mean time the quiz is down as is the message board. Look for new and improved versions in the not too distant future...
+<br /><br />
+Again, big thanks to Brad from Detroit for the donated server space. He rocks.
+<br /><br />
+<hr>
+<br /><br />
+Friday, February, 22 2003
+<br /><br /><br /><br />
+<h1><b>Solea Tour</b></h1>
+Solea will be on tour in march playing with the likes of Idlewild, Ultimate Fakebook and The Fakers. Surf over to <a href="http://www.solea.org" target="newWindow">Solea.org</a> for dates.
+<br /><br />
+Oh, the <a href="http://hardover.com/samiam/quiz.php" target="myWindow">quiz</a> is back up thanks to the server space donated by Brad from Detroit. He rocks. Remember to make sure your browser accepts cookies. If you don't know what that means feel free to email <a href = "mailto:sloobkof@earthlink.net">me</a> with questions.
+<br /><br />
+<hr>
+<br /><br />
+Friday, January 31st, 2003
+<br /><br /><br /><br />
+<h1><b>No Real News.</b></h1>
+Sorry but that is just the way it is. Sergie and Johnny are busy with <a href="http://www.solea.org" target="newWindow">Solea</a> and Sean with <a href="http://www.thefakers.net" target="newWindow">The Fakers</a>. And no, Samiam are not broken up.
+<br /><br />
+While you are waiting for your Samiam fix, click here to take the Samiam <a href=http://hardover.com/samiam/quiz.php" target="myWindow">quiz</a>. Ten hard questions only the most ardent Samiam fan could know the answers to. (I doubt anyone other than Jason or Sergie will will get them all right).
+<br /><br />
+Right now the quiz is being hosted on a temporary site so if any of you guys have an ISP that supports php and mysql (www.gosamgo.com does not), please email <a href = "mailto:sloobkof@earthlink.net">me</a>. I only need about 500k of space. : )
+<br /><br />
+<hr>
+<br /><br />
+Tuesday, October 15th, 2002
+<br /><br /><br /><br />
+<h1><b>Brazil!</b></h1>
+Samiam are back home from their hugely successfull Brazillian tour and we have <a href="http://www.gosamgo.com/photos_brazil.htm" target="myWindow">photos</a>! A big thank you to Cesar, Alexandre, Marlisi, Jose, Antionio, Francesco and everyone that sent me their shots!  
+<br /><br /><a href="http://www.gosamgo.com/photos_brazil.htm" target="myWindow"><img class="right" src="http://www.gosamgo.com/brazil.jpg" border="0"></a>
+But before you check out the photos, read Sean's Brazillian Tour diary in "<a href="http://www.gosamgo.com/Band.html" target="myWindow">The Band</a>" section of the site!<br /><br />
+Sean also sent me the url of his new band: <a href="http://www.thefakers.net" target="newWindow">The Fakers</a>. I heard a demo a couple months ago and it was really good. Sean sings and plays guitar.
+<br /><br />
+Earlier I suggested that Jason might've jammed with The Fakers a couple of times on a recent NYC visit. I was wrong. Sean and Jason did work on some songs, but they were Samiam songs. Can't wait to hear some new stuff (by both bands).
+<br /><br />
+Anybody like The Vines? I thought I did based on their single (which rocks) but I bought the cd and it's pretty disappointing. Not terrible or anything but not great either. Anyways, the only reason I bring it up is that VIc (Samiam's Clumsy-era drummer) played drums on one of the songs on the album. The man gets around.
+<br /><br />
+Smitty wrote in to tell us that Samiam came in #8 in the new <a href="http://www.blanktv.com/home/home.php4" target="newWindow">BlankTV</a> top ten list.
+Right on. If you have a speedy connection, check out some videos!
+<br /><br />
+<hr>
+<br /><br />
+Tuesday, September 17th, 2002
+<br /><br />
+<h1><b>Brazil!</b></h1>
+As you may have heard, Samiam is heading to Brazil next month. Everyone is stoked!
+<br /><br />
+Check out the "Tour Dates" section for details. [Updated 8/25]
+<br /><br />In other news, <a href="http://www.solea.org" target="newWindow">solea</a> are gearing up to record their debut cd. Their new songs sound great!
+<br /><br />
+<hr>
+<br /><br />
+<a href="http://www.hopelessrecords.com/store.php?Choosecatnum=HR662" target="newWindow"><img  class="right" src="http://www.gosamgo.com/HopelessComp/hopeless.gif" border="0"></a>
+<h1><b>A New Song!</b></h1>
+Well, it ain't so new... but it's previously unreleased.
+<br /><br />
+Hopeless Record's new comp, "Hopelessly Devoted to You, Vol. 4," features a song from the "Astray" sessions entitled "Look No Hand." Great song, I think it should have made the cd. It would've been one of my favorites. Click <a href="http://www.gosamgo.com/HopelessComp/Samiam.mp3">here</a> for a 30 sec mp3 sample. 
+<br /><br />
+Anyways, you can <a href="http://www.hopelessrecords.com/store.php?Choosecatnum=HR662" target="newWindow">pre-order</a> the cd from Hopeless for only $2. Not bad. Also featured are tracks by Thrice, Common Rider, The Weakerthans and the usual cast of Hopeless characters. Oh, and if your copy contains the winning ticket, you win a free Dell computer. Yippeee.
+<br /><br />
+From what I hear, the shows in May went well. I got a million emails from people wanting to get on the guest list for the SF show, so I know people were excited. Unfortunately, Samiam were added to the bill after the show was sold out so few Samiam fans actually got in. Sergie got plastered and tore up the club... so all is well.
+<br /><br />
+No more shows are booked at the moment, so please save your emails.
+<br /><br />
+As you can see the website is back up. We switched servers a while back and had a bunch
+of problems. Now that it is up, we promise to devote the site to Samiam and remove most of the information concerning Solea (Sergie
+and Johnny's new band). We recieved some messages from people bummed that
+the news was mostly devoted to Solea and not Samiam...fair enough, now you
+can go to <a href="http://www.solea.org" target="newWindow">www.solea.org</a> for updates on that band (including tour dates).<br /><br />
+In the 'way to go bro' dept.: Jealous Sound has picked up Get Up Kids dates
+on the west coast, Sensefield rocked nationwide on Jay Leno, Texas is the
+Reason (rip) scored a small fortune from Mercedes Benz (or was it BMW?) by
+being on German TV spots and the new Promise Ring cd is really great!
+<br /><br />
+<hr>
+<br />
+<a href="http://home.earthlink.net/~sloobkof/CutlassSupreme/" target="newWindow"><img  class="left" src="http://www.gosamgo.com/Cutlass.gif" width="90" height="30" border=0></a><img src="http://www.gosamgo.com/shim.gif" width="6" height="30" align="left">Click <a href="http://home.earthlink.net/~sloobkof/CutlassSupreme/" target="newWindow">here</a> to download a Cutlass Supreme MP3 (or purchase their new CD) from their web site.
+<br /><br />
+<hr>
+<br /><br />
+<b>In Other News:</b>
+<br /><br />
+<img  class="right" src="http://www.gosamgo.com/Lil_Punker_Jimi.gif" alt= "James">I recently finished a web site for James' (ex-Samiam) new company, <a href="http://www.primedentertainment.com" target="newWindow">Primed Entertainment</a>. They're into music management and consulting, so if you're in a band that needs representation, you know where to go.
+<br /><br />
+Oh yea, and James also wrote a book. After countless Social Unrest and Samiam tours (with bands like Bad Religion, The Toadies, The Supersuckers, Blink 182, Error Type 11, Millencollin, Unwritten Law, All, The Bloodhound Gang, Creed (blech...) &amp; Green Day), it's time someone put it all down on paper. Think of the debauchery! Think of the wacky hi-jinks! Plus, James is a master story teller...ya know what I'm Satan? The title is:<b>&quot;TOUR STORIES and Other 3rd Grade Tales.&quot;</b> James will be hocking copies by mail. You can get ordering info <a href="mailto:info@primedentertainment.com">here</a>.
+<br /><br />
+<b>Ex drummer report:</b>
+<br /><br />
+We ran into M.P at the bar he manages in L.A. (Good Luck bar - Hollywood/Sunset). Cool bar. Turns out he's playing in a lounge act named Champagne Velvet that recently opened for Hank Williams Jr III at the Roxy. Right on. Scott has been playing in Elliott Smith's band; Vic with Beck, Scott Weiland and now Macy Gray; and Mark, I think, is in the Working Stiffs. I'm not sure if Dave is in a band but I know he's giving drum lessons in SF.  
+<br /><br />
+- Sasha (Kirby)
+
+<center>
+<br /><br />
+<!-- note all other images are positioned using css except this one. I figured you got the point. -->
+<img src="http://www.gosamgo.com/fiendlogo.jpg" alt="fiend" align=bottom width=144 height=144>
+<br /><br />
+<!-- BEGIN SPYONIT.COM SPYMAKER -->
+<a href="http://www.spyonit.com/AddPageChangedSpy?location=http://www.gosamgo.com/samiam1.htm&title=Samiam+Home+Page&description=Click+here+to+get+notified+when+there+is+new+Samiam+news.">
+<font face="arial, helvetica, san-serif" size=1>Click here to get notified when there is new Samiam news.</a>
+<!-- END SPYONIT.COM SPYMAKER -->
+</center>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

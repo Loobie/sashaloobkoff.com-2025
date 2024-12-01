@@ -1,0 +1,28 @@
+links=<html><body><i>To buy
+<b>The Amulet Chronicles:    
+Book 1: The Freedom Train:</b></i>
+
+<b><u><a href="http://amazon.com/" target="newWindow">Amazon</a></u></b>
+
+
+<i>For more information on Harriet Tubman:</i>
+
+<b><u><a href="http://harriettubmanjournal.com/" target="newWindow">Harriet Tubman Journal</a></u></b>
+<b><u><a href="http://www.pbs.org/" target="newWindow">PBS</a></u></b>
+<b><u><a href="http://www.harriettubmanbiography.com/" target="newWindow">Harriet Tubman Biography</a></u></b>
+
+
+
+<i>For more information on the Quakers:</i>
+
+<b><u><a href="http://www.whispersofangels.com/" target="newWindow">Whispers of Angels</a></u></b>
+
+
+
+<i>For more information on Stonehenge:</i>
+
+<b><u><a href="http://activemind.com/" target="newWindow">Active Mind</a></u></b>
+<b><u><a href="http://www.christiaan.com/stonehenge/index.php" target="newWindow">Christiaan</a></u></b>
+<b><u><a href="http://www.castles.me.uk/copyright.htm" target="newWindow">Castles</a></u></b>
+</body></html>
+

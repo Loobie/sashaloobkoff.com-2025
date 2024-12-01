@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Multiple Image Rollover</title>
+	<STYLE TYPE="text/css" MEDIA=screen>
+	<!--
+	  	p {text-align:center;font:10pt'verdana','tahoma';color:black;border:thin gray ridge;background-color:#AD9410;padding:6;width:350}
+
+		a:link{color:#FFFFFF;text-decoration:none;font:10pt"verdana","tahoma"}
+		a:visited {color:#FFFFFF;text-decoration:none;font:10pt"verdana","tahoma"}
+		a:hover{color:#000000;text-decoration:none;font:10pt"verdana","tahoma"}
+		a:active{color:#000000;text-decoration:none;font:10pt"verdana","tahoma"}
+	-->
+	</STYLE>
+	<script language="javascript" type="text/javascript">
+		<!--
+			if (document.images)
+			{
+				// create 'off' array
+				var offImgArray = new Array();
+				offImgArray["josh"] = new Image(75,56);
+				offImgArray["sasha"] = new Image(75,56);
+				offImgArray["joe"] = new Image(75,56);
+				
+				// map 'off' images
+				offImgArray["josh"].src = "art/Josh.gif";
+				offImgArray["sasha"].src = "art/Sasha.gif";
+				offImgArray["joe"].src = "art/Joe.gif";
+				
+				// create 'over' array
+				var overImgArray = new Array();
+				overImgArray["josh"] = new Image(75,56);
+				overImgArray["sasha"] = new Image(75,56);
+				overImgArray["joe"] = new Image(75,56);
+				
+				// map 'over' images
+				overImgArray["josh"].src = "art/JoshOver.jpg";
+				overImgArray["sasha"].src = "art/SashaOver.jpg";
+				overImgArray["joe"].src = "art/JoeOver.jpg";
+			} else
+			{
+				alert('You browser does not support Image objects.')
+			}
+			
+			// function changes images on over
+			function cursorOver(num)
+			{
+				if (document.images)
+				{
+					switch (num)
+					{
+						case 1:
+						document.images["josh"].src = overImgArray["josh"].src;
+						break;
+						
+						case 2:
+						document.images["josh"].src = overImgArray["sasha"].src;
+						document.images["sasha"].src = overImgArray["sasha"].src;
+						break;
+						
+						case 3:
+						document.images["josh"].src = overImgArray["joe"].src;
+						document.images["sasha"].src = overImgArray["joe"].src;
+						document.images["joe"].src = overImgArray["joe"].src;
+						break;
+					}
+				return true;
+				}
+			}
+			
+			// function changes images on out
+			function cursorOut(num)
+			{
+				if (document.images)
+				{
+					switch (num)
+					{
+						case 1:
+						document.images["josh"].src = offImgArray["josh"].src;
+						return true;
+						
+						case 2:
+						document.images["josh"].src = offImgArray["josh"].src;
+						document.images["sasha"].src = offImgArray["sasha"].src;
+						return true;
+						
+						case 3:
+						document.images["josh"].src = offImgArray["josh"].src;
+						document.images["sasha"].src = offImgArray["sasha"].src;
+						document.images["joe"].src = offImgArray["joe"].src;
+						return true;
+					}
+				}
+			}
+			
+			
+		// -->
+	</script>
+</head>
+<body marginheight=20 marginwidth=20 topmargin=20 leftmargin=20>
+	<p>
+	<img src="art/Josh.gif" name="josh" Id="josh" width=75 height=56 border=0>
+	<img src="art/Sasha.gif" name="sasha" Id="sasha" width=75 height=56 border=0>
+	<img src="art/Joe.gif" name="joe" Id="joe" width=75 height=56 border=0>
+	<br /><br />
+	<a href="" onMouseOver="cursorOver(1)" onMouseOut="cursorOut(1)">Change One Square</a>
+	<br /><br />
+	<a href="" onMouseOver="cursorOver(2)" onMouseOut="cursorOut(2)" >Change Two Squares</a>
+	<br /><br />
+	<a href="" onMouseOver="cursorOver(3)" onMouseOut="cursorOut(3)" >Change Three Squares</a>
+</body>
+</html>

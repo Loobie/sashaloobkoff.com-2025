@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:blogChannel="http://backend.userland.com/blogChannelModule" xmlns:itunes="http://www.itunes.com/DTDs/Podcast-1.0.dtd">
+<channel>
+      <title>Momibello Recording Company PodCast</title>
+	  <itunes:author>Sasha Loobkoff</itunes:author>
+      <link>http://www.momibello.com</link>
+	  <itunes:subtitle>Our favorite indie bands play their best tunes.</itunes:subtitle>
+	  <description>
+The Momibello PodCast. 
+A collection of some our favorite bands. 
+
+We are an online record store featuring Solea, Last Days of April, Communique, Cutlass Supreme, The Fakers, Speed not Steel, Theory of Ruin and Samiam. We will update the podcast frequently with both bands on and off our roster. 
+
+Enjoy!</description>
+	  <itunes:summary>
+The Momibello PodCast. 
+A collection of some our favorite bands. 
+
+We are an online record store featuring Solea, Last Days of April, Communique, Cutlass Supreme, The Fakers, Speed not Steel, Theory of Ruin and Samiam. We will update the podcast frequently with both bands on and off our roster. 
+
+Enjoy!</itunes:summary>
+      <language>en-us</language>
+	   <copyright>&#xA9; 2005 Momibello Recording Company</copyright> 
+	   <itunes:owner>
+			<itunes:name>Sasha Loobkoff</itunes:name>
+			<itunes:email>momibello@sashaloobkoff.com</itunes:email>
+		</itunes:owner>
+	  <webmaster>momibello@sashaloobkoff.com</webmaster>
+      <itunes:image>http://www.momibello.com/podcast/itunes_image.png</itunes:image>
+	  <itunes:link rel="image" type="video/jpeg" href="http://www.momibello.com/podcast/itunes_image.png"></itunes:link>
+	  <itunes:category text="Music"></itunes:category>
+	  <lastBuildDate>Thu, 22 Sep 2005 05:25:35 PST</lastBuildDate> 
+	  <category>Podcast</category> 
+	  <category>Momibello Recording Company</category> 
+	  <category>Music</category> 
+	  <category>Indie Rock</category> 
+	  <category>Media</category> 
+	  <category>Online Sales</category> 
+	  <category>San Francisco</category> 
+	  <category>San Francisco Bay Area</category> 
+	  <category>Pop</category> 
+	  <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+	  
+	  <item>
+			<title>Momibello one</title>
+			<itunes:author>Sasha Loobkoff</itunes:author>
+			<itunes:subtitle>This edition features Spoon, Doves, Knapsack, Swervdriver, etc... </itunes:subtitle>
+			<description>
+This Edition's Track Listing:
+
+Spoon :: "Me and the Bean" :: girls can tell :: merge records :: 2000
+Doves :: "Snowden"  :: some cities :: astralworks 2005
+Venus Beads :: "You Wish" :: shackled e.p. :: equator records :: 1994
+Pedro the Lion :: "Rehearsal" :: control :: jade tree :: 2002
+Last Days of April :: "Two Hands and Ten Fingers" :: angel youth :: bad taste records :: 2001
+Interpol :: "Untitled" :: turn on the bright lights :: matador records :: 2002
+Knapsack :: "Cinema Stare" :: this conversation is ending starting right now :: alias records :: 1998
+Pavement :: "Date with Ikea" :: brighten the corners :: matador records :: 1997
+Sparklehorse :: "Saturday" :: vivadixiesubmarinetransmissionplot :: capitol records :: 1995
+Swervedriver ::  "Duress" :: mezcal head :: creation records :: 1992
+My Bloody Valentine :: "Sometimes" :: loveless :: creation records :: 1991										
+			</description>
+			<itunes:summary>
+This Edition's Track Listing:
+
+Spoon :: "Me and the Bean" :: girls can tell :: merge records :: 2000
+Doves :: "Snowden"  :: some cities :: astralworks 2005
+Venus Beads :: "You Wish" :: shackled e.p. :: equator records :: 1994
+Pedro the Lion :: "Rehearsal" :: control :: jade tree :: 2002
+Last Days of April :: "Two Hands and Ten Fingers" :: angel youth :: bad taste records :: 2001
+Interpol :: "Untitled" :: turn on the bright lights :: matador records :: 2002
+Knapsack :: "Cinema Stare" :: this conversation is ending starting right now :: alias records :: 1998
+Pavement :: "Date with Ikea" :: brighten the corners :: matador records :: 1997
+Sparklehorse :: "Saturday" :: vivadixiesubmarinetransmissionplot :: capitol records :: 1995
+Swervedriver ::  "Duress" :: mezcal head :: creation records :: 1992
+My Bloody Valentine :: "Sometimes" :: loveless :: creation records :: 1991										
+			</itunes:summary>
+			<enclosure url="http://www.momibello.com/podcast/momibello_one.mp3" length="41767000" type="audio/mpeg" />
+         	<guid>http://www.momibello.com/podcast/momibello_one.mp3</guid>
+			<pubDate>thu, 22 sep 2005 19:00:00 PST</pubDate>
+			<itunes:category text="Music"></itunes:category>
+			<itunes:duration>44:32</itunes:duration>
+			<itunes:keywords>Momibello Doves Swervedriver My Bloody Valentine Knapsack Spoon Pedro the Lion Last Days of April Interpol Samiam Pavement Sparklehorse Venus Beads Jawbreaker Built to Spill Communique</itunes:keywords>
+		</item>
+     
+   </channel>
+</rss>

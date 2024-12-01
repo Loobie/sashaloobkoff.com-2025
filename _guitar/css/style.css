@@ -1,0 +1,487 @@
+html {
+       overflow-y: scroll;
+}
+
+/* shrink the padding on col- elements */
+body{
+    background-image: url('../images/halftone2.png');
+    background-repeat: repeat;
+    background-color: #fffffc;
+}
+
+/* change default padding of all 'col-'' columns */
+body [class*='col-'] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#copyright {
+  margin-top: 16px;
+}
+
+/*
+SUPER IMPORTANT
+bootstrap adds: 
+'padding-left: 15px' & 'padding-right: -15px' to div.container
+'margin-left: -15px' & 'margin-right: -15px' to div.row
+which is great for most applications
+BUT this screws up .scrollDown()... makes width of sliding div jitter
+*/
+.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+/* my 5 column layout */
+.col-xs-5x,
+.col-sm-5x,
+.col-md-5x,
+.col-lg-5x {
+    position: relative;
+    width: 20%;
+    float: left;
+}
+
+/* my 7 column layout */
+.col-xs-7x,
+.col-sm-7x,
+.col-md-7x,
+.col-lg-7x {
+    position: relative;
+    width: 14.2857%;
+    float: left;
+}
+
+.box-for-odd {
+  display:none;
+}
+
+.float-none {
+  float: none;
+}
+
+.timer-set {
+  width: 80px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* gets rid of blue border on button's and shit when you hover or press */
+.btn:focus, .btn:active, input:focus, input:active, select:focus, select:active  {
+  outline: none !important;
+}
+
+/* modals */
+
+.modal-content {
+  -webkit-border-radius: 0 0 12px 12px !important;
+  -moz-border-radius: 0 0 12px 12px !important;
+  -ms-border-radius: 0 0 12px 12px !important;
+  -o-border-radius: 0 0 12px 12px !important;
+  border-radius: 0 0 12px 12px !important; 
+}
+
+
+.modal-body {
+  background-color: #fdf7ef;
+  background-image: url('../images/halftone2.png');
+  
+  /*
+  border-top: 10px solid #fdf7ef;
+  border-bottom: 10px solid #fdf7ef;*/
+}
+
+.modal-footer {  
+
+  background-color: #fdf7ef;
+  background-image: url('../images/halftone2.png');
+
+  text-align: center;
+  
+  -webkit-border-radius: 0 0 12px 12px !important;
+  -moz-border-radius: 0 0 12px 12px !important;
+  -ms-border-radius: 0 0 12px 12px !important;
+  -o-border-radius: 0 0 12px 12px !important;
+  border-radius: 0 0 12px 12px !important;
+  
+}
+
+.modal-header {
+  background-color: rgb(22, 160, 133);
+  color: #fdf7ef;
+}
+
+#modal_BC .modal-body {
+  background-color: rgb(22, 160, 133);
+}
+
+#modal_BC .modal-footer {
+  background-color: rgb(22, 160, 133);
+}
+
+/* popover styles */
+
+.info-icon {
+  font-size: 27%;
+  margin: 10px 0 0 0;
+  vertical-align: top;
+}
+
+
+a, a:hover, a:visited, a:active, a:not( :hover ) {
+  text-decoration: none;
+  color: #fdf7ef;
+}
+
+a.info-link {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #fdf7ef;
+}
+
+a.info-link: hover, a.info-link: active, a.info-link: visited {
+  color: #fdf7ef;
+}
+
+#copyright a, #copyright a:hover, #copyright a:visited {
+  color: #333;
+}
+
+#copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Popover styles */
+.popover {
+  padding: 0px;
+  background-color: #fdf7ef;
+  background-image: url('../images/halftone2.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+.popover.bottom>.arrow:after {
+    border-bottom-color: #fdf7ef;
+}
+h1.shadowTextGreen .popover-title {
+    background-color: rgb(22, 160, 133);
+}
+h1.shadowTextPink .popover-title {
+    background-color: #B7366D;
+}
+
+h1.shadowTextOrange .popover-title {
+    background-color: #F66F00;
+}
+h1.shadowTextCyan .popover-title {
+    background-color: #0F76AD;
+}
+.popover-content {
+    color: #333;
+}
+
+.popover-content p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/* End popover styles */
+
+.green {
+    background-color: rgb(22, 160, 133);
+}
+
+.btn-green {
+    background: #007F67;
+    border-color: #006653;
+    color: #fdf7ef;
+}
+ 
+.btn-green:hover, .btn-green:focus, .open > .dropdown-toggle.btn-green {
+    background: #006653;
+    border-color: #005243;
+    color: #fdf7ef;
+}
+ 
+.btn-green:active, .btn-green.active {
+    background: #005243 !important;
+    color: #fdf7ef !important;
+    box-shadow: none !important;
+}
+
+.pink {
+  background-color: #B7366D;
+}
+
+.btn-pink {
+    background: #9D2F5F;
+    border-color: #8D2A55;
+    color: #fdf7ef;
+}
+ 
+.btn-pink:hover, .btn-pink:focus, .open > .dropdown-toggle.btn-pink {
+    background: #8D2A55;
+    border-color: #7E264C;
+    color: #fdf7ef;
+}
+ 
+.btn-pink:active, .btn-pink.active {
+    background: #7E264C !important;
+    color: #fdf7ef !important;
+    box-shadow: none !important;
+}
+
+.orange {
+  background-color: #F66F00;
+}
+
+.btn-orange {
+    background: #CC5C00;
+    border-color: #B85300;
+    color: #fdf7ef;
+}
+ 
+.btn-orange:hover, .btn-orange:focus, .open > .dropdown-toggle.btn-orange {
+    background: #B85300;
+    border-color: #8F4000;
+    color: #fdf7ef;
+}
+ 
+.btn-orange:active, .btn-orange.active {
+    background: #8F4000 !important;
+    color: #fdf7ef !important;
+    box-shadow: none !important;
+}
+
+.cyan {
+  background-color: #0F76AD;
+}
+
+.btn-cyan {
+    background: #0B5983;
+    border-color: #0A4D71;
+    color: #fdf7ef;
+}
+ 
+.btn-cyan:hover, .btn-cyan:focus, .open > .dropdown-toggle.btn-cyan {
+    background: #0A4D71;
+    border-color: #08405E;
+    color: #fdf7ef;
+}
+ 
+.btn-cyan:active, .btn-cyan.active {
+    background: #08405E !important;
+    color: #fdf7ef !important;
+    box-shadow: none !important;
+}
+
+.inner, .inner-with-button {
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    overflow: hidden; /* this shit is important as fuck makes it fill parent div height */
+}
+
+.inner-with-inputs {
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 0 6px 0;
+    overflow: hidden; /* this shit is important as fuck makes it fill parent div height */
+}
+
+.inner-with-checkbox {
+    margin-top: 10px;
+    text-align: center;
+    padding: 14px 0;
+    overflow: hidden; /* this shit is important as fuck makes it fill parent div height */
+}
+
+#rounded-top {
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+      -webkit-border-radius: 16px 16px 0 0; 
+      /* Firefox 1-3.6 */
+      -moz-border-radius: 16px 16px 0 0;  
+      /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+      border-radius: 16px 16px 0 0; 
+}
+
+#rounded-bottom {
+    /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+      -webkit-border-radius: 0 0 16px 16px; 
+      /* Firefox 1-3.6 */
+      -moz-border-radius:  0 0 16px 16px; 
+      /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+      border-radius:  0 0 16px 16px; 
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.head h1 {	
+	color: #fdf7ef;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+.instructions p {
+	font-size: 1.4em;
+}
+
+.instructions p:last-child {
+  margin-bottom: 0;
+}
+
+.padding-top {
+  padding-top: 20px;
+}
+
+.shadowTextGreen {
+  text-shadow: 
+    rgb(20, 144, 120) 1px 1px,
+    rgb(20, 144, 120) 2px 2px,
+    rgb(20, 144, 120) 3px 3px,
+    rgb(20, 144, 120) 4px 4px,
+    rgb(20, 144, 120) 5px 5px,
+    rgb(20, 144, 120) 6px 6px,
+    rgb(20, 144, 120) 7px 7px,
+    rgb(20, 144, 120) 8px 8px,
+    rgb(20, 144, 120) 9px 9px,
+    rgb(20, 144, 120) 10px 10px,
+    rgb(20, 144, 120) 11px 11px,
+    rgb(20, 144, 120) 12px 12px,
+    rgb(20, 144, 120) 13px 13px,
+    rgb(20, 145, 121) 14px 14px,
+    rgb(20, 146, 122) 15px 15px,
+    rgb(20, 147, 122) 16px 16px,
+    rgb(20, 148, 123) 17px 17px,
+    rgb(20, 149, 124) 18px 18px,
+    rgb(20, 150, 125) 19px 19px,
+    rgb(20, 151, 125) 20px 20px,
+    rgb(21, 152, 126) 21px 21px,
+    rgb(21, 152, 127) 22px 22px,
+    rgb(21, 153, 127) 23px 23px,
+    rgb(21, 154, 128) 24px 24px,
+    rgb(21, 155, 129) 25px 25px,
+    rgb(21, 156, 130) 26px 26px,
+    rgb(21, 157, 130) 27px 27px,
+    rgb(21, 158, 131) 28px 28px,
+    rgb(21, 159, 132) 29px 29px,
+    rgb(22, 160, 133) 30px 30px;
+}
+
+.shadowTextPink {
+  text-shadow: 
+    rgb(165, 49, 98) 1px 1px,
+    rgb(165, 49, 98) 2px 2px,
+    rgb(165, 49, 98) 3px 3px,
+    rgb(165, 49, 98) 4px 4px,
+    rgb(165, 49, 98) 5px 5px,
+    rgb(165, 49, 98) 6px 6px,
+    rgb(165, 49, 98) 7px 7px,
+    rgb(165, 49, 98) 8px 8px,
+    rgb(165, 49, 98) 9px 9px,
+    rgb(165, 49, 98) 10px 10px,
+    rgb(165, 49, 98) 11px 11px,
+    rgb(165, 49, 98) 12px 12px,
+    rgb(166, 49, 98) 13px 13px,
+    rgb(167, 49, 99) 14px 14px,
+    rgb(168, 49, 99) 15px 15px,
+    rgb(169, 50, 100) 16px 16px,
+    rgb(170, 50, 101) 17px 17px,
+    rgb(171, 50, 101) 18px 18px,
+    rgb(172, 50, 102) 19px 19px,
+    rgb(173, 51, 102) 20px 20px,
+    rgb(174, 51, 103) 21px 21px,
+    rgb(175, 51, 104) 22px 22px,
+    rgb(176, 52, 104) 23px 23px,
+    rgb(177, 52, 105) 24px 24px,
+    rgb(178, 52, 105) 25px 25px,
+    rgb(179, 52, 106) 26px 26px,
+    rgb(180, 53, 107) 27px 27px,
+    rgb(181, 53, 107) 28px 28px,
+    rgb(182, 53, 108) 29px 29px,
+    rgb(183, 54, 109) 30px 30px;
+}
+
+.shadowTextOrange {
+  text-shadow:
+    rgb(221, 100, 0) 1px 1px,
+    rgb(221, 100, 0) 2px 2px,
+    rgb(221, 100, 0) 3px 3px,
+    rgb(221, 100, 0) 4px 4px,
+    rgb(221, 100, 0) 5px 5px,
+    rgb(221, 100, 0) 6px 6px,
+    rgb(221, 100, 0) 7px 7px,
+    rgb(221, 100, 0) 8px 8px,
+    rgb(221, 100, 0) 9px 9px,
+    rgb(221, 100, 0) 10px 10px,
+    rgb(221, 100, 0) 11px 11px,
+    rgb(221, 100, 0) 12px 12px,
+    rgb(222, 100, 0) 13px 13px,
+    rgb(223, 101, 0) 14px 14px,
+    rgb(225, 101, 0) 15px 15px,
+    rgb(226, 102, 0) 16px 16px,
+    rgb(227, 103, 0) 17px 17px,
+    rgb(229, 103, 0) 18px 18px,
+    rgb(230, 104, 0) 19px 19px,
+    rgb(232, 104, 0) 20px 20px,
+    rgb(233, 105, 0) 21px 21px,
+    rgb(234, 106, 0) 22px 22px,
+    rgb(236, 106, 0) 23px 23px,
+    rgb(237, 107, 0) 24px 24px,
+    rgb(239, 107, 0) 25px 25px,
+    rgb(240, 108, 0) 26px 26px,
+    rgb(241, 109, 0) 27px 27px,
+    rgb(243, 109, 0) 28px 28px,
+    rgb(244, 110, 0) 29px 29px,
+    rgb(246, 111, 0) 30px 30px;
+  }
+
+.shadowTextCyan {
+  text-shadow: 
+    rgb(14, 106, 156) 1px 1px,
+    rgb(14, 106, 156) 2px 2px,
+    rgb(14, 106, 156) 3px 3px,
+    rgb(14, 106, 156) 4px 4px,
+    rgb(14, 106, 156) 5px 5px,
+    rgb(14, 106, 156) 6px 6px,
+    rgb(14, 106, 156) 7px 7px,
+    rgb(14, 106, 156) 8px 8px,
+    rgb(14, 106, 156) 9px 9px,
+    rgb(14, 106, 156) 10px 10px,
+    rgb(14, 106, 156) 11px 11px,
+    rgb(14, 106, 156) 12px 12px,
+    rgb(14, 106, 156) 13px 13px,
+    rgb(14, 107, 157) 14px 14px,
+    rgb(14, 108, 158) 15px 15px,
+    rgb(14, 108, 159) 16px 16px,
+    rgb(14, 109, 160) 17px 17px,
+    rgb(14, 110, 161) 18px 18px,
+    rgb(14, 110, 162) 19px 19px,
+    rgb(14, 111, 163) 20px 20px,
+    rgb(14, 112, 164) 21px 21px,
+    rgb(14, 112, 165) 22px 22px,
+    rgb(14, 113, 166) 23px 23px,
+    rgb(14, 114, 167) 24px 24px,
+    rgb(14, 114, 168) 25px 25px,
+    rgb(14, 115, 169) 26px 26px,
+    rgb(14, 116, 170) 27px 27px,
+    rgb(14, 116, 171) 28px 28px,
+    rgb(14, 117, 172) 29px 29px,
+    rgb(15, 118, 173) 30px 30px;
+}
+
+
+

@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+html, body {
+    background-color: transparent; /* TODO Make sure this is set to transparent for a transparent unit */
+}
+
+body, button, img {
+    vertical-align: baseline;
+    border: 0px;
+    outline: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+::-webkit-media-controls {
+    display:none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display:none !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+#sizmek_sync_block {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    width: 600px;
+    height: 250px;
+    background-color: transparent; /* TODO Make sure this is set to transparent for a transparent unit */
+}
+
+.keyline {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #000000;
+}
+
+.clicktag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: transparent;
+    background-image: url("../images/transparent-ie-fix.png");
+    cursor:pointer;
+}
+
+.sdk .sdk-video-player {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sdk .sdk-video-player-button {
+    cursor: pointer;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url("../images/play.png") no-repeat scroll 0px 0px;
+    background-color:transparent;
+    background-size: cover;
+}
+
+#content-collapsed {
+    position: absolute;
+    display: block;
+    width: 970px;
+    height: 90px;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    background-color: #000000; /* TODO Make sure this is set to transparent for a transparent unit */
+    background-image: url("../images/collaped_bg.jpg");
+}
+
+#content-expand {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 970px;
+    height: 418px;
+    z-index: 200;
+    background-color: #000000;
+    background-image: url("../images/expand-resolve.jpg");
+}
+
+#watch-cta {
+    position:absolute;
+    top:34px;
+    left:710px;
+    width: 133px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url("../images/watch-cta.png");
+    background-position: 0px 0px;
+}
+
+#watch-cta:hover {
+    background-position: 0px -26px;
+}
+
+#button-cta {
+    position:absolute;
+    top:372px;
+    left:117px;
+    width: 206px;
+    height: 26px;
+    background-color: transparent;
+    background-image: url("../images/button-cta.png");
+    background-position: 0px 0px;
+}
+
+#button-cta:hover {
+    background-position: 0px -27px;
+}
+
+#panel-closeBtn{
+    position:absolute;
+    top:5px;
+    right:5px;
+    height:25px;
+    width:25px;
+    background:url("../images/close.png") no-repeat;
+    background-position:0px 0px;
+    cursor:pointer
+}
+
+#tunein {
+    position:absolute;
+    top:40px;
+    left:112px;
+    width: 529px;
+    height: 35px;
+}
+
+#tunein-expand {
+    position:absolute;
+    top:323px;
+    left:29px;
+    width: 379px;
+    height: 26px;
+}
+
+.tunein-lead-in-1,
+.tunein-lead-in-2,
+.tunein-tonight,
+.tunein-tomorrow,
+.tunein-thursdays,
+.tunein-ddt {
+    position:relative;
+    margin:0px;
+    padding:0px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.tunein-ddt {
+    background-image: url("../images/tunein-ddt.png");
+    background-size: 100% 100%;
+}
+
+.tunein-lead-in-1 {
+    background-image: url("../images/tunein-lead-in-1.png");
+    background-size: 100% 100%;
+}
+
+.tunein-lead-in-2 {
+    background-image: url("../images/tunein-lead-in-2.png");
+    background-size: 100% 100%;
+}
+
+.tunein-lead-in-3 {
+    background-image: url("../images/tunein-lead-in-3.png");
+    background-size: 100% 100%;
+}
+
+.tunein-tonight {
+    background-image: url("../images/tunein-tonight.png");
+    background-size: 100% 100%;
+}
+
+.tunein-tomorrow {
+    background-image: url("../images/tunein-tomorrow.png");
+    background-size: 100% 100%;
+}
+
+.tunein-thursdays {
+    background-image: url("../images/tunein-thursdays.png");
+    background-size: 100% 100%;
+}
+
+#video-1-loader,
+#video-2-loader {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+
+#video-1-loader img,
+#video-2-loader img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:32px;
+    height:32px;
+    margin-left:-16px;
+    margin-top:-16px;
+    background-color:transparent;
+}
+
+.video-frame-static {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 530px;
+    height: 418px;
+    background: url("../images/video-frame-static.jpg") no-repeat;
+    background-color:#000000;
+}
+
+#video-2-container-holder {
+    position:absolute;
+    top:0px;
+    left:439px;
+    width: 530px;
+    height: 418px;
+}
+
+.icon-click-to-play-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 97px;
+    height: 100px;
+    margin-left: -49px;
+    margin-top: -50px;
+    background: url("../images/icon-click-to-play-video.png") transparent no-repeat;
+}
+
+.icon-click-to-replay-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 97px;
+    height: 100px;
+    margin-left: -49px;
+    margin-top: -50px;
+    background: url("../images/icon-click-to-play-video.png") transparent no-repeat;
+}
+
+#button-click-to-play-video,
+#button-click-to-replay-video {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 531px;
+    height: 418px;
+    background-color: transparent;
+}
+
+#button-play-video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    background: url("../images/button-play-video.png") transparent no-repeat;
+}
+
+#button-pause-video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    background: url("../images/button-pause-video.png") transparent no-repeat;
+}
+
+#button-unmute-video {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    background: url("../images/button-unmute-video.png") transparent no-repeat;
+}
+
+#button-mute-video {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    background: url("../images/button-mute-video.png") transparent no-repeat;
+}
+
+#video-2-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 530px;
+    height: 418px;
+    display: block;
+    background-color: #000000;
+}
+
+#video-2-container video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 530px;
+    height: 418px;
+}
+
+.blk_fill {
+    position: absolute;
+    top: 383px;
+    left: 439px;
+    width: 530px;
+    height: 35px;
+    background-color: #000000;
+}
+
+#button-video-1 {
+    position: absolute;
+    top: 383px;
+    left: 439px;
+    width: 177px;
+    height: 33px;
+    overflow:hidden;
+    background-image: url("../images/button-video-1.jpg");
+    background-position: 0px 0px;
+}
+
+#button-video-1:hover {
+    background-position: 0px -34px;
+}
+
+#button-video-2 {
+    position: absolute;
+    top: 383px;
+    left: 616px;
+    width: 177px;
+    height: 33px;
+    overflow:hidden;
+    background-image: url("../images/button-video-2.jpg");
+    background-position: 0px 0px;
+}
+
+#button-video-2:hover {
+    background-position: 0px -34px;
+}
+
+#button-video-3 {
+    position: absolute;
+    top: 383px;
+    left: 792px;
+    width: 177px;
+    height: 33px;
+    overflow:hidden;
+    background-image: url("../images/button-video-3.jpg");
+    background-position: 0px 0px;
+}
+
+#button-video-3:hover {
+    background-position: 0px -34px;
+}

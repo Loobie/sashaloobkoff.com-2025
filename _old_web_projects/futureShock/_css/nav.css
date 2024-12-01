@@ -1,0 +1,107 @@
+#main-nav {
+		position: relative;
+		top: 23px;
+		left: 422px;
+		width: 394px;
+		height: 26px;
+		overflow:hidden;
+		clear: both;
+}
+
+ul#main-nav  li {
+	float: left;
+	list-style: none; /* make sure no bullets show up on nav bar */
+	margin: 0px;
+}
+	
+ul#main-nav  li a {
+		text-decoration: none;
+		height: 26px;
+		background: url(../_images/nav.png) no-repeat 0 0;
+		display: block;
+	}
+	
+ul#main-nav  li a.about_btn {
+	width: 63px;
+	background-position: 0px 0px;
+	}
+	
+ul#main-nav  li a.about_btn:hover {
+	background-position: 0px -26px;
+	}
+	
+ul#main-nav  li.selected a.about_btn {
+	background-position: 0px -26px;
+	}
+	
+ul#main-nav  li a.about_btn:active {
+	background-position: 0px -52px;
+	}
+		
+ul#main-nav  li a.equipment_btn {
+	width: 86px;
+	background-position: -63px 0px;
+	}
+	
+ul#main-nav  li a.equipment_btn:hover {
+	background-position: -63px -26px;
+	}
+	
+ul#main-nav  li.selected a.equipment_btn {
+	background-position: -63px -26px;
+	}
+	
+ul#main-nav  li a.equipment_btn:active {
+	background-position: -63px -52px;
+	}
+		
+ul#main-nav  li a.photos_btn {
+	width: 66px;
+	background-position: -149px 0px;
+	}
+	
+ul#main-nav  li a.photos_btn:hover {
+	background-position: -149px -26px;
+	}
+	
+ul#main-nav  li.selected a.photos_btn {
+	background-position: -149px -26px;
+	}
+	
+ul#main-nav  li a.photos_btn:active {
+	background-position: -149px -52px;
+	}
+		
+ul#main-nav  li a.clients_btn {
+	width: 72px;
+	background-position: -215px 0px;
+	}
+	
+ul#main-nav  li a.clients_btn:hover {
+	background-position: -215px -26px;
+	}
+	
+ul#main-nav  li.selected a.clients_btn {
+	background-position: -215px -26px;
+	}
+	
+ul#main-nav  li a.clients_btn:active {
+	background-position: -215px -52px;
+	}
+		
+ul#main-nav  li a.contact_btn {
+	width: 107px;
+	background-position: -287px 0px;
+	}
+	
+ul#main-nav  li a.contact_btn:hover {
+	background-position: -287px -26px;
+	}
+	
+ul#main-nav li.selected a.contact_btn {
+	background-position: -287px -26px;
+	}
+	
+ul#main-nav  li a.contact_btn:active {
+	background-position: -287px -52px;
+	}

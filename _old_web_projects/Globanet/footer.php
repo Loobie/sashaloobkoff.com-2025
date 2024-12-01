@@ -1,0 +1,1 @@
+<div id="footer">© 2011 Alex Newport  |  All Rights Reserved</div>

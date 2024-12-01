@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Compute the Average</title>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #3 -- First JavaScripts -- Compute the Average
+		// 03.01.03
+		
+		// get info from user via propts
+		var name = prompt("Please input the student's name.","");
+		var score1 = prompt("What is his/her first score?","");
+		var score2 = prompt("What is his/her second score?","");
+		var score3 = prompt("What is his/her third score?","");
+		
+		// create an array and sort it so we can get the two highest values
+		var myArray = new Array(score1,score2,score3);
+		function compare(a,b){
+			return b - a;
+		}
+		myArray.sort(compare)
+		
+		// compute average. Note: need to convert to number (float).
+		var avg = (parseFloat(myArray[0]) + parseFloat(myArray[1]))/2;
+		
+		//  End -->
+	</script>
+</head>
+<body bgcolor=black link="#ffffff" vlink="#808080" alink="#ff6600" onblur=window.close()>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// Display output
+		window.document.write("<font face='verdana, tahoma, geneva' size='-2' color='ffffff'>Name: <b>" + name + "</b><br>Average: <b><i>" + avg + "</I></b><br>Grades: <b>" + score1 + " " + score2 + " " + score3 + "<br><br><br><br><< <a href='#' onClick='window.close()'>Close Window</a> >></font>");
+
+		// End -->
+	</script>
+	
+</body>
+</HTML>

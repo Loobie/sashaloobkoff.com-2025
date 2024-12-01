@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>JPEG Animation Rollover</title>
+	<script language="javascript" type="text/javascript">
+		<!--
+		// set status bar to contain instructions
+		window.defaultStatus = "Place cursor over image to start animation. Place cursor off image to stop animation.";
+		
+		
+		if (document.images)
+		{
+			// precache all images
+			var ImgArray = new Array();
+			ImgArray[0] = new Image(640,480);
+			ImgArray[1] = new Image(640,480);
+			ImgArray[2] = new Image(640,480);
+			ImgArray[3] = new Image(640,480);
+			
+			// set path for each image
+			ImgArray[0].src = "art/Cutlass1.jpg";
+			ImgArray[1].src = "art/Cutlass2.jpg";
+			ImgArray[2].src = "art/Cutlass3.jpg";
+			ImgArray[3].src = "art/Cutlass4.jpg";
+		} else
+		{
+		alert('Sorry, your browser does not the image object.\nSome JavaScript functionality will not work including animation.');
+		}
+		
+		// set position in animation
+		var position = 0;
+		
+		// make timeoutId global
+		var timoutId = 0;
+		
+		// animation function
+		function animate()
+		{
+				if (position < ImgArray.length - 1)
+				{
+					position++;
+				} else
+				{
+					position = 0;
+				}
+			
+			
+			// display frame (image)
+			window.document.imageAnimation.src = ImgArray[position].src;
+			
+			// repeat animate() function
+			timeoutId = setTimeout("animate()", 300);
+			
+			return true;
+		}
+		
+		// stop animation function
+		function stopAnimation()
+		{
+			clearTimeout(timeoutId);
+			return true; // onMouseOver and onMouseOut events need true returns to work
+		}
+		
+		// -->
+	</script>
+</head>
+<body marginheight=0 marginwidth=0 topmargin=0 leftmargin=0>
+<a href="" onMouseOver="animate()" onMouseOut="stopAnimation()"><img src="art/Cutlass1.jpg" name="imageAnimation" Id="imageAnimation" width="640" height="480" border=0></a>
+</body>
+</html>

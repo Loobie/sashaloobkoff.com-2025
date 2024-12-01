@@ -1,0 +1,59 @@
+#ribbon {
+	position: absolute;
+	width: 82px;
+	height: 220px;
+	top: 50%;
+	right: 0px;
+	margin-top: -110px;
+	z-index:30;
+}
+
+a.newProjects, a.newProjects:visited {
+	position:relative;
+	display:block;
+	top: 0px;
+	right: 0px;
+	width: 82px;
+	height: 75px;
+	background: url(../_images/ribbon.png) no-repeat 0 0;
+}
+
+a.newProjects:hover {
+	background: url(../_images/ribbon.png) no-repeat -164px 0;
+}
+
+a.newProjects:active {
+	background: url(../_images/ribbon.png) no-repeat -82px 0;
+}
+
+a.resume, a.resume:visited {
+	position:relative;
+	display:block;
+	width: 82px;
+	height: 72px;
+	background: url(../_images/ribbon.png) no-repeat 0 -75px;
+}
+
+a.resume:hover {
+	background: url(../_images/ribbon.png) no-repeat -164px -75px;
+}
+
+a.resume:active {
+	background: url(../_images/ribbon.png) no-repeat -82px -75px;
+}
+
+a.contact, a.contact:visited {
+	position:relative;
+	display:block;
+	width: 82px;
+	height: 72px;
+	background: url(../_images/ribbon.png) no-repeat 0 -147px;
+}
+
+a.contact:hover {
+	background: url(../_images/ribbon.png) no-repeat -164px -147px;
+}
+
+a.contact:active {
+	background: url(../_images/ribbon.png) no-repeat -82px -147px;
+}

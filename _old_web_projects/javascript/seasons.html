@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>Pick a Season.</title>
+
+<style>
+	form	{
+		font-family: geneva, verdana, sans-serif;
+		font-size: 10pt;
+		text-align: center;
+		border-top: 2px;
+		border-bottom: 2px;
+		border-left: 0px;
+		border-right: 0px;
+		border-color: #666666;
+		border-style: groove;
+		background-image: none;
+		background-color: #c3a22f;
+		width: 100%;
+		padding: 8px;
+		top:240px;
+		position:absolute;
+		z-index: 3
+		}
+</style>
+
+<script language="JavaScript1.2">
+<!-- 
+
+
+//-->
+
+</script>
+
+</head>
+<body leftmargin=0, topmargin=0, marginheight=0, marginwidth=0>
+
+<script language="JavaScript1.2">
+<!-- 
+
+//////////////////////////////////////////////////////////////////////
+// set globals
+
+// Configure this var to change number of images to render
+var no = 10;
+
+///////////////////////
+// The first thing done is to sniff out what kind of browser
+// the user has. This is a nice technique because it looks at what
+// you have to use NOT the browser name. This tells you what approach
+// you can use to animate the images.
+var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+var ie4up = (document.all) ? 1 : 0;
+var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+var dx, xPos, yPos;    // coordinate and position variables
+var amp, stx, sty;  // amplitude and step variables
+var i = 0, doc_width = 800, doc_height = 600;
+
+var timerId = -1;
+
+///////////////////////
+// The arrays below are created outside of any functions to give
+// them page scope. Note that we could have declared the arrays using
+// new Array(no).
+dx = new Array();
+xPos = new Array();
+yPos = new Array();
+amp = new Array();
+stx = new Array();
+sty = new Array();
+
+///////////////////////
+//Configure below to change URL path to the image
+var seasonImage = new Image();
+seasonImage.src="winter.gif"
+
+///////////////////////
+// We need to know how big our "screen" is going to be by looking at the
+// width and height of the window (for the NS series) or the body height
+// and width (for the IE series).
+if (ns4up||ns6up)
+{
+	doc_width = self.innerWidth;
+	doc_height = self.innerHeight;
+}
+else if (ie4up)
+{
+	doc_width = window.document.body.clientWidth;
+	doc_height = window.document.body.clientHeight;
+}
+
+/////////////////////////////////////////////////////////////////////
+// Loop over the number of images and set how much they wiggle
+// how fast they fall, etc. Then create the positionable element using
+// either layers (for NS) or divs (for IE/NS6).
+function setScreen(image)
+{
+    //alert('i: ' + i);
+    document.open();
+
+    for (i = 0; i < no; ++ i)
+    {
+	dx[i] = 0;                        // set coordinate variables
+	xPos[i] = Math.random()*(doc_width-50);  // set position variables
+	yPos[i] = Math.random()*doc_height;
+	amp[i] = Math.random()*20;         // set amplitude variables
+	stx[i] = 0.02 + Math.random()/10; // set step variables
+	sty[i] = 0.7 + Math.random();     // set step variables
+
+	//////////////////////////////////////////////////////////////////
+	// This section creates the positionable elements; layers for NS
+	// or divs for IE/NS6. This code must be located inline so that we
+	// can have the positionable elements show up in the correct place.
+	if (ns4up)
+	{       // set layers
+		document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src='"+image+"' border=\"0\"></layer>");	
+	}
+	else if (ie4up||ns6up)
+	{
+		document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; z-index: "+ i +"; visibility: visible; top: 15px; left: 15px;\"><img src='"+image+"' border=\"0\"></div>");
+	}
+    }
+    document.close();
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// Netscape main animation function
+function animateNS()
+{  
+	// Loop over all the images
+	for (i = 0; i < no; ++ i)
+	{  // iterate for every dot
+		// Here we move a particular image down its
+		// incremental amount.
+		yPos[i] += sty[i];
+		
+		// This section is executed when the image is 50
+		// pixels or more from the bottom. This assumes that images
+		// are 50 pixels or less in height. This code section resets
+		// the Y position of the image to the top of the screen
+		// and regenerates the random parameters to get the image
+		// to move differently.
+		if (yPos[i] > doc_height-66)
+		{
+			xPos[i] = Math.random()*(doc_width-amp[i]-30);
+			yPos[i] = 0;
+			stx[i] = 0.02 + Math.random()/10;
+			sty[i] = 0.7 + Math.random();
+			doc_width = self.innerWidth;
+			doc_height = self.innerHeight;
+		}
+		
+		// Compute the next position place on its sinusoidal
+		// movement of the image.
+		dx[i] += stx[i];
+		
+		// Move the image to its computed y position.
+		document.layers["dot"+i].top = yPos[i];
+		
+		// Compute the image position according to the
+		// randomly generated amlitude and path position.
+		document.layers["dot"+i].left = xPos[i] + amp[i]*Math.sin(dx[i]);
+	}
+
+	var timerId = setTimeout("animateNS()", 10);
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// IE and NS6 main animation function
+function animateIE_NS6()
+{  
+  for (i = 0; i < no; ++ i)  // iterate for every dot
+  {  
+    yPos[i] += sty[i];
+    if (yPos[i] > doc_height-66)
+    {
+      xPos[i] = Math.random()*(doc_width-amp[i]-30);
+      yPos[i] = 0;
+      stx[i] = 0.02 + Math.random()/10;
+      sty[i] = 0.7 + Math.random();
+      doc_width = ns6up?window.innerWidth : document.body.clientWidth;
+      doc_height = ns6up?window.innerHeight : document.body.clientHeight;
+    }
+    dx[i] += stx[i];
+    if (ie4up)
+    {
+    document.all["dot"+i].style.pixelTop = yPos[i];
+    document.all["dot"+i].style.pixelLeft = xPos[i] + amp[i]*Math.sin(dx[i]);
+    }
+    else if (ns6up)
+    {
+      document.getElementById("dot"+i).style.top=yPos[i];
+      document.getElementById("dot"+i).style.left=xPos[i] + amp[i]*Math.sin(dx[i]);
+    }   
+  }
+timerId = setTimeout("animateIE_NS6()", 10);
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// change image
+function changeImage(image)
+{
+    for (i = 0; i < no; ++ i)  // iterate for every image
+    { 
+	document.images[i].src = image;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// runs animation
+function runAnimation()
+{
+    if (ns4up)
+    {
+        animateNS();
+    }   else if (ie4up||ns6up)
+    {
+        animateIE_NS6();
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////
+// stop animation 
+function haltAnimation()
+{
+   if (timerId != -1) {
+	clearTimeout(timerId);
+   }
+}
+
+setScreen(seasonImage.src);
+runAnimation();
+
+//-->
+</script>
+
+<!-- NOTE: I experimented with various function calls on the onclick handler -->
+<form name='seasons'>
+	<input type='radio' name='choice' Id='choice' value='winter' onclick="JavaScript: seasonImage.src='winter.gif'; changeImage(seasonImage.src);" checked=true>winter   
+	<input type='radio' name='choice' Id='choice' value='spring' onclick="seasonImage.src = 'spring.gif'; changeImage(seasonImage.src);">spring      
+	<input type='radio' name='choice' Id='choice' value='summer' onclick="changeImage('summer.gif');">summer   
+	<input type='radio' name='choice' Id='choice' value='fall.gif' onclick="changeImage(this.value);">fall      
+	<!-- start and stop buttons
+	<input type='button' name='stop' Id='stop' value='stop ' onclick="haltAnimation();">      
+	<input type='button' name='start' Id='start' value='start' onclick="runAnimation();">
+	--> 
+</form>
+
+</body>
+</html>

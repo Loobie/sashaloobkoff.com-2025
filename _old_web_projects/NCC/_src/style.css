@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-align: justify;
+}
+
+body {line-height: 1;}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+
+/* remember to define focus styles! */
+
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+
+ins {text-decoration: none;}
+
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+/* MEYER RESET */
+
+
+
+body {font-family:Trebuchet MS; font-size:12px; text-align:center; background-color:#FFF;}
+
+#wrapper {width: 800px; margin: 0 auto; text-align:left; position:relative;}
+
+
+
+#header, #footer {position:relative; height:70px; background:url(/NCC/_img/headerLeft.gif) no-repeat top left #29405a;}
+
+#header #logo {position:absolute; top:0px; left:19px; width:74px; height:70px; text-indent:-1000em; /*background:url(/NCC/_img/NCC_logo_74x70.png) no-repeat;*/}
+
+
+.rightSideRounded {position:absolute; top:0; left:796px; width:4px; height:70px; background:url(/NCC/_img/headerRight.gif) no-repeat;}
+
+#disclaimer {
+	font-family: Trebuchet MS;
+	font-size:10px;
+	color:#FFF;
+	line-height:17px;
+	padding:10px 0 0 20px;
+}
+
+#disclaimer a {color:#FFF;}
+
+
+
+#middle {margin:10px 0; position:relative;}
+
+
+
+#middle .left {float:left; width:306px; margin-right:40px; position:relative;}
+
+#middle .left #greyBox {width:306px; height:174px; margin-top:10px; background:url(/NCC/_img/greyBox.gif) no-repeat;}
+
+#greyBox {position:relative; font-size:14px; font-weight:bold; color:#5c625c;}
+
+#greyBox p {position:absolute; top:15px; left:25px; line-height:18px;}
+
+#greyBox ul.left {list-style-type:none; position:absolute; top:60px; left:25px;}
+
+#greyBox ul.right {list-style-type:none; position:absolute; top:60px; left:155px; margin:0; width:150px;}
+
+#greyBox ul li {background:url(/NCC/_img/bullet.gif) no-repeat scroll left center transparent; padding:5px 0 5px 14px;}
+
+
+
+#middle .right {float:left; width:445px; position:relative;}
+
+#middle .right h1 {font-size:23px; font-weight:bold; line-height:26px; color:#293f59; padding-top:23px;}
+
+#middle .right h2 {font-size:16px; font-weight:normal; color:#5f8ba7; padding-top:16px;}
+
+
+
+/* FORM CSS */
+
+form { position:absolute; top:130px; left:0; width:420px; font-size:12px; color:#606460;}
+
+.lft,.rht,.clr { height:50px; }
+
+.lft input,.rht input,.clr input,select, textarea { background:white; border:1px solid #999999; font-size:11px; font-family:Verdana; }
+
+.clr { clear:both; }
+
+.lft,.rht { float:left; }
+
+/*.lft { width:200px; }*/
+.lft { width:210px; }
+
+.rht { width:210px; }
+
+label { display:block; padding:0 0 4px 0; }
+
+#first_name,#last_name,#street,#city,#zip,#email { width:175px; height:20px; }
+
+#phone1_p1,#phone1_p2,#phone2_p1,#phone2_p2 { width:41px; height:20px; }
+
+#phone1_p3,#phone2_p3 { width:61px; height:20px; }
+
+#sub_btn { position:absolute; left:299px; top:216px; }
+
+#terms {
+	padding:20px 0 0 0;
+	font-size:12px;
+	line-height:13px;
+	width:390px;
+	color:#5b615b;
+}
+
+#message { margin: 0; width: 173px; height: 84px;}
+
+
+
+.phone_number {margin-top:20px; font-size:14px; font-weight:bold;}

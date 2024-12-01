@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>mp3player</title>
+<link rel="stylesheet" type='text/css' href='style.css'> 
+	<style type="text/css">
+		<!--
+			div { 
+				position: relative; 
+				top: 144px;
+				}
+		-->
+		</style>
+		<script language="JavaScript">
+		<!--
+		function playSong(arg1, arg2){
+		   var location = arg1;
+		   var songTitle = arg2;
+		   window.document.mp3player.SetVariable("requestedSongLocation", location);
+		   window.document.mp3player.SetVariable("requestedSongTitle", songTitle);
+		}
+		//-->
+		</script> 
+</head>
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0"">
+<center>
+<table>
+<tr>
+<td background="background.png" width="955px" height="670px" valign="top">
+	<div>
+		<object classid="clsid:d27cdb/6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="660" height="28" id="mp3player" align="middle">
+		<param name="allowScriptAccess" value="sameDomain" />
+		<param name="wmode" value="transparent"> <!-- i added this for the transparency -->
+		<param name="movie" value="mp3player.swf" />
+		<param name="quality" value="high" />
+		<param name="bgcolor" value="#ffffff" />
+		<embed src="mp3player.swf" quality="high" wmode="transparent" width="660" height="28" name="mp3player" swLiveConnect="true" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+		</object>
+	</dif>
+</td>
+</tr>
+<tr>
+	<td>
+		<a href="#" onMouseDown="playSong('communique_sample.mp3', 'communique :: \'evening in the city\' :: \'crescent honeymoon\' ep')"><img src="listen_btn.gif" border=0> communique :: 'evening in the city'</a>
+		<br>
+		<a href="#" onMouseDown="playSong('cutlass_sample.mp3', 'cutlass supreme :: \'words\' :: \'to the mud\' ep')"><img src="listen_btn.gif" border=0> cutlass supreme :: 'words i've never heard'</a>
+		<br>
+		<a href="#" onMouseDown="playSong('http://www.downloadpunk.com/sample.m3u\?id=12830', 'download punk sample')"><img src="listen_btn.gif" border=0> cutlass supreme :: 'words i've never heard'</a>
+	</td>
+
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "utf-8";
+		
+.enter_btn {
+	position:relative;
+	display:block;
+	height: 82px;
+	width: 155px;
+	background:url(../_images/enter_btn.png) no-repeat;
+	background-position:0px 0px;
+	cursor: pointer;
+}	
+
+.enter_btn span.hover {
+	position: absolute;
+	display: block;
+	height: 82px;
+	width: 155px;
+	background: url(../_images/enter_btn.png) no-repeat;
+	background-position: bottom;
+}
+	
+.enter_sm_btn {
+	position:relative;
+	display:block;
+	height: 64px;
+	width: 121px;
+	background:url(../_images/enter_btn.jpg) no-repeat;
+	background-position:0 0;
+}	
+
+.enter_sm_btn span.hover {
+	position: absolute;  
+	display: block; 
+	height: 64px;
+	width: 121px;
+	background: url(../_images/enter_btn.jpg) no-repeat;  
+	background-position: bottom;
+}
+
+
+
+.home_btn {
+	position: relative;
+	float: left;
+	width: 73px;
+	height: 23px;
+	margin-left: 16px;
+	margin-bottom: 3px;
+	display: block;
+	background-image: url(../_images/nav_bar.jpg);
+	background-position: 0px 0px;
+}
+
+.home_btn span.hover {
+	position: absolute;
+	display: block;
+	width:73px;
+	height:23px;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: 0px -23px;
+}
+
+.about_btn {
+	position: relative;
+	float: right;
+	width: 229px;
+	height: 23px;
+	display: block;
+	background-image: url(../_images/nav_bar.jpg);
+	background-position: -73px 0px;
+}
+
+.about_btn span.hover{
+	position: absolute;
+	display: block;
+	width: 229px;
+	height: 23px;
+	background-image: url(../_images/nav_bar.jpg);
+	background-position: -73px -23px;
+}
+
+.web_btn {
+	position: relative;
+	float: left;
+	width:66px;
+	height:23px;
+	display:block;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -377px 0px;
+}
+
+.web_btn span.hover{
+	position: absolute;
+	display: block;
+	width:66px;
+	height:23px;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -377px -23px;
+}
+
+.mobile_btn {
+	float: left;
+	width:87px;
+	height:23px;
+	display:block;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -442px 0px;
+}
+
+.mobile_btn span.hover{
+	position: absolute;
+	display: block;
+	width:87px;
+	height:23px;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -442px -23px;
+}
+
+.print_btn {
+	float: left;
+	width:76px;
+	height:23px;
+	display:block;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -301px 0px;
+}
+
+.print_btn span.hover{
+	position: absolute;
+	display: block;
+	width:76px;
+	height:23px;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -301px -23px;
+}
+
+.motion_btn {
+	float: left;
+	width:87px;
+	height:23px;
+	display:block;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -529px 0px;
+}
+
+.motion_btn span.hover{
+	position: absolute;
+	display: block;
+	width:87px;
+	height:23px;
+	background-image:url(../_images/nav_bar.jpg);
+	background-position: -529px -23px;
+}

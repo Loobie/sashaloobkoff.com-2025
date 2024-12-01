@@ -1,0 +1,403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD>
+	<TITLE>Shopping Cart Checkout</TITLE>
+	<STYLE TYPE="text/css" MEDIA=screen>
+	<!--
+	  tr {font:10pt"verdana","tahoma"}
+	  td.form {text-align:left;font:10pt'verdana','tahoma';color:black;border:thin gray ridge;background-color:#AD9410;padding:6px}
+	-->
+	</STYLE>
+	<script language="JavaScript">
+	
+	////////////////////////////////////////////////////////////////////////
+	// zipcode validation function
+	// note: hyphen is the only allowed delimeter for zip+4 codes : )
+	function zipVal(zip)
+		{
+		// email RegEx string.
+		var regEx = /^[\d]{5,5}-?([\d]{4,4})?$/
+		
+		if (regEx.test(zip) == false)
+			{
+			window.alert("Invalid Zip Code");
+			return false;
+			}
+		}
+	
+	////////////////////////////////////////////////////////////////////////
+	// street address validation function
+	function streetVal(myField)
+		{
+		// convert value to a string object so we can use .replace
+		var str = myField.value;
+		// avenue check
+		var regEx = /\bAV\b|\bAVE\b|\bAVEN\b|\bAVENU\b|\bAVENUE\b|\bAVN\b|\bAVAVNUE\b/i;
+		if (regEx.test(str))
+			{
+			window.alert('Use of "Avenue" changed to USPS approved abbreviation.');
+			str = str.replace(regEx, "AVE");
+			myField.value = str;
+			}
+		// street check
+		var regEx = /\bST\b|\bSTR\b|\bSTREET\b|\bSTRT\b/i;
+		if (regEx.test(str))
+			{
+			window.alert('Use of "Street" changed to USPS approved abbreviation.');
+			str = str.replace(regEx, "ST");
+			myField.value = str;
+			}
+		// terrace check
+		var regEx = /\bTER\b|\bTERR\b|\bTERRACE\b/i;
+		if (regEx.test(str))
+			{
+			window.alert('Use of "Terrace" changed to USPS approved abbreviation.');
+			str = str.replace(regEx, "TER");
+			myField.value = str;
+			}
+		// drive check
+		var regEx = /\bDR\b|\bDRIV\b|\bDRIVE\b|\bDRV\b/i;
+		if (regEx.test(str))
+			{
+			window.alert('Use of "Drive" changed to USPS approved abbreviation.');
+			str = str.replace(regEx, "DR");
+			myField.value = str;
+			}
+		}
+	
+	////////////////////////////////////////////////////////////////////////
+	// email validation function
+	function emailVal(emailAddress)
+		{
+		// email RegEx string
+		var regEx = /^[a-zA-Z0-9_.\-]{1,}@([a-zA-Z_\-]{2,}\.)+(com|org|net|mil|edu|AF|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CY|CZ|DK|DJ|DM|DO|TP|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IL|IT|JM|JP|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|MS|MA|MZ|MM|NA|NR|NP|NL|AN|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|SH|KN|LC|PM|VC|WS|SM|ST|SA|SN|SC|SL|SG|SK|SI|SB|SO|ZA|GS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UK|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|YU|ZM|ZW)$/i
+		
+		if(regEx.test(emailAddress) == false)
+			{
+			alert("Invalid Email Address")
+			return false;
+			}
+		return true;
+		}
+	
+	////////////////////////////////////////////////////////////////////////
+	// credit card validation function -- uses luhn formula
+	function ccVal(myForm)
+		{
+		// assign cc # to variable so we can mess with it
+		var ccNum = myForm.creditCard.value; 
+			
+
+		////////////////////////////////////////////////////////////////
+		// VISA
+		if (myForm.cc[0].checked == true)
+			{
+
+			// take out hyphens
+			var regEx = /-/g;
+			ccNum = ccNum.replace(regEx,"");
+
+		var regEx = /^([0-9]{1,1})([0-9]{15,15})?([0-9]{12,12})?$/
+
+			// check format/length
+			if (!regEx.test(ccNum))
+				{
+				alert("Incorrect Visa Card number format.");
+				return false;
+
+				// check initial character
+				} else if ((RegExp.$1 != "4"))
+				{
+				var str = 'The first digit of the Visa card is incorrect: "' + RegExp.$1 + '".';
+				alert(str);
+				return false;
+				} else
+				{
+
+				// create new string without hyphens
+				var ccNumNoHyphens = RegExp.$1 + RegExp.$2 + RegExp.$3;
+
+				// check number against lund formula
+				if (luhnFormula(ccNumNoHyphens)==true)
+					{
+			alert("Passed Luhn Formula Test.");
+					return true;
+					} else {
+			alert("Failed Luhn Formula Test.");
+					return false;
+					}
+				}				
+			}
+
+		////////////////////////////////////////////////////////////////
+		// MasterCard
+		if (myForm.cc[1].checked == true)
+			{
+
+			var regEx2 = /^([0-9]{2,2})([0-9]{2,2})([-]{1,1})?([0-9]{4,4})([-]{1,1})?([0-9]{4,4})([-]{1,1})?([0-9]{4,4})$/
+
+			regEx2.test(ccNum);
+
+			var temp = parseInt(RegExp.$1);
+
+			if ((!regEx2.test(ccNum)))
+				{
+				alert("Incorrect MasterCard number format.");
+				return false;
+				} else if ((temp < 51) || (temp > 54))
+				{
+				var str = 'The first two digits of the MasterCard are incorrect: "' + temp + '".';
+				alert(str);
+				return false;
+				} else
+				{
+
+				// create new string without hyphens
+				var ccNumNoHyphens = RegExp.$1 + RegExp.$2 + RegExp.$4 + RegExp.$6 + RegExp.$8;
+
+				// check number against lund formula
+				if (luhnFormula(ccNumNoHyphens)==true)
+					{
+					alert("Passed Luhn Formula Test.");
+					return true;
+					} else {
+					alert("Failed Luhn Formula Test.");
+					return false;
+					}
+				}
+			}
+
+		////////////////////////////////////////////////////////////////
+		// Discover
+		if (myForm.cc[2].checked == true)
+			{
+		var regEx = /^([0-9]{4,4})([-]{1,1})?([0-9]{4,4})([-]{1,1})?([0-9]{4,4})([-]{1,1})?([0-9]{4,4})$/
+			if (!regEx.test(ccNum))
+				{
+				alert("Incorrect Discover card number format.");
+				return false;
+				} else if ((RegExp.$1 != "6011"))
+				{
+				var str = 'The first four digits of the Discover card are incorrect: "' + RegExp.$1 + '".';
+				alert(str);
+				return false;
+				} else
+				{
+
+				// create new string without hyphens
+				var ccNumNoHyphens = RegExp.$1 + RegExp.$3 + RegExp.$5 + RegExp.$7;
+
+				// check number against lund formula
+				if (luhnFormula(ccNumNoHyphens)==true)
+					{
+					alert("Passed Luhn Formula Test.");
+					return true;
+					} else {
+					alert("Failed Luhn Formula Test.");
+					return false;
+					}
+				}
+			}
+
+		}
+
+	////////////////////////////////////////////////////////////////////////
+	// luhn formula function
+	function luhnFormula(num)
+		{
+		var total = 0;
+		var timesTwo = 0;
+
+		// start at second from right and get every other adding to total		
+		for (var i = num.length - 2; i >= 0; i -= 2)
+    			{
+			timesTwo = parseInt(num.charAt(i)) * 2;
+			if (timesTwo > 9)
+				{
+				x = (timesTwo / 10);
+				x = x.toString();
+				x = parseInt(x);
+				total += x + (timesTwo % 10);
+				} else
+				{
+				total += timesTwo;
+				}
+			}
+
+		// now start from far right and get every other adding to total
+		for (var j = num.length - 1; j >= 0; j -= 2)
+			{
+			total += parseInt(num.charAt(j));			
+			}
+
+		// if is mod 10 than we are cool
+		if (total % 10 == 0)
+			{
+			return true
+			} else
+			{
+			return false;
+			}
+		}
+
+		
+	
+	////////////////////////////////////////////////////////////////////////
+	// form validation function
+	function formVal(myForm)
+		{
+		// run functions a second time (batch)
+
+		// check zip
+		if (zipVal(myForm.zipcode.value) == false)
+			{
+			return false;
+			}
+		
+		// check email
+		if (!emailVal(myForm.emailAddress.value))
+			{
+			return false;
+			}
+
+		// make sure a credit card is selected
+		var ccSelected = false
+		for (var i=0; i<3; i++)
+			{
+			if (myForm.cc[i].checked)
+				{
+				ccSelected = true;
+				}
+			}
+
+		if (!ccSelected)
+			{
+			alert("Please select a credit card company");
+			return false;
+			}
+			
+		
+		// check credit card number
+		if (ccVal(myForm) == false)
+			{
+			return false;
+			}
+
+		// all conditions are met so must be ok
+		return true;
+
+		}
+
+		
+// -->
+</script>
+
+</HEAD>
+<BODY bgcolor="#FFFFFF" leftmargin=20 topmargin=20 marginheight=20 marginwidth=20>
+
+
+<FORM name="cartForm" method="post" action="http://cs115.cs.sbcc.net/cgi-bin/FormMail.pl" onsubmit="return formVal(this)">
+<table cellpadding=6 cellspacing=0 border=0 width=375>
+
+	<!-- hidden forms needed to make formMail.pl work -->
+	<input type="hidden" name="username" value="n2loobko" />
+	<input type="hidden" name="recipient" id="recipient" value="1" />
+
+	<tr>
+		<td width=175 valign=top>
+		<br />
+		<img src="cart.gif"> <input type='submit' value='checkout' />
+		<br />	
+		</td>
+		<td width=200 class="form" align="left">
+		First Name:<br />
+		<input type='text' name="firstName" id="firstName" value="" size='35' onchange="this.value=this.value.toUpperCase()" /><br />
+		Last Name:<br />
+		<input type='text' name="lastName" id="lastName" value="" size='35' onchange="this.value=this.value.toUpperCase()" /><br />
+		Street Address:<br />
+		<input type='text' name="streetAddress" id="streetAddress" value="" size='35' onChange="this.value=this.value.toUpperCase(); streetVal(this)"><br />
+		City:<br />
+		<input type='text' name="city" id="city" value="" size='35' onchange="this.value=this.value.toUpperCase()" /><br />
+		State:<br />
+		<select name="state" id="state">
+			<option value>
+			<option value="AK" >AK
+			<option value="AL" >AL
+			<option value="AR" >AR
+			<option value="AZ" >AZ
+			<option value="CA" >CA
+			<option value="CO" >CO
+			<option value="CT" >CT
+			<option value="DC" >DC
+			<option value="DE" >DE
+			<option value="FL" >FL
+			<option value="GA" >GA
+			<option value="HI" >HI
+			<option value="IA" >IA
+			<option value="ID" >ID
+			<option value="IL" >IL
+			<option value="IN" >IN
+			<option value="KS" >KS
+			<option value="KY" >KY
+			<option value="LA" >LA
+			<option value="MA" >MA
+			<option value="MD" >MD
+			<option value="ME" >ME
+			<option value="MI" >MI
+			<option value="MN" >MN
+			<option value="MO" >MO
+			<option value="MS" >MS
+			<option value="MT" >MT
+			<option value="NC" >NC
+			<option value="ND" >ND
+			<option value="NE" >NE
+			<option value="NH" >NH
+			<option value="NJ" >NJ
+			<option value="NM" >NM
+			<option value="NV" >NV
+			<option value="NY" >NY
+			<option value="OH" >OH
+			<option value="OK" >OK
+			<option value="OR" >OR
+			<option value="PA" >PA
+			<option value="RI" >RI
+			<option value="SC" >SC
+			<option value="SD" >SD
+			<option value="TN" >TN
+			<option value="TX" >TX
+			<option value="UT" >UT
+			<option value="VA" >VA
+			<option value="VT" >VT
+			<option value="WA" >WA
+			<option value="WI" >WI
+			<option value="WV" >WV
+			<option value="WY" >WY
+			<option value="AA" >AA
+			<option value="AE" >AE
+			<option value="AP" >AP
+			<option value="AS" >AS
+			<option value="PR" >PR
+			<option value="FM" >FM
+			<option value="GU" >GU
+			<option value="MH" >MH
+			<option value="MP" >MP
+			<option value="PW" >PW
+			<option value="VI" >VI
+		</select><br />
+		Zip Code:<br />
+		<input type='text' name="zipcode" id="zipcode" value="" size='35' onchange="this.value=this.value.toUpperCase(); zipVal(this.value)"><br /><br /><br />
+		eMail:<br />
+		<input type='text' name="emailAddress" id="emailAddress" value="" size='35' onchange="this.value=this.value.toUpperCase(); emailVal(this.value)"><br /><br /><br />
+		Credit Card Number:<br />
+		<input type='text' name="creditCard" id="creditCard" value="" size='35' onchange="ccVal(this.form)" /><br />
+		<input type='radio' name="cc" id="cc" value="Visa" onclick="ccVal(this.form)" />Visa<br />
+		<input type='radio' name="cc" id="cc" value="MC" onclick="ccVal(this.form)" />MasterCard<br /> 
+		<input type='radio' name="cc" id="cc" value="Disc" onclick="ccVal(this.form)" />Discover
+	</td>
+	</tr>
+</table>
+</form>	
+
+</BODY>
+</HTML>

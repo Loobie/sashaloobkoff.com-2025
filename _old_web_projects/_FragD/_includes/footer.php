@@ -1,0 +1,1 @@
+&copy; <?php echo date('Y'); ?> Frag&rsquo;D, Incorporated &nbsp;| &nbsp;All Rights Reserved

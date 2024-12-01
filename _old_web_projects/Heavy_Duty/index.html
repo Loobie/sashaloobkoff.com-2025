@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heavy Duty Music</title>
+
+    <script type="text/javascript" src="edge_includes/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="edge_includes/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="edge_includes/edge.0.1.2.min.js"></script>
+    <script type="text/javascript" src="edge_includes/edge.symbol.0.1.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="index_edge.js"></script>
+    <link rel="stylesheet" href="index_edge.css"/>
+    
+	<!-- If IE then show static page-->
+	<script type="text/javascript">
+		var browser = navigator.appName
+		var ver = navigator.appVersion
+		var thestart = parseFloat(ver.indexOf("MSIE"))+1
+		var brow_ver = parseFloat(ver.substring(thestart+4,thestart+7))
+		
+		if ((browser=="Microsoft Internet Explorer") && (brow_ver < 9))
+		{
+		window.location="Heavy_Duty_Music_no_ie.html";
+	}
+	</script>
+	
+	<!-- create loop -->
+	<script language="JavaScript">
+		$(window).ready(function() {
+			$.Edge.symbol.get($("#stage"))._getTimeline("Default Timeline").addObserver({ onComplete: function() {
+				$.Edge.symbol.get($("#stage")).play("Default Timeline");
+			}});
+		});
+	</script>
+
+</head>
+<body style="margin:0;padding:0;">
+	<div id="stage" class="symbol_stage" style="position: absolute; left: 50%; top: 0px; margin-left: -522px;">
+	</div>
+</body>
+</html>

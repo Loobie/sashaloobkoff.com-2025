@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML>
+<HEAD><title>Sasha's Rho-Sham-Bo</title>
+	<link rel=stylesheet type="text/css" href="http://cs115.cs.sbcc.net/~n2loobko/styles.css">
+	<SCRIPT LANGUAGE="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #5 Rho-Sham-Bo
+		// 03.15.03
+				
+
+		// variables
+		var wins=0;
+		var losses=0;
+		var ties=0;
+
+		var playerChoice;
+		var computerChoice;
+
+		// play function
+		// we are using integers between 1 and 3 to denote choices
+		function play(myButton) {
+
+			// register players choice
+			playerChoice = myButton.value;
+
+			// register and display computers choice
+			computerChoice = Math.floor(Math.random()*3) + 1;
+			switch (computerChoice) {
+				case 1:
+					window.document.game.txtComputer.value = "The computer selects Rock"
+					break;
+				case 2:
+					window.document.game.txtComputer.value = "The computer selects Scissors"
+					break;
+				case 3:
+					window.document.game.txtComputer.value = "The computer selects Paper"
+					break;
+			}
+			
+			// determine result
+			if (playerChoice == 1) {
+				switch (computerChoice) {
+					case 1:
+						ties++;
+						break;
+					case 2:
+						wins++;
+						break;
+					case 3:
+						losses++;
+						break;
+				}
+			}
+			if (playerChoice == 2) {
+				switch (computerChoice) {
+					case 2:
+						ties++;
+						break;
+					case 3:
+						wins++;
+						break;
+					case 1:
+						losses++;
+						break;
+				}
+			}
+			
+			if (playerChoice == 3) {
+				switch (computerChoice) {
+					case 3:
+						ties++;
+						break;
+					case 1:
+						wins++;
+						break;
+					case 2:
+						losses++;
+						break;
+				}
+			}
+					
+
+			// display totals
+			window.document.game.txtWins.value = wins;
+			window.document.game.txtLosses.value = losses;
+			window.document.game.txtTies.value = ties;
+
+		}
+		
+		// reset function
+		function resetForm(myForm) {
+			// reset variables
+			wins=0;
+			losses=0;
+			ties=0;
+			
+			// display them
+			myForm.txtWins.value = wins;
+			myForm.txtLosses.value = losses;
+			myForm.txtTies.value = ties;
+			myForm.txtComputer.value = "";
+			// uncheck radio boxes
+			for (i=0; i<3; i++) {
+				myForm.user[i].checked=false;
+			}
+		}
+
+
+		//  End -->
+	</SCRIPT>
+
+
+
+<BODY BGCOLOR='#000000' leftmargin=0 marginheight=0 marginheight=0 marginwidth=0>
+	<table width=400 border=0>
+	<tr>
+	<td width=300>
+		<form name='game'>
+			<input type='text' name='txtComputer' size=35>
+			<br><br>
+			<input type='radio' name='user' value='1' onClick='play(this)'>Rock
+			<input type='radio' name='user' value='2' onClick='play(this)'>Scissors
+			<input type='radio' name='user' value='3' onClick='play(this)'>Paper
+			<br><br>
+			<input type='button' name='reset' value='Reset Stats' onClick='resetForm(this.form)'>
+	</td>
+	<td width=100>
+		<!-- // nested table carrying results -->
+		<table border=0>
+		<tr>
+		<td class='right' width=50>
+			Wins: 
+		</td>
+		<td class='left' width=50>
+			<input type='text' name='txtWins' value=0 size=5>
+		</td>
+		</tr>
+		<tr>
+		<td class='right' width=50>
+			Losses: 
+		</td>
+		<td class='left' width=50>
+			<input type='text' name='txtLosses' value=0 size=5>
+		</td>
+		</tr>
+		<tr>
+		<td class='right' width=50>
+			Ties: 
+		</td>
+		<td class='left' width=50>
+			<input type='text' name='txtTies' value=0 size=5>
+		</td>
+		</tr>
+		</table>
+		<p></p>
+		<script language="JavaScript">
+		<!-- Begin
+
+			window.document.write("close <a href='javascript:window.close()'><img src='close.gif' border=0></a>");
+			
+		// End -->
+	</script>
+	</td>
+	</tr>
+	</table>
+	
+</BODY>
+</HEAD>
+</HTML>

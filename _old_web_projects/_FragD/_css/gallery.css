@@ -1,0 +1,136 @@
+div.gallery_row {
+	overflow: hidden; 
+}
+
+
+.gallery_btn_1 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/wonderland_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_1:hover {
+	background: url(../_images/gallery/wonderland_btn_over.png) no-repeat 0 0;
+}
+
+.gallery_btn_2 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_2:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_3 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_3:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_4 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_4:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_5 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_5:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_6 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_6:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_7 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_7:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_8 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;		
+}
+
+.gallery_btn_8:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_9 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_9:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_10 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_10:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_11 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;	
+}
+
+.gallery_btn_11:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}
+
+.gallery_btn_12 {
+	width: 185px;
+	height: 133px;
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+	float: left;		
+}
+
+.gallery_btn_12:hover {
+	background: url(../_images/gallery/generic_btn.png) no-repeat 0 0;
+}

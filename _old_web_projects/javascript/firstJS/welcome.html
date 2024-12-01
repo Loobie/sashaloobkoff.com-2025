@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Working with the Date Object</title>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #3 -- First JavaScripts -- Welcome
+		// 03.01.03
+		
+		// create new date object
+		var now = new Date();
+		var hour = now.getHours();
+		hour = parseInt(hour)
+		window.defaultStatus = now;
+				
+		// function that determines phrase
+		function phrase(){
+			var str = "";
+			if ( (hour >= 4) && (hour < 12) ) {
+				str = "Good Morning";
+			} else if  ( (hour >= 12) && (hour < 15) ) {
+				str = "Good Afternoon";
+			} else if  ( (hour >= 15) && (hour < 22) ) {
+				str = "Good Evening";
+			} else {
+				str = "Good Night";
+			}
+			return str;
+		}
+		
+		//  End -->
+	</script>
+</head>
+<body bgcolor=black link="#ffffff" vlink="#808080" alink="#ff6600" onblur=window.close()>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// Display output
+		window.document.write("<font face='verdana, tahoma, geneva' size='-2' color='ffffff'><b>" + phrase() + "</b><br>It is now " + now + "<br><br><br><br><< <a href='#' onClick='window.close()'>Close Window</a> >></font>");
+
+		// End -->
+	</script>
+	
+</body>
+</HTML>

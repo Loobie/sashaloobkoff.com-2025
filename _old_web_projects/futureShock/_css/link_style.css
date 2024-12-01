@@ -1,0 +1,31 @@
+a {outline: 0;}
+
+object, embed {
+  outline: 0;
+}
+
+body {
+	background-color: #ffffff;
+	overflow: auto;
+}
+	
+
+	
+.bodyText { 
+	font: 11px/14px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.1em;
+	color: #cccccc;
+	margin: 5px 26px 12px 30px;
+}
+	
+.linkImg { 
+	padding: 6px;
+	border: 1px solid #9a988b;
+	background-color: #ffffff;
+}
+
+a:link {color: #3c2b0a; text-decoration:none; background-color: #ffffff; padding: 0px 3px; font-weight:normal;}
+a:visited {color: #3c2b0a; text-decoration:none; background-color: #ffffff; padding: 0px 3px; font-weight:normal;}
+a:hover {color: #ffffff; text-decoration:none; background-color: #3c2b0a; padding: 0px 3px; font-weight:normal;}
+a:active {color: #ffffff; text-decoration:none; background-color: #555555; padding: 0px 3px; font-weight:normal;
+}

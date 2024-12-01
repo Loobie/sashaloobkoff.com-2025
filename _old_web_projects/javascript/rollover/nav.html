@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Navigation Rollover</title>
+	<script language="javascript" type="text/javascript">
+		<!--
+		if (document.images)
+		{
+			// precache all 'off' button images
+			var offImgArray = new Array();
+			offImgArray["google"] = new Image(90,40);
+			offImgArray["MSN"] = new Image(90,40);
+			offImgArray["yahoo"] = new Image(90,40);
+			offImgArray["altavista"] = new Image(90,40);
+			
+			// set path each 'off' button images
+			offImgArray["google"].src = "art/google.jpg";
+			offImgArray["MSN"].src = "art/MSN.jpg";
+			offImgArray["yahoo"].src = "art/yahoo.jpg";
+			offImgArray["altavista"].src = "art/altavista.jpg";
+			
+			// precache all 'over' button images
+			var overImgArray = new Array();
+			overImgArray["google"] = new Image(90,40);
+			overImgArray["MSN"] = new Image(90,40);
+			overImgArray["yahoo"] = new Image(90,40);
+			overImgArray["altavista"] = new Image(90,40);
+			
+			// set path each 'over' button images
+			overImgArray["google"].src = "art/googleOver.jpg";
+			overImgArray["MSN"].src = "art/MSNOver.jpg";
+			overImgArray["yahoo"].src = "art/yahooOver.jpg";
+			overImgArray["altavista"].src = "art/altavistaOver.jpg";
+		} else
+		{
+		alert('Sorry, your browser does not the image object.\nSome JavaScript functionality will not work including rollovers.');
+		}
+			
+		// functions that swap images
+		
+		// off
+		function imageOff(imgName)
+		{
+			if (document.images)
+			{
+				document.images[imgName].src = offImgArray[imgName].src;
+			}
+			// on mouse over and out need a return true!!!!!!
+			return true;
+		}
+		
+		// over
+		function imageOver(imgName)
+		{
+			if (document.images)
+			{
+				document.images[imgName].src = overImgArray[imgName].src;
+			}
+			return true;
+		}
+			
+		//-->
+	</script>
+</head>
+<body>
+<a href = "http://www.google.com" target = "navWindow" onMouseOver="imageOver('google')" onMouseOut="imageOff('google')"><img src="art/google.jpg" name="google" Id="google" height=40 width=90 border=0></a>
+<img src="art/casper.gif" height=40 width=10 border=0>
+<a href = "http://search.msn.com/" target = "navWindow" onMouseOver="imageOver('MSN')" onMouseOut="imageOff('MSN')"><img src="art/MSN.jpg" name="MSN" height=40 width=90 border=0></a>
+<img src="art/casper.gif" height=40 width=20 border=0>
+<a href = "http://search.yahoo.com/" target = "navWindow" onMouseOver="imageOver('yahoo')" onMouseOut="imageOff('yahoo')"><img src="art/yahoo.jpg" name="yahoo" height=40 width=90 border=0></a>
+<img src="art/casper.gif" height=40 width=20 border=0>
+<a href = "http://www.altavista.com" target = "navWindow" onMouseOver="imageOver('altavista')" onMouseOut="imageOff('altavista')"><img src="art/altavista.jpg" name="altavista" height=40 width=90 border=0></a>
+</body>
+</html>

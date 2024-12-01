@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>RegEx O' Matic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script language="JavaScript1.2">
+<!--
+// Looks at the option and figures out if it has been selected. If it has then we
+// return the modifier, otherwise we return a blank.
+function getRadioOption(radioButton, modifier)
+	{
+	return ((radioButton[0].value == "yes" && radioButton[0].checked) ? modifier : "")
+	}
+
+// Runs a regex on a given string. Takes the results and prints out what the system is doing
+// during the regex.
+function runRegex(theForm)
+	{
+	with(theForm)
+		{
+		// Figure out which options have been selected.
+		optionModifiers  = getRadioOption(theForm.global, "g")
+		optionModifiers += getRadioOption(theForm.caseinsensitive, "i")
+		optionModifiers += getRadioOption(theForm.multiline, "m")
+		
+		// Creates a default regex object using the constructor and then puts an expression
+		// in the regex object using compile. In this way we can easily add the options.
+		var re = new RegExp()
+		re.compile(regex.value, optionModifiers)
+		
+		// Run some tests and then output the objects properties.
+		outstring.value = "Test: " + re.test(instring.value) + "\n"
+		
+		// Append the object's properties. Note the use of the for in construct (Chapter 39)
+		for(prop in re)
+			{
+			outstring.value += prop + " = " + re[prop] + "\n"
+			}
+		
+		outstring.value += "\nFrom the \"global\" RegExp object:\n"
+		
+		for(prop in RegExp)
+			{
+			outstring.value += prop + " = " + RegExp[prop] + "\n"
+			}
+		}
+		
+	//compile(“pattern”, [“g” | “i” | “m”])
+	}
+// -->
+</script>
+</head>
+
+<body>
+<p>Regular Expression o' matic.</p>
+<form action="" method="get" enctype="application/x-www-form-urlencoded" name="regexForm" id="regexForm">
+<input name="doregex" type="button" id="doregex" value="Run Regex" onclick="runRegex(this.form)" /><br />
+  <table width="80%" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td><div align="right">String to be searched:</div></td>
+      <td><input name="instring" type="text" id="instring" size="40" maxlength="80" /></td>
+    </tr>
+    <tr> 
+      <td><div align="right">Regular Expression: </div></td>
+      <td><input name="regex" type="text" id="regex" size="40" maxlength="80" /></td>
+    </tr>
+    <tr> 
+      <td><div align="right">Apply globally::</div></td>
+      <td><input type="radio" name="global" value="yes" />
+        Yes 
+        <input name="global" type="radio" value="no" checked="checked" />
+        No </td>
+    </tr>
+    <tr> 
+      <td><div align="right">Case Insensitive:</div></td>
+      <td><input type="radio" name="caseinsensitive" value="yes" />
+        Yes 
+        <input name="caseinsensitive" type="radio" value="no" checked="checked" />
+        No </td>
+    </tr>
+    <tr> 
+      <td><div align="right">Multiline:</div></td>
+      <td><input type="radio" name="multiline" value="yes" />
+        Yes 
+        <input name="multiline" type="radio" value="no" checked="checked" />
+        No </td>
+    </tr>
+    <tr> 
+      <td colspan="2"><hr /></td>
+    </tr>
+    <tr> 
+      <td>Evaluation Results:</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="2"><textarea name="outstring" cols="40" rows="25" id="outstring"></textarea></td>
+	    </tr>
+  </table>
+  
+</form>
+
+</body>
+</html>

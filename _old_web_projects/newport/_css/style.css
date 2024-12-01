@@ -1,0 +1,152 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #ffffff url(../_images/background.gif) repeat center top;
+}
+
+
+ul .documentation {
+	margin-top: 10px; 
+	margin-left: 30px;
+	}
+	
+li .documentation {margin: 10px 0 0 0;}
+
+img {border: 0px;}
+
+a {outline: 0;}
+
+object, embed {
+  outline: 0;
+}
+
+a:link {font-weight:bold; color: #323232; text-decoration:none;}
+a:visited {font-weight:bold; color:#323232; text-decoration:none;}
+a:hover {font-weight:bold; color:#707070; text-decoration:none;}
+a:active {font-weight:bold; color:#bab380;text-decoration:none;}
+
+a.shadowBoxLink:link {color: #cccccc; text-decoration:none;}
+a.shadowBoxLink:visited {color:#cccccc; text-decoration:none;}
+a.shadowBoxLink:hover {color:#ea0903; text-decoration:none;}
+a.shadowBoxLink:active {color:#ea0903;text-decoration:none;}
+
+
+#center_content_main {
+  position: absolute;
+  width: 900px;
+  height: 707px;
+  left: 50%;
+  margin: 0px 0px 0px -450px;
+  overflow: hidden;
+}
+
+#center_box {
+	width: 900px;
+	height: 707px;
+	float: left;
+	overflow: hidden;
+}
+
+#top_banner {
+	position: relative;
+	width: 900px;
+	height: 90px;
+}
+
+
+
+
+
+.title { 
+
+	margin: 22px 0px 0px 0px;
+}
+
+.subHead { 
+	font: 11px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+	margin: 15px 0px 0px 0px;
+}
+
+.player { 
+	margin: 18px 0px 0px 0px;
+}
+
+.news, .bodyText { 
+	font: 10px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+	margin: 5px 0px 0px 0px;
+}
+
+.documentation { 
+	font: 10px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+}
+
+td {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #b7b383;
+}
+
+th {
+	font: 11px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+	font-weight: bold;
+	padding: 5px 0px 4px 6px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid #b7b383;
+	text-align: left;
+}
+
+td {
+	font: 10px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+	padding: 4px 0px 4px 6px;
+}
+
+td.band {
+	font-weight: bold;
+}
+
+td.role {
+	text-align: center;
+	padding: 4px 0px;
+}
+
+.song { 
+	font: 10px/14px Helvetica,Arial,Verdana,sans-serif;
+	color: #323232;
+	margin: 2px 0px 0px 0px;
+}
+
+#footer {
+	position: absolute;
+	top: 628px;
+	left: 50%;
+	margin-left: -101px;
+	width: 202px;
+	height: 24px;
+	background: url(../_images/footer_bkgd.gif) no-repeat center top;
+	text-align: center;
+	font: 9px/13px Helvetica,Arial,Verdana,sans-serif;
+	color: #fafafa;
+	padding-top: 7px;
+}
+
+.button{
+	background:#eee;
+	border:0;
+	font: 10px/14px Helvetica,Arial,Verdana,sans-serif;
+	margin: 18px 0px 0px 9px;
+	padding:2px 4px;
+	text-decoration:none;
+	position:relative
+  }

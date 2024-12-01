@@ -1,0 +1,111 @@
+@charset "utf-8";
+/*
+* { margin:0; padding:0; outline:none; }
+
+body {
+	font: 11px/15px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	background: url(https://www.sashaloobkoff.com/_images/contact.jpg) no-repeat;
+	 }
+*/
+#contact_form {
+	position: relative;
+	top: 20px;
+	left: 14px;
+	width: 300px;
+	border: 1px;
+	font: 11px/15px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+}
+
+form fieldset {
+	position:relative;
+	border:0;
+	display:block;
+	padding:0px;
+	}
+
+form fieldset legend {
+	border-width:1px;
+	border-style:solid;
+	border-color:#BBBB66;
+	color:#3D7169;
+	font-weight:bold;
+	font-variant:small-caps;
+	font-size:140%;
+	padding:4px 8px;
+	margin:0px 0px 10px 0px;
+	position:relative;
+	top: -12px;
+	background:white;
+	}
+
+label {
+	display:block;
+	text-align:left;
+	color:#888888;
+	margin:0px 2px; }
+
+label.error
+	{
+		background: transparent url(../_images/cancel.png) no-repeat scroll left bottom;
+		color:red;
+		float: right;
+		font-weight:normal;
+		padding:3px 0px 0px 19px;
+		text-align:left;
+	}
+
+input.text-input {
+		width:148px;
+		height:20px;
+		background:#fefefe;
+		border:1px double #dddddd;
+		margin: 0px 0px 4px 0px;
+		padding: 0px 4px;
+	}
+
+		.message {
+			width:282px;
+			height:56px;
+			background:#fefefe;
+			border:1px double #dddddd;
+			margin: 0px 0px 4px 0px;
+			padding: 4px 4px;
+			overflow: auto;
+		}
+
+input.button {
+		position:relative;
+		background: transparent url(../_images/submit_btn.jpg) no-repeat scroll left top;
+		top:0px;
+		width:94px;
+		height:44px;
+		left:96px;
+		margin:0px;
+		border:0px;
+		}
+
+input.button:hover {
+		background: transparent url(../_images/submit_btn.jpg) no-repeat scroll left -44px;
+		}
+
+/* SASHA hide hidden spam catching field */
+div#contact_url {
+	display:none;
+}
+
+#message {
+		width:200px;
+		margin:82px 0 0 87px; }
+
+#message h2 {
+		font-size:120%;
+		color:#888888;
+		margin: 0px 0px 2px 0px;
+		}
+
+#message p {
+		color:#888888;
+		margin:0px 0px 4px 0px;
+		}
+
+#checkmark { position:relative;top:-46px;left:-60px; }

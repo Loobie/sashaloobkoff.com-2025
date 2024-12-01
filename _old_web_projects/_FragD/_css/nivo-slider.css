@@ -1,0 +1,201 @@
+/*
+ * jQuery Nivo Slider v2.5.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2011, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+ #slider {
+	position:relative;
+    width:877px;
+    height:534px;
+	background:url(_images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+ 
+ 
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+    text-shadow:none;
+}
+
+.nivo-caption p {
+	padding:17px 60px 40px 60px;
+	margin:0;
+}
+
+p.caption_head {
+	font: 24px/22px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	color: #444444;
+	margin: 0px 0px 6px 0px;
+	padding: 0px;
+}
+
+p.caption_body {
+	font: 14px/22px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+	color: #aaaaaa;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nivo-caption a {
+	display:inline !important;
+    color:#fc0000;
+    text-decoration:none;
+}
+
+/*	loobie says: 
+	this is super important, it makes sure that the html of the caption doesn't show on the
+	page... except where it is proccessed and placed by the nivo-slider jquery   */
+
+.nivo-html-caption {
+    display:none;
+}
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+
+.nivo-prevNav {
+	left:0px;
+}
+
+.nivo-nextNav {
+	right:0px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(../_images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+
+a.nivo-prevNav {
+	left:15px;
+}
+
+a.nivo-nextNav:hover {
+	background:url(../_images/arrows_hover.png) no-repeat;
+	background-position:-30px 0;
+	right:15px;
+}
+
+a.nivo-prevNav:hover {
+	left:15px;
+	background:url(../_images/arrows_hover.png) no-repeat;
+}
+
+a.nivo-nextNav:active {
+	background:url(../_images/arrows_active.png) no-repeat;
+	background-position:-30px 0;
+	right:15px;
+}
+
+a.nivo-prevNav:active {
+	left:15px;
+	background:url(../_images/arrows_active.png) no-repeat;
+}
+
+/* Control nav styles (e.g. 1,2,3... or bullets) */
+.nivo-controlNav {
+	position:absolute;
+	left: 45%;
+	top: 502px;
+}
+
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(../_images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+
+.nivo-controlNav a.active {
+	font-weight:bold;
+	background-position:0 -22px;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;

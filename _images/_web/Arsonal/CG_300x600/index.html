@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if IE]><script type="text/javascript" src="js/classList.js"></script><![endif]-->
+    <script type="text/javascript">
+        EBModulesToLoad = ['Video'];
+    </script>
+    <script type="text/javascript" src="js/EBLoader.js"></script>
+    <script type="text/javascript" src="js/devicedetector-min.js"></script>
+    <script type='text/javascript' src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/Notifications.js"></script>
+    <script type="text/javascript" src="js/ArsonalSizmekVideo.js"></script>
+    <script type="text/javascript" src="js/Quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
+    <style type="text/css">	
+		html { 
+		  background: url(../../../background.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+		.shadow {
+		  -moz-box-shadow:    2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		  box-shadow:         2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Source+Sans+Pro:900:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <script type='text/javascript' src="js/main.js"></script>
+</head>
+<body onLoad="loadEB();">
+<div id="sizmek_sync_block" class="shadow" style="position: relative; margin: 5% auto; width: 300px;">
+    <div id="resolve">
+        <div id="tunein"></div>
+        <div id="logo-lifetime"></div>
+        <div id="view-state-result" class="view-state">
+            <div id="result-copy-1"></div>
+            <div id="result-copy-2"></div>
+            <div id="result-copy-3"></div>
+            <div class="keyline" style="width: 298px; height: 598px;"></div>
+            <button type="button" id="button-clicktag-3" class="clicktag" style="width:300px; height:600px;"></button>
+            <button type="button" id="button-cta"></button>
+        </div>
+        <div id="view-state-game" class="view-state">
+            <div class="keyline" style="width: 298px; height: 598px;"></div>
+            <div id="question-animation">
+                <div id="question-container"></div>
+            </div>
+            <button type="button" id="button-clicktag-2" class="clicktag" style="width:300px; height:600px;"></button>
+            <div id="answers-animation">
+                <div id="answer-container">
+                    <div class="button-answer-container" style="top:0px;"><button type="button" class="button-answer" style="top:4px;"></button></div>
+                    <div class="button-answer-container" style="top:40px;"><button type="button" class="button-answer" style="top:4px;"></button></div>
+                    <div class="button-answer-container" style="top:80px;"><button type="button" class="button-answer" style="top:4px;"></button></div>
+                </div>
+            </div>
+        </div>
+        <div id="view-state-landing" class="view-state">
+            <div id="girl"></div>
+            <div id="tunein-resolve"></div>
+            <div id="flash"></div>
+            <div id="logo-lifetime-resolve"></div>
+            <div class="keyline" style="width: 298px; height: 598px;"></div>
+            <button type="button" id="button-clicktag-4" class="clicktag" style="width:300px; height:600px;"></button>
+            <button type="button" id="button-take-quiz"></button>
+        </div>
+    </div>
+    <div id="initial">
+        <div id="girl-2" style="visibility:hidden;"></div>
+        <div id="video-1-container"></div>
+        <div id="image-sequence-1">
+            <img id="image-sequence-1-image-container" src="images/transparent-ie-fix.png" />
+            <div id="image-sequence-1-loader">
+                <img src="images/loader.gif" />
+            </div>
+        </div>
+        <div class="keyline" style="width: 298px; height: 598px;"></div>
+        <button type="button" id="button-clicktag-1" class="clicktag" style="width:300px; height:600px;"></button>
+        <button type="button" id="button-take-quiz-2" style="visibility:hidden;"></button>
+        <button type="button" id="button-take-quiz-invisible"></button>
+    </div>
+</div>
+</body>
+</html>

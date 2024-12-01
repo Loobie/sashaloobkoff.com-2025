@@ -1,0 +1,113 @@
+a {outline: 0;}
+
+object, embed {
+  outline: 0;
+}
+
+body {
+	background: url('../_images/background.gif');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #f8aa00;
+	overflow: hidden;
+}
+	
+img {
+	border: 0px;
+}
+
+a#logo, a#logo:visited {
+	background: url('../_images/logo.gif');
+	position: absolute;
+	top: 9px;
+	left: 2px;
+	width: 428px;
+	height: 32px;
+}
+
+a#logo:hover {background: url('../_images/logo_over.gif');}
+
+a#logo:active {background: url('../_images/logo_active.gif');}
+
+.mainContent {
+	position: absolute; 
+	width: 850px; 
+	height: 614px; 
+	top: 50%; 
+	left: 50%; 
+	margin-top: -293px;
+	margin-left: -400px;
+	background: url('../_images/content_background.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.equipSection {
+		font: 11px/14px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.1em;
+		color: #3b2a01;
+		margin: 18px 8px 0px 14px
+	}
+
+.equipItem {
+	font: 11px/14px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.1em;
+	color: #3b2a01;
+	margin: 7px 26px 0px 40px;
+	}
+
+.equipItemSub {
+	font: 11px/14px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.1em;
+	color: #3b2a01;
+	margin: 5px 8px 0px 70px;
+	}
+	
+.bodyText, ul { 
+	font: 11px/14px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.1em;
+	color: #3b2a01;
+	margin: 5px 22px 0px 14px;
+}
+	
+.mainImg { 
+	width: 418px;
+	height: 224px;
+	margin: 5px 0px 16px 13px;
+	padding: 6px;
+	border: 1px solid #9a988b;
+	background-color: #ffffff;
+}
+
+ul  {
+	margin: -10px 0px 15px 0px;
+}
+
+li  {
+	margin: 5px 40px 10px 15px;
+}
+/*
+a:link {color: #3c2b0a; text-decoration:none; font-weight:bold;}
+a:visited {color:#3c2b0a; text-decoration:none; font-weight:bold;}
+a:hover {color:#ea4b00; text-decoration:none; font-weight:bold;}
+a:active {color:#ea4b00;text-decoration:underline; font-weight:bold;*/
+
+
+a:link {color: #ea4b00; text-decoration:none;}
+a:visited {color:#ea4b00; text-decoration:none;}
+a:hover {color:#3c2b0a; text-decoration:none;}
+a:active {color:#3c2b0a;text-decoration:underline;}
+
+#footer {
+	position: absolute;
+	top: 522px;
+	left: 50%;
+	margin-left: -286px;
+	width: 600px;
+	height: 100px;
+	text-align: center;
+	font: 9px/13px  "Andale Mono","Lucida Console", "Lucida Sans Typewriter",Consolas,"DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono", "Nimbus Mono L",Monaco,"Courier New", Courier,monospace;
+	letter-spacing: -.04em;
+	color: #eee7cb;
+	padding-top: 7px;
+}

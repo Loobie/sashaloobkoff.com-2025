@@ -1,0 +1,32 @@
+shows=<html><body><b>Oct 13 2006</b> :: 8:00P<br>bottom of the hill :: <b>sf
+
+Oct 15 2006</b> :: 8:00P<br>The Troubador :: <b>los angeles
+
+Oct 19 2006</b> :: 8:00A<br>underworld :: <b>london
+
+Oct 20 2006</b> :: 8:00P<br>josephs well :: <b>leeds
+
+Oct 21 2006</b> :: 8:00P<br>boat house :: <b>nottingham
+
+Oct 22 2006</b> :: 8:00P<br>The Phoenix Art Centre :: <b>exeter
+
+Oct 23 2006</b> :: 8:00P<br>Tivilo de Helling :: <b>utrecht
+
+Oct 24 2006</b> :: 8:00P<br>Schlachthof bremen flex :: <b>vienna
+
+Nov 4 2006</b> :: 8:00P<br>kafe antzokia :: <b>durango
+
+Nov 6 2006</b> :: 8:00P<br>batorfar :: <b>paris
+
+Nov 8 2006</b> :: 8:00P<br>flex :: <b>vienna
+
+Nov 9 2006</b> :: 8:00P<br>backstage :: <b>munich
+
+Nov 10 2006</b> :: 8:00P<br>conne island :: <b>leipzig
+
+Nov 11 2006</b> :: 8:00P<br>kato :: <b>berlin
+
+Nov 12 2006</b> :: 8:00P<br>knust :: <b>hamburg
+
+Nov 13 2006</b> :: 8:00P<br>stollwerk :: <b>koln</b>
+</body></html>

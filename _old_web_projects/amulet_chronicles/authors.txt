@@ -1,0 +1,18 @@
+authors=<html><body><b>WRITER BIOS</b>
+<img src='erica.jpg' hspace='0' vspace='0'>
+
+
+
+
+
+<p><b>Erika Lewis</b> has been developing programming for television and new media for more than a decade. Having worked for Sony Pictures Television, Fox (20th Television) and Fireworks Television, her diverse experience spans across reality and scripted programming, including daytime talk, variety, children's programming, dramas and sci-fi thrillers.  Reading and writing in the young adult and juvenile genres has always been her passion. Growing up in the Washington, D. C. area, then spending several years in the South while finishing her degree from Vanderbilt University, Erika now resides in the Los Angeles area with her husband Timberlake, 2 children, Riley and Jack, and dog Sadie.</p>
+
+<img src='lorianne.jpg' hspace='0' vspace='0'>
+
+
+
+
+
+<b>L.S. Tibbets</b> is a former television writer with credits on such shows as The Zach Files on ABC Family and Strange Days at Blake Holsey High on NBC's Discovery Kids.  Born Lorianne Snodgrass (no, that's not a typo) in Kettering, Ohio Lorianne grew up in middle class America with a love of reading and an obsession with Science Fiction and Fantasy that can betraced back to when the first Robotech cartoons aired in the U.S. in the mid-1980s.  With a B.A. in Theater Arts from California State University, Fullerton, Lorianne is able to quote most, if not all Star Wars movies verbatim and discuss The Dark Elf series by R.A. Salvatore in detail.  She often daydreams of fighting along side Aragorn from The Lord of the Rings, swears Picard was a better Captain than Kirk, and is also an avid World of Warcraft player. Nostalgic to the core, Lorianne engages in the lost art of needlepoint and crochet, plays the violin like two generations before her, and raises her two rambunctious daughters along with her adorable husband, Daniel, in the Los Angeles area.
+</body></html>
+

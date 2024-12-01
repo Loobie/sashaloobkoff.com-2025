@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Grades</title>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #3 -- First JavaScripts -- Grades
+		// 03.01.03
+		
+		// get data with prompts
+		var name = prompt("Please enter student's name.","");
+		var score = prompt("Please enter student's score.","");
+		
+		// prepare data for comparison
+		name = name.toLowerCase();
+		score = parseFloat(score);
+				
+		// function that determines grade
+		// note name comparisons for back door
+		function grade(){
+			var letter = "";
+			if ( ( (score >100) || (score < 0) ) && (name != "sasha loobkoff") ) {
+				alert("The score you entered is not valid.\nEnter a value between 0 & 100.");
+				letter ="N.A.";
+			} else if  ( (score >= 90) || (name == "sasha loobkoff") ) {
+				letter = "A";
+			} else if  (score >= 80) {
+				letter = "B";
+			} else if  (score >= 70) {
+				letter = "C";
+			} else if  (score >= 60) {
+				letter = "D";
+			} else {
+				letter = "F";
+			}
+			return letter;
+		}
+		
+		//  End -->
+	</script>
+</head>
+<body bgcolor=black link="#ffffff" vlink="#808080" alink="#ff6600" onblur=window.close()>
+	<table width=250 border=2>
+		<tr><td width=150 align=center><font face='verdana, tahoma, geneva' size='-2' color='ffffff'><b>Name</b></font></td><td width=50 align=center><font face='verdana, tahoma, geneva' size='-2' color='ffffff'><b>Score</b></font></td><td width=100 align=center><font face='verdana, tahoma, geneva' size='-2' color='ffffff'><b>Grade</b></font></td></tr>
+		
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// Display output -- includes function call to get letter grade
+		window.document.write("<tr><td><font face='verdana, tahoma, geneva' size='-2' color='ffffff'>" + name + "</font></td><td align=center><font face='verdana, tahoma, geneva' size='-2' color='ffffff'>" + score + "</font></td><td align=center><font face='verdana, tahoma, geneva' size='-2' color='ffffff'>" + grade() + "</font></td></tr></table><font face='verdana, tahoma, geneva' size='-2' color='ffffff'><br><br><br><br><< <a href='#' onClick='window.close()'>Close Window</a> >></font>");
+
+		// End -->
+	</script>
+	
+</body>
+</HTML>

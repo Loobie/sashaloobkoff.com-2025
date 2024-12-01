@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+	<title>Scrolling Status Bar</title>
+	<script language="JavaScript">
+		<!-- Begin
+		
+		// #######################################################
+		// Sasha Loobkoff
+		// cs115 JavaScript
+		// Assignment #4 -- Scrolling Status Bar
+		// 03.05.03
+		
+		
+		//  End -->
+	</script>
+</head>
+<body bgcolor="#004A4A" link="#ffffff" vlink="#808080" alink="#ff6600">
+	
+	<!-- // All controls are based on adjusting rate (amount of middle space is cut during each
+	     // setTimeOut cycle). I realize there are other ways of doing this, but this works great. -->
+	<form name = "ctrlFrm">
+		<input type="button" value="Stop" onClick="opener.prevRate = opener.rate; opener.rate = 0;">
+		<input type="button" value="Start" onClick="opener.rate = opener.prevRate;">
+		<input type="button" value="Faster" onClick="opener.rate = opener.rate + 1">
+		<input type="button" value="Slower" onClick="opener.rate = opener.rate - 1">
+	</form>
+	<script language="JavaScript">
+		<!-- Begin
+			window.document.write("<a href='javascript:window.close()'><img src='close.gif' border=0></a><font face='verdana, tahoma, geneva' size='-2' color='ffffff'> close</font>");
+		// End -->
+	</script>
+	
+</body>
+</HTML>

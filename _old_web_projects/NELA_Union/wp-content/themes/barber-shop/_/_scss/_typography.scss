@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Alegreya+SC);
+@font-face {
+    font-family: 'social icons';
+    src: url('_/_type/social-icons.woff') format('woff'),
+         url('_/_type/social-icons.ttf') format('truetype');
+}
+html {
+    font: normal 62.5%/1.5 serif;
+}
+body {
+    font-size: 1.6rem;
+    color: $text;
+    font-family: 'Lora', Georgia, serif;
+}
+a {
+    @include transition;
+    color: $accent;
+    text-decoration: none;
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+p {
+    margin-bottom: 1.6rem;
+}
+p+h1, p+h2, p+h3, p+h4, p+h5, p+h6 {
+    margin-top: 3.2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.6rem;
+    font-family: 'Alegreya SC', Georgia, serif;
+    font-weight: normal;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.8rem;
+}
+h6 {
+    font-size: 1.6rem;
+}
+ul, ol, ul ul, ul ol, ol ol, ol ul {
+  padding-left: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+blockquote {
+    border-left: 8px solid $accent;
+    padding-left: 1.6rem;
+    font-style: italic;
+}
+[data-icon]::before {
+  position: relative;
+  content: attr(data-icon);
+  font-family: 'social icons';
+  font-weight: 400 !important;
+  font-style: normal;
+  text-transform: none;
+  line-height: 0;
+}

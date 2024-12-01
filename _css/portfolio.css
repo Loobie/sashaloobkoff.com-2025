@@ -1,0 +1,1099 @@
+@charset "utf-8";
+
+/* repeating box placement css */
+.box {
+  position: relative;
+  display: block;
+  width: 239px;
+  height: 195px;
+  float: left;
+  margin: 0px 4px 2px 0px;
+}
+
+/* repeating hover box placement css */
+.hover_placement {
+  position: absolute;
+  display: block;
+  width: 239px;
+  height: 195px;
+  background-position: 0px -195px;
+}
+
+/* box images */
+
+/* xxxxxxxxxx Web xxxxxxxxxx */
+
+.WEB_lucha_underground {
+  background: url(../_images/_web/_nav/lucha_underground.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_lucha_underground span.hover {
+  background: url(../_images/_web/_nav/lucha_underground.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_player_omega {
+  background: url(../_images/_web/_nav/player_omega.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_player_omega span.hover {
+  background: url(../_images/_web/_nav/player_omega.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_fat {
+  background: url(../_images/_web/_nav/fat.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_fat span.hover {
+  background: url(../_images/_web/_nav/fat.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_ult {
+  background: url(../_images/_web/_nav/ult.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_ult span.hover {
+  background: url(../_images/_web/_nav/ult.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_pacific_natural_spices {
+  background: url(../_images/_web/_nav/pacific_natural_spices.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_pacific_natural_spices span.hover {
+  background: url(../_images/_web/_nav/pacific_natural_spices.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_arsonal {
+  background: url(../_images/_web/_nav/arsonal.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_arsonal span.hover {
+  background: url(../_images/_web/_nav/arsonal.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+.WEB_avatar_labs {
+  background: url(../_images/_web/_nav/avatar_labs.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_avatar_labs span.hover {
+  background: url(../_images/_web/_nav/avatar_labs.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+.WEB_machinima {
+  background: url(../_images/_web/_nav/machinima.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_machinima span.hover {
+  background: url(../_images/_web/_nav/machinima.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_josiah_early {
+  background: url(../_images/_web/_nav/josiah_early.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_josiah_early span.hover {
+  background: url(../_images/_web/_nav/josiah_early.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_charm_school {
+  background: url(../_images/_web/_nav/charm_school.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_charm_school span.hover {
+  background: url(../_images/_web/_nav/charm_school.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+.WEB_BMP {
+  background: url(../_images/_web/_nav/BMP.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_BMP span.hover {
+  background: url(../_images/_web/_nav/BMP.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_heavy_duty {
+  background: url(../_images/_web/_nav/heavy_duty.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_heavy_duty span.hover {
+  background: url(../_images/_web/_nav/heavy_duty.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_1pt1 {
+  background: url(../_images/_web/_nav/1pt1.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_1pt1 span.hover {
+  background: url(../_images/_web/_nav/1pt1.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_dmsFM {
+  background: url(../_images/_web/_nav/dmsFM.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_dmsFM span.hover {
+  background: url(../_images/_web/_nav/dmsFM.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_dmsFM_email {
+  background: url(../_images/_web/_nav/dmsFM_email.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_dmsFM_email span.hover {
+  background: url(../_images/_web/_nav/dmsFM_email.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_endust {
+  background: url(../_images/_web/_nav/endust.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_endust span.hover {
+  background: url(../_images/_web/_nav/endust.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_coding {
+  background: url(../_images/_web/_nav/coding.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_coding span.hover {
+  background: url(../_images/_web/_nav/coding.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_FragD {
+  background: url(../_images/_web/_nav/fragD.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_FragD span.hover {
+  background: url(../_images/_web/_nav/fragD.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_stratford_hall {
+  background: url(../_images/_web/_nav/stratford_hall.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_stratford_hall span.hover {
+  background: url(../_images/_web/_nav/stratford_hall.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_chocolate_city {
+  background: url(../_images/_web/_nav/chocolate_city.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_chocolate_city span.hover {
+  background: url(../_images/_web/_nav/chocolate_city.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_NOW {
+  background: url(../_images/_web/_nav/NOW.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_NOW span.hover {
+  background: url(../_images/_web/_nav/NOW.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_GoTV_site {
+  background: url(../_images/_web/_nav/GoTV_site.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_GoTV_site span.hover {
+  background: url(../_images/_web/_nav/GoTV_site.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_Community {
+  background: url(../_images/_web/_nav/GoTV_community.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_Community span.hover {
+  background: url(../_images/_web/_nav/GoTV_community.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_LFY_site {
+  background: url(../_images/_web/_nav/LFY_site.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_LFY_site span.hover {
+  background: url(../_images/_web/_nav/LFY_site.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_Maranatha {
+  background: url(../_images/_web/_nav/Maranatha_site.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_Maranatha span.hover {
+  background: url(../_images/_web/_nav/Maranatha_site.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_channel_buyer {
+  background: url(../_images/_web/_nav/channel_buyer.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_channel_buyer span.hover {
+  background: url(../_images/_web/_nav/channel_buyer.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_universal {
+  background: url(../_images/_web/_nav/universal.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_universal span.hover {
+  background: url(../_images/_web/_nav/universal.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_myPlace {
+  background: url(../_images/_web/_nav/myPlace.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_myPlace span.hover {
+  background: url(../_images/_web/_nav/myPlace.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_verizon_widget {
+  background: url(../_images/_web/_nav/verizon_widget.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_verizon_widget span.hover {
+  background: url(../_images/_web/_nav/verizon_widget.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_momibello {
+  background: url(../_images/_web/_nav/momibello.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_momibello span.hover {
+  background: url(../_images/_web/_nav/momibello.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_music_sites {
+  background: url(../_images/_web/_nav/music_sites.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_music_sites span.hover {
+  background: url(../_images/_web/_nav/music_sites.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_Latimes {
+  background: url(../_images/_web/_nav/LATimes.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_Latimes span.hover {
+  background: url(../_images/_web/_nav/LATimes.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_myHolidayCondo {
+  background: url(../_images/_web/_nav/myHolidayCondo.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_myHolidayCondo span.hover {
+  background: url(../_images/_web/_nav/myHolidayCondo.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_formative {
+  background: url(../_images/_web/_nav/formative_design.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_formative span.hover {
+  background: url(../_images/_web/_nav/formative_design.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+/* xxxxxxxxxx Mobile xxxxxxxxxx */
+
+.MOBILE_summoners_war {
+  background: url(../_images/_mobile/_nav/summoners_war.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_summoners_war span.hover {
+  background: url(../_images/_mobile/_nav/summoners_war.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_bettye_lavette {
+  background: url(../_images/_mobile/_nav/bettye_lavette.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_bettye_lavette span.hover {
+  background: url(../_images/_mobile/_nav/bettye_lavette.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_aquatic_discoveries {
+  background: url(../_images/_mobile/_nav/aquatic_discoveries.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_aquatic_discoveries span.hover {
+  background: url(../_images/_mobile/_nav/aquatic_discoveries.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_yoga_assists {
+  background: url(../_images/_mobile/_nav/yoga_assists.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_yoga_assists span.hover {
+  background: url(../_images/_mobile/_nav/yoga_assists.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_GoTV_Partners {
+  background: url(../_images/_mobile/_nav/media_applications.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_GoTV_Partners span.hover {
+  background: url(../_images/_mobile/_nav/media_applications.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_GoTV_originals {
+  background: url(../_images/_mobile/_nav/GoTV_Originals.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_GoTV_originals span.hover {
+  background: url(../_images/_mobile/_nav/GoTV_Originals.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_Sprint_Cup {
+  background: url(../_images/_mobile/_nav/Sprint_Cup.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_Sprint_Cup span.hover {
+  background: url(../_images/_mobile/_nav/Sprint_Cup.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_LFY {
+  background: url(../_images/_mobile/_nav/LFY_mobile.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_LFY span.hover {
+  background: url(../_images/_mobile/_nav/LFY_mobile.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_the_cool_doc {
+  background: url(../_images/_mobile/_nav/the_cool_doc.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_the_cool_doc span.hover {
+  background: url(../_images/_mobile/_nav/the_cool_doc.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_10toPlay {
+  background: url(../_images/_mobile/_nav/10toPlay.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_10toPlay span.hover {
+  background: url(../_images/_mobile/_nav/10toPlay.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_hsts {
+  background: url(../_images/_mobile/_nav/hsts.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_hsts span.hover {
+  background: url(../_images/_mobile/_nav/hsts.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_vcr {
+  background: url(../_images/_mobile/_nav/vcr.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_vcr span.hover {
+  background: url(../_images/_mobile/_nav/vcr.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_Jackass {
+  background: url(../_images/_mobile/_nav/jackass.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_Jackass span.hover {
+  background: url(../_images/_mobile/_nav/jackass.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_Telemundo {
+  background: url(../_images/_mobile/_nav/telemundo.jpg) no-repeat;
+  background-position: 0px 0-195px;
+}
+
+.MOBILE_Telemundo span.hover {
+  background: url(../_images/_mobile/_nav/telemundo.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_TB_Bucs {
+  background: url(../_images/_mobile/_nav/TB_Bucs.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_TB_Bucs span.hover {
+  background: url(../_images/_mobile/_nav/TB_Bucs.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOBILE_demos {
+  /*background: url(../_images/empty_portfolio_box.jpg) no-repeat; */
+  background: url(../_images/_mobile/_nav/app_demos.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOBILE_demos span.hover {
+  /*background: url(../_images/empty_portfolio_box.jpg) no-repeat; */
+  background: url(../_images/_mobile/_nav/app_demos.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+/* xxxxxxxxxx Print xxxxxxxxxx */
+
+.PRINT_esports_branding {
+  background: url(../_images/_print/_nav/esports_branding.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_esports_branding span.hover {
+  background: url(../_images/_print/_nav/esports_branding.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_flogging_molly {
+  background: url(../_images/_print/_nav/flogging_molly.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_flogging_molly span.hover {
+  background: url(../_images/_print/_nav/flogging_molly.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_player_omega {
+  background: url(../_images/_print/_nav/player_omega.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_player_omega span.hover {
+  background: url(../_images/_print/_nav/player_omega.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_ult {
+  background: url(../_images/_print/_nav/ult.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_ult span.hover {
+  background: url(../_images/_print/_nav/ult.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_movie_promotion {
+  background: url(../_images/_print/_nav/movie_promotion.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_movie_promotion span.hover {
+  background: url(../_images/_print/_nav/movie_promotion.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_X {
+  background: url(../_images/_print/_nav/X.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_X span.hover {
+  background: url(../_images/_print/_nav/X.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_machinima {
+  background: url(../_images/_print/_nav/machinima.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_machinima span.hover {
+  background: url(../_images/_print/_nav/machinima.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_AL_signage {
+  background: url(../_images/_print/_nav/AL_signage.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_AL_signage span.hover {
+  background: url(../_images/_print/_nav/AL_signage.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_AL_marketing {
+  background: url(../_images/_print/_nav/AL_marketing.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_AL_marketing span.hover {
+  background: url(../_images/_print/_nav/AL_marketing.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_cinedigm {
+  background: url(../_images/_print/_nav/cinedigm.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_cinedigm span.hover {
+  background: url(../_images/_print/_nav/cinedigm.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_skyrose {
+  background: url(../_images/_print/_nav/skyrose.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_skyrose span.hover {
+  background: url(../_images/_print/_nav/skyrose.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_VRLA {
+  background: url(../_images/_print/_nav/vrla.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_VRLA span.hover {
+  background: url(../_images/_print/_nav/vrla.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_aeg {
+  background: url(../_images/_print/_nav/aeg.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_aeg span.hover {
+  background: url(../_images/_print/_nav/aeg.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_bmp {
+  background: url(../_images/_print/_nav/bmp.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_bmp span.hover {
+  background: url(../_images/_print/_nav/bmp.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_rich_robinson {
+  background: url(../_images/_print/_nav/dmsFM.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_rich_robinson span.hover {
+  background: url(../_images/_print/_nav/dmsFM.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_book_design {
+  background: url(../_images/_print/_nav/book_design.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_book_design span.hover {
+  background: url(../_images/_print/_nav/book_design.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_brkdwn {
+  background: url(../_images/_print/_nav/brkdwn.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_brkdwn span.hover {
+  background: url(../_images/_print/_nav/brkdwn.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_pdp {
+  background: url(../_images/_print/_nav/pdp.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_pdp span.hover {
+  background: url(../_images/_print/_nav/pdp.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_GoTV_branding {
+  background: url(../_images/_print/_nav/GoTV_Channel_Branding.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_GoTV_branding span.hover {
+  background: url(../_images/_print/_nav/GoTV_Channel_Branding.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_GOTV_corp {
+  background: url(../_images/_print/_nav/GoTV_Corporate_Graphics.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_GOTV_corp span.hover {
+  background: url(../_images/_print/_nav/GoTV_Corporate_Graphics.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_GOTV_biz_dev {
+  background: url(../_images/_print/_nav/GoTV_Biz_Dev.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_GOTV_biz_dev span.hover {
+  background: url(../_images/_print/_nav/GoTV_Biz_Dev.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_GOTV_marketing {
+  background: url(../_images/_print/_nav/GoTV_Marketing.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_GOTV_marketing span.hover {
+  background: url(../_images/_print/_nav/GoTV_Marketing.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_GOTV_show_branding {
+  background: url(../_images/_print/_nav/GoTV_Show_Branding.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_GOTV_show_branding span.hover {
+  background: url(../_images/_print/_nav/GoTV_Show_Branding.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_guides {
+  background: url(../_images/_print/_nav/GoTV_Guides.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_guides span.hover {
+  background: url(../_images/_print/_nav/GoTV_Guides.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_SEE {
+  background: url(../_images/_print/_nav/Sprint_SEE.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_SEE span.hover {
+  background: url(../_images/_print/_nav/Sprint_SEE.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_wrigleys {
+  background: url(../_images/_print/_nav/Wrigleys.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_wrigleys span.hover {
+  background: url(../_images/_print/_nav/Wrigleys.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_NOFX {
+  background: url(../_images/_print/_nav/NOFX.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_NOFX span.hover {
+  background: url(../_images/_print/_nav/NOFX.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_LAT {
+  background: url(../_images/_print/_nav/LAT.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_LAT span.hover {
+  background: url(../_images/_print/_nav/LAT.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_Target {
+  background: url(../_images/_print/_nav/target.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_Target span.hover {
+  background: url(../_images/_print/_nav/target.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_FragD {
+  background: url(../_images/_print/_nav/FragD.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_FragD span.hover {
+  background: url(../_images/_print/_nav/FragD.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_misc {
+  background: url(../_images/_print/_nav/misc_logos.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_misc span.hover {
+  background: url(../_images/_print/_nav/misc_logos.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.PRINT_old {
+  background: url(../_images/_print/_nav/formative_design.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.PRINT_old span.hover {
+  background: url(../_images/_print/_nav/formative_design.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+/* xxxxxxxxxx Motion xxxxxxxxxx */
+
+.MOTION_MLG_CSGO {
+  background: url(../_images/_motion/_nav/MLG_CSGO.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_MLG_CSGO span.hover {
+  background: url(../_images/_motion/_nav/MLG_CSGO.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_BOTS {
+  background: url(../_images/_motion/_nav/bots.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_BOTS span.hover {
+  background: url(../_images/_motion/_nav/bots.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_machinima {
+  background: url(../_images/_motion/_nav/machinima.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_machinima span.hover {
+  background: url(../_images/_motion/_nav/machinima.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_plutoTV {
+  background: url(../_images/_motion/_nav/plutoTV.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_plutoTV span.hover {
+  background: url(../_images/_motion/_nav/plutoTV.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_BID {
+  background: url(../_images/_motion/_nav/BID.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_BID span.hover {
+  background: url(../_images/_motion/_nav/BID.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_pokebingo {
+  background: url(../_images/_motion/_nav/pokebingo.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_pokebingo span.hover {
+  background: url(../_images/_motion/_nav/pokebingo.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_controller {
+  background: url(../_images/_motion/_nav/controller.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_controller span.hover {
+  background: url(../_images/_motion/_nav/controller.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_profiler {
+  background: url(../_images/_motion/_nav/profiler.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_profiler span.hover {
+  background: url(../_images/_motion/_nav/profiler.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_xology {
+  background: url(../_images/_motion/_nav/xology.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_xology span.hover {
+  background: url(../_images/_motion/_nav/xology.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_TVGasm {
+  background: url(../_images/_motion/_nav/TVGasm.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_TVGasm span.hover {
+  background: url(../_images/_motion/_nav/TVGasm.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_cambio {
+  background: url(../_images/_motion/_nav/cambio.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_cambio span.hover {
+  background: url(../_images/_motion/_nav/cambio.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_family_business {
+  background: url(../_images/_motion/_nav/family_business.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_family_business span.hover {
+  background: url(../_images/_motion/_nav/family_business.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_kingdom {
+  background: url(../_images/_motion/_nav/kingdom.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_kingdom span.hover {
+  background: url(../_images/_motion/_nav/kingdom.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_music_promo {
+  background: url(../_images/_motion/_nav/lake_effect.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_music_promo span.hover {
+  background: url(../_images/_motion/_nav/lake_effect.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_crazy_heart {
+  background: url(../_images/_motion/_nav/crazy_heart.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_crazy_heart span.hover {
+  background: url(../_images/_motion/_nav/crazy_heart.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_dyatlov_pass {
+  background: url(../_images/_motion/_nav/dyatlov_pass.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_dyatlov_pass span.hover {
+  background: url(../_images/_motion/_nav/dyatlov_pass.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_big_joe {
+  background: url(../_images/_motion/_nav/big_joe.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_big_joe span.hover {
+  background: url(../_images/_motion/_nav/big_joe.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_pinnacle {
+  background: url(../_images/_motion/_nav/pinnacle.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_pinnacle span.hover {
+  background: url(../_images/_motion/_nav/pinnacle.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_mobil {
+  background: url(../_images/_motion/_nav/mobil.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_mobil span.hover {
+  background: url(../_images/_motion/_nav/mobil.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_sprint {
+  background: url(../_images/_motion/_nav/sprint.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_sprint span.hover {
+  background: url(../_images/_motion/_nav/sprint.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_motorola {
+  background: url(../_images/_motion/_nav/motorola.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_motorola span.hover {
+  background: url(../_images/_motion/_nav/motorola.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_cricket {
+  background: url(../_images/_motion/_nav/cricket.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_cricket span.hover {
+  background: url(../_images/_motion/_nav/cricket.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_limelight {
+  background: url(../_images/_motion/_nav/limelight.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_limelight span.hover {
+  background: url(../_images/_motion/_nav/limelight.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_gotv {
+  background: url(../_images/_motion/_nav/gotv.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_gotv span.hover {
+  background: url(../_images/_motion/_nav/gotv.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.MOTION_inside_track {
+  background: url(../_images/_motion/_nav/inside_track.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.MOTION_inside_track span.hover {
+  background: url(../_images/_motion/_nav/inside_track.jpg) no-repeat;
+  background-position: 0px -195px;
+}
