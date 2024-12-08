@@ -95,13 +95,13 @@
 					<!-- About -->
 					<div id="about_box" class="content_box">
 						<ul id="rotating_image">
-							<li><img src="_images/about_me_1_613x350.jpg" alt="Sasha 1" class="about_img" /></li>
-							<li><img src="_images/about_me_2_613x350.jpg" alt="Sasha 2" class="about_img" /></li>
-							<li><img src="_images/about_me_3_613x350.jpg" alt="Sasha 3" class="about_img" /></li>
+							<li><img src="../_images/about_me_1_613x350.jpg" alt="Sasha 1" class="about_img" /></li>
+							<li><img src="../_images/about_me_2_613x350.jpg" alt="Sasha 2" class="about_img" /></li>
+							<li><img src="../_images/about_me_3_613x350.jpg" alt="Sasha 3" class="about_img" /></li>
 						</ul>
 
             <div id="about_text">
-                <p id="about_head"><img src="_images/about.png" /></p>
+                <p id="about_head"><img src="../_images/about.png" /></p>
     						<p>Sasha Loobkoff is a multidisciplinary Art Director with a focus on Print, Web and Interactive Media.<span id="about_text_resume"> >> <a href="Loobkoff_resume.pdf">Resume</a></span> <span class="about_text_more">His design sensibilities run from whimsical to corporate but always clean, clear and intuitive.</span><span id="about_text_resume_2"> >> <a href="Loobkoff_resume.pdf">Resume</a></span></p>
 
                 <div id="about_text_1c_1r">
@@ -120,7 +120,7 @@
 
 					<!-- Links -->
 					<div id="links_box" class="content_box">
-            <img id="link_head" src="_images/links.png" />
+            <img id="link_head" src="../_images/links.png" />
 						<div id="link_box_1">
 							<p class="link">>> <a href="https://www.sashaloobkoff.com/Loobkoff_resume.pdf" onclick="this.target='_blank';">Resume</a></p>
 
@@ -182,7 +182,7 @@
 
 					<!-- Contact Form START-->
 					<div id="contact_box" class="content_box">
-            <img id="contact_head" src="_images/contact.png" />
+            <img id="contact_head" src="../_images/contact.png" />
 						<div id="contact_form">
 						  <form name="contact" method="post" action="">
 							<fieldset>
@@ -261,31 +261,19 @@
               <a href="_images/_web/fat/fat_my_account.jpg" class="box WEB_fat" rel="shadowbox[fat]" title="Fatwreck.com :: Ecommerce (Shopify) Design, UX/UI, Concepting :: My Account Page"></a>
             </div>
 
-			<a href="_images/_web/ibew11/ibew11_home.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Home Page"></a>
-				<div class="hideMe">
-					<a href="_images/_web/ibew11/ibew11_home_II.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Home Page 2"></a>
-					<a href="_images/_web/ibew11/ibew11_go_green.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Go Green Campaign Page"></a>
-					<a href="_images/_web/ibew11/ibew11_go_green_II.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Go Green Campaign Page"></a>
-					<a href="_images/_web/ibew11/ibew11_map.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Interactive Jobsite Map"></a>
-					<a href="_images/_web/ibew11/ibew11_calendar.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Calendar"></a>
-					<a href="_images/_web/ibew11/ibew11_join_us.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Join Us Page"></a>
-					<a href="_images/_web/ibew11/ibew11_safety.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Safety Campaign Page"></a>
-					<a href="_images/_web/ibew11/ibew11_women.jpg" class="box WEB_ibew11" rel="shadowbox[ibew11]" title="IBEW Local 11 :: Wordpress Development, Design, UX/UI, Concepting :: Women in the Trades Page"></a>
-				</div>
-
-			<a href="_images/_web/ult/ULT_Home_1.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page"></a>
-           		 <div class="hideMe">
-					<a href="_images/_web/ult/ULT_Home_2.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 2"></a>
-					<a href="_images/_web/ult/ULT_Banners_1.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 1"></a>
-					<a href="_images/_web/ult/ULT_Product.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Product Page"></a>
-					<a href="_images/_web/ult/ULT_Menus.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Drop Down Menus"></a>
-					<a href="_images/_web/ult/ULT_Footer.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Footer"></a>
-					<a href="_images/_web/ult/ULT_Cart.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Shopping Cart"></a>
-					<a href="_images/_web/ult/ULT_Home_3.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 3"></a>
-					<a href="_images/_web/ult/ULT_Home_4.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 4"></a>
-					<a href="_images/_web/ult/ULT_Banners_2.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 2"></a>
-					<a href="_images/_web/ult/ULT_Banners_3.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 3"></a>
-				</div>
+						<a href="_images/_web/ult/ULT_Home_1.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page"></a>
+            <div class="hideMe">
+              <a href="_images/_web/ult/ULT_Home_2.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 2"></a>
+              <a href="_images/_web/ult/ULT_Banners_1.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 1"></a>
+              <a href="_images/_web/ult/ULT_Product.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Product Page"></a>
+              <a href="_images/_web/ult/ULT_Menus.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Drop Down Menus"></a>
+              <a href="_images/_web/ult/ULT_Footer.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Footer"></a>
+              <a href="_images/_web/ult/ULT_Cart.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Shopping Cart"></a>
+              <a href="_images/_web/ult/ULT_Home_3.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 3"></a>
+              <a href="_images/_web/ult/ULT_Home_4.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page 4"></a>
+              <a href="_images/_web/ult/ULT_Banners_2.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 2"></a>
+              <a href="_images/_web/ult/ULT_Banners_3.jpg" class="box WEB_ult" rel="shadowbox[ult]" title="ULT Esports :: Ecommerce (Shopify) Coding, Management & Design :: Home Page Banners 3"></a>
+						</div>
 
 
 						<a href="_images/_web/arsonal/colony_1.jpg" class="box WEB_arsonal" rel="shadowbox[arsonal]" title="Arsonal :: Colony :: 970x pushdown (clip editing & design only) :: { <i><a href='/_images/_web/arsonal/Colony_970x90/index.html' target='_newWindow' class='shadowboxLink'>View unit with video</a> }</i>"></a>

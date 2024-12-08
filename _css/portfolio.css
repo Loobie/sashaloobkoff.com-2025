@@ -23,6 +23,16 @@
 
 /* xxxxxxxxxx Web xxxxxxxxxx */
 
+.WEB_ibew11 {
+  background: url(../_images/_web/_nav/ibew11.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_ibew11 span.hover {
+  background: url(../_images/_web/_nav/ibew11.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
 .WEB_lucha_underground {
   background: url(../_images/_web/_nav/lucha_underground.jpg) no-repeat;
   background-position: 0px 0px;
