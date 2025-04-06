@@ -23,6 +23,16 @@
 
 /* xxxxxxxxxx Web xxxxxxxxxx */
 
+.WEB_field {
+  background: url(../_images/_web/_nav/field.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_field span.hover {
+  background: url(../_images/_web/_nav/field.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
 .WEB_ibew11 {
   background: url(../_images/_web/_nav/ibew11.jpg) no-repeat;
   background-position: 0px 0px;
