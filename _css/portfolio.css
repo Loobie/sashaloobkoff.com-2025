@@ -23,6 +23,26 @@
 
 /* xxxxxxxxxx Web xxxxxxxxxx */
 
+.WEB_clash {
+  background: url(../_images/_web/_nav/clash.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_clash span.hover {
+  background: url(../_images/_web/_nav/clash.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
+.WEB_lucha_underground {
+  background: url(../_images/_web/_nav/lucha_underground.jpg) no-repeat;
+  background-position: 0px 0px;
+}
+
+.WEB_lucha_underground span.hover {
+  background: url(../_images/_web/_nav/lucha_underground.jpg) no-repeat;
+  background-position: 0px -195px;
+}
+
 .WEB_field {
   background: url(../_images/_web/_nav/field.jpg) no-repeat;
   background-position: 0px 0px;
